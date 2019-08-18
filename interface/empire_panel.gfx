@@ -1,0 +1,26 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_empire_button"
+		texturefile = "gfx/uk_parliament_empire//idea_empire_tab.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_parliament_button"
+		texturefile = "gfx/uk_parliament_empire//idea_parliament_tab.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_laws_button"
+		texturefile = "gfx/uk_parliament_empire//laws_panel.tga"
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_empire_bg"
+		texturefile = "gfx/uk_parliament_empire//empire_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_King_George_V"
+		texturefile = "gfx/leaders/ENG/Portrait_Britain_George_V.dds"
+	}
+	
+}

@@ -1,0 +1,45 @@
+﻿add_namespace = zz_uk_parliament
+
+#Appoint a Prime Minister
+country_event = { 
+	id = zz_uk_parliament.1
+	title = zz_uk_parliament.1.t
+	desc = zz_uk_parliament.1.desc
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+	
+	option = {
+		name = "appoint_prime_minister_01"	
+        if = { 
+
+        }
+	}
+	option = {
+		name = "appoint_prime_minister_02"
+		
+	}
+    option = {
+		name = "appoint_prime_minister_03"
+		
+	}
+    option = {
+		name = "appoint_prime_minister_04"
+		
+	}
+    option = {
+		name = "appoint_prime_minister_05"
+		
+	}
+    option = {
+		name = "appoint_prime_minister_06"
+		
+	}	
+    option = {
+		name = "appoint_prime_minister_07"
+		
+	}
+}

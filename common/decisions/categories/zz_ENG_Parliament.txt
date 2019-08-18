@@ -1,0 +1,29 @@
+
+
+ENG_cabinet_government= {
+    icon = generic_political_actions
+    scripted_gui = cabinet_government_panel
+    allowed = { tag = ENG }
+    priority = 85
+}
+ENG_legislation= {
+    icon = generic_political_actions
+    scripted_gui = legislation_target_panel
+    allowed = { tag = ENG }
+    priority = 85
+}
+
+ENG_legislation_completition = {
+    icon = generic_political_actions
+    scripted_gui = house_of_commons_voting_panel
+    allowed = { tag = ENG }
+    priority = 80
+}
+
+ENG_legislation_completition_lords = {
+    icon = generic_political_actions
+    scripted_gui = house_of_lords_voting_panel
+    allowed = { tag = ENG }
+    priority = 75
+}
+

@@ -1,0 +1,961 @@
+
+defined_text = {
+	name = getpartynameloc
+	
+	text = {
+		trigger = {
+			check_variable = {v = 1}
+		}
+		localization_key =  "Conservative Party Seats: [?ENG.party_seats_num^0]"
+	}	
+	text = {
+		trigger = {
+			check_variable = {v = 2}
+		}
+		localization_key = "Liberal Party Seats: [?ENG.party_seats_num^1]"
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 3}
+		}
+		localization_key = "Labour Party Seats: [?ENG.party_seats_num^2]"
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 4}
+		}
+		localization_key = "CPGB Party Seats: [?ENG.party_seats_num^3]"
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 5}
+		}
+		localization_key = "BUF Party Seats: [?ENG.party_seats_num^4]"
+	}	
+	text = {
+		trigger = {
+			check_variable = {v = 6}
+		}
+		localization_key = "party_07_seats"
+	}	
+}
+
+defined_text = {
+	name = getpartysupport
+	
+	text = {
+		trigger = {
+			check_variable = {v = 1}
+		}
+		localization_key =  "Support [?ENG.party_seats_num_sup^0]"
+	}	
+	text = {
+		trigger = {
+			check_variable = {v = 2}
+		}
+		localization_key = "Support [?ENG.party_seats_num_sup^1]"
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 3}
+		}
+		localization_key = "Support [?ENG.party_seats_num_sup^2]"
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 4}
+		}
+		localization_key = "Support [?ENG.party_seats_num_sup^3]"
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 5}
+		}
+		localization_key = "Support [?ENG.party_seats_num_sup^4]"
+	}	
+	text = {
+		trigger = {
+			check_variable = {v = 6}
+		}
+		localization_key = "party_07_seats"
+	}	
+}
+defined_text = {
+	name = getpartypopularity
+	
+	text = {
+		trigger = {
+			check_variable = {v = 1}
+		}
+		localization_key =  "Pop [?ENG.party_pop^0]"
+	}	
+	text = {
+		trigger = {
+			check_variable = {v = 2}
+		}
+		localization_key = "Pop [?ENG.party_pop^1]"
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 3}
+		}
+		localization_key = "Pop [?ENG.party_pop^2]"
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 4}
+		}
+		localization_key = "Pop [?ENG.party_pop^3]"
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 5}
+		}
+		localization_key = "Pop [?ENG.party_pop^4]"
+	}	
+	text = {
+		trigger = {
+			check_variable = {v = 7}
+		}
+		localization_key = "party_07_seats"
+	}	
+}
+#Current PM
+defined_text = {
+    name = getpm
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.prime_minister  = 1}
+        }
+        localization_key = "GFX_idea_David_Lloyd_George"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.prime_minister = 2}
+        }
+        localization_key = "GFX_idea_William_Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.prime_minister = 3}
+        }
+        localization_key = "GFX_idea_Crewe_Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.prime_minister = 4}
+        }
+        localization_key = "GFX_idea_Ernest_Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.prime_minister = 5}
+        }
+        localization_key = "GFX_idea_Hamar_Greenwood"
+    }
+}
+defined_text = {
+    name = getpmname
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.prime_minister  = 1}
+        }
+        localization_key = "David Lloyd George"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.prime_minister = 2}
+        }
+        localization_key = "William Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.prime_minister = 3}
+        }
+        localization_key = "Crewe Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.prime_minister = 4}
+        }
+        localization_key = "Ernest Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.prime_minister = 5}
+        }
+        localization_key = "Hamar Greenwood"
+    }
+}
+defined_text = {
+    name = getpmtooltip
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.prime_minister  = 1}
+        }
+        localization_key = "zz_david_lloyd_george"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.prime_minister = 2}
+        }
+        localization_key = "zz_william_beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.prime_minister = 3}
+        }
+        localization_key = "zz_crewe_milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.prime_minister = 4}
+        }
+        localization_key = "zz_ernest_brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.prime_minister = 5}
+        }
+        localization_key = "zz_hamar_greenwood"
+    }
+}
+
+# Current Home Secretary
+defined_text = {
+    name = gethomesec
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.home_secretary  = 1}
+        }
+        localization_key = "GFX_idea_David_Lloyd_George"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.home_secretary = 2}
+        }
+        localization_key = "GFX_idea_William_Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.home_secretary = 3}
+        }
+        localization_key = "GFX_idea_Crewe_Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.home_secretary = 4}
+        }
+        localization_key = "GFX_idea_Ernest_Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.home_secretary = 5}
+        }
+        localization_key = "GFX_idea_Hamar_Greenwood"
+    }
+}
+defined_text = {
+    name = gethomsecname
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.home_secretary  = 1}
+        }
+        localization_key = "David Lloyd George"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.home_secretary = 2}
+        }
+        localization_key = "William Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.home_secretary = 3}
+        }
+        localization_key = "Crewe Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.home_secretary = 4}
+        }
+        localization_key = "Ernest Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.home_secretary = 5}
+        }
+        localization_key = "Hamar Greenwood"
+    }
+}
+defined_text = {
+    name = gethomsectooltip
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.home_secretary  = 1}
+        }
+        localization_key = "zz_david_lloyd_george"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.home_secretary = 2}
+        }
+        localization_key = "zz_william_beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.home_secretary = 3}
+        }
+        localization_key = "zz_crewe_milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.home_secretary = 4}
+        }
+        localization_key = "zz_ernest_brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.home_secretary = 5}
+        }
+        localization_key = "GFX_idea_Hamar_Greenwood"
+    }
+}
+
+# Current Foreign Secretary
+defined_text = {
+    name = getforesec
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary  = 1}
+        }
+        localization_key = "GFX_idea_David_Lloyd_George"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary = 2}
+        }
+        localization_key = "GFX_idea_William_Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary = 3}
+        }
+        localization_key = "GFX_idea_Crewe_Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary = 4}
+        }
+        localization_key = "GFX_idea_Ernest_Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary = 5}
+        }
+        localization_key = "GFX_idea_Hamar_Greenwood"
+    }
+}
+defined_text = {
+    name = getforsecname
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary  = 1}
+        }
+        localization_key = "David Lloyd George"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary = 2}
+        }
+        localization_key = "William Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary = 3}
+        }
+        localization_key = "Crewe Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary = 4}
+        }
+        localization_key = "Ernest Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary = 5}
+        }
+        localization_key = "Hamar Greenwood"
+    }
+}
+defined_text = {
+    name = getforsectooltip
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary  = 1}
+        }
+        localization_key = "David Lloyd George increases Political Power gain by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary = 2}
+        }
+        localization_key = "William Beveridge reduces the time to justify a war by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary = 3}
+        }
+        localization_key = "Crewe Milnes increases stability by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary = 4}
+        }
+        localization_key = "Ernest Brown increases productive output by 5%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.foreign_secretary = 5}
+        }
+        localization_key = "GFX_idea_Hamar_Greenwood"
+    }
+}
+
+# Get Economic Sec
+defined_text = {
+    name = getecosec
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary  = 1}
+        }
+        localization_key = "GFX_idea_David_Lloyd_George"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary = 2}
+        }
+        localization_key = "GFX_idea_William_Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary = 3}
+        }
+        localization_key = "GFX_idea_Crewe_Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary = 4}
+        }
+        localization_key = "GFX_idea_Ernest_Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary = 5}
+        }
+        localization_key = "GFX_idea_Hamar_Greenwood"
+    }
+}
+defined_text = {
+    name = getecosecname
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary  = 1}
+        }
+        localization_key = "David Lloyd George"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary = 2}
+        }
+        localization_key = "William Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary = 3}
+        }
+        localization_key = "Crewe Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary = 4}
+        }
+        localization_key = "Ernest Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary = 5}
+        }
+        localization_key = "Hamar Greenwood"
+    }
+}
+defined_text = {
+    name = getecosectooltip
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary  = 1}
+        }
+        localization_key = "David Lloyd George increases Political Power gain by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary = 2}
+        }
+        localization_key = "William Beveridge reduces the time to justify a war by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary = 3}
+        }
+        localization_key = "Crewe Milnes increases stability by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary = 4}
+        }
+        localization_key = "Ernest Brown increases productive output by 5%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.economic_secretary = 5}
+        }
+        localization_key = "GFX_idea_Hamar_Greenwood"
+    }
+}
+
+# Current Naval Secretary
+defined_text = {
+    name = getnavsec
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary = 1}
+        }
+        localization_key = "GFX_idea_David_Lloyd_George"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary = 2}
+        }
+        localization_key = "GFX_idea_William_Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary = 3}
+        }
+        localization_key = "GFX_idea_Crewe_Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary = 4}
+        }
+        localization_key = "GFX_idea_Ernest_Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary = 5}
+        }
+        localization_key = "GFX_idea_Hamar_Greenwood"
+    }
+}
+defined_text = {
+    name = getnavsecname
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary  = 1}
+        }
+        localization_key = "David Lloyd George"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary = 2}
+        }
+        localization_key = "William Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary = 3}
+        }
+        localization_key = "Crewe Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary = 4}
+        }
+        localization_key = "Ernest Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary = 5}
+        }
+        localization_key = "Hamar Greenwood"
+    }
+}
+defined_text = {
+    name = getnavsectooltip
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary  = 1}
+        }
+        localization_key = "David Lloyd George increases Political Power gain by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary = 2}
+        }
+        localization_key = "William Beveridge reduces the time to justify a war by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary = 3}
+        }
+        localization_key = "Crewe Milnes increases stability by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary = 4}
+        }
+        localization_key = "Ernest Brown increases productive output by 5%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.navy_secretary = 5}
+        }
+        localization_key = "GFX_idea_Hamar_Greenwood"
+    }
+}
+
+# Current War Secretary
+defined_text = {
+    name = getwarsec
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.war_secretary  = 1}
+        }
+        localization_key = "GFX_idea_David_Lloyd_George"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.war_secretary = 2}
+        }
+        localization_key = "GFX_idea_William_Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.war_secretary = 3}
+        }
+        localization_key = "GFX_idea_Crewe_Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.war_secretary = 4}
+        }
+        localization_key = "GFX_idea_Ernest_Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.war_secretary = 5}
+        }
+        localization_key = "GFX_idea_Hamar_Greenwood"
+    }
+}
+defined_text = {
+    name = getwarsecname
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.war_secretary  = 1}
+        }
+        localization_key = "David Lloyd George"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.war_secretary = 2}
+        }
+        localization_key = "William Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.war_secretary = 3}
+        }
+        localization_key = "Crewe Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.war_secretary = 4}
+        }
+        localization_key = "Ernest Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.war_secretary = 5}
+        }
+        localization_key = "Hamar Greenwood"
+    }
+}
+defined_text = {
+    name = getwarsectooltip
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.war_secretary  = 1}
+        }
+        localization_key = "David Lloyd George increases Political Power gain by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.war_secretary = 2}
+        }
+        localization_key = "William Beveridge reduces the time to justify a war by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.war_secretary = 3}
+        }
+        localization_key = "Crewe Milnes increases stability by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.war_secretary = 4}
+        }
+        localization_key = "Ernest Brown increases productive output by 5%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.war_secretary = 5}
+        }
+        localization_key = "GFX_idea_Hamar_Greenwood"
+    }
+}
+
+# Current Air Secretary
+defined_text = {
+    name = getairsec
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.air_secretary  = 1}
+        }
+        localization_key = "GFX_idea_David_Lloyd_George"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.air_secretary = 2}
+        }
+        localization_key = "GFX_idea_William_Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.air_secretary = 3}
+        }
+        localization_key = "GFX_idea_Crewe_Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.air_secretary = 4}
+        }
+        localization_key = "GFX_idea_Ernest_Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.air_secretary = 5}
+        }
+        localization_key = "GFX_idea_Hamar_Greenwood"
+    }
+}
+defined_text = {
+    name = getairsecname
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.air_secretary  = 1}
+        }
+        localization_key = "David Lloyd George"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.air_secretary = 2}
+        }
+        localization_key = "William Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.air_secretary = 3}
+        }
+        localization_key = "Crewe Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.air_secretary = 4}
+        }
+        localization_key = "Ernest Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.air_secretary = 5}
+        }
+        localization_key = "Hamar Greenwood"
+    }
+}
+defined_text = {
+    name = getairsectooltip
+    
+    text = {
+        trigger = {
+			check_variable = {ENG.air_secretary  = 1}
+        }
+        localization_key = "David Lloyd George increases Political Power gain by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.air_secretary = 2}
+        }
+        localization_key = "William Beveridge reduces the time to justify a war by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.air_secretary = 3}
+        }
+        localization_key = "Crewe Milnes increases stability by 25%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.air_secretary = 4}
+        }
+        localization_key = "Ernest Brown increases productive output by 5%"
+    }
+	text = {
+        trigger = {
+			check_variable = {ENG.air_secretary = 5}
+        }
+        localization_key = "GFX_idea_Hamar_Greenwood"
+    }
+}
+
+#Minister Selection Array
+defined_text = {
+    name = getpmarray
+    
+    text = {
+        trigger = {
+			check_variable = {v = 1}
+        }
+        localization_key = "GFX_idea_David_Lloyd_George"
+    }
+	text = {
+        trigger = {
+			check_variable = {v = 2}
+        }
+        localization_key = "GFX_idea_William_Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {v = 3}
+        }
+        localization_key = "GFX_idea_Crewe_Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {v = 4}
+        }
+        localization_key = "GFX_idea_Ernest_Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {v = 5}
+        }
+        localization_key = "GFX_idea_Hamar_Greenwood"
+    }
+}
+
+defined_text = {
+    name = getpmarrayname
+    
+    text = {
+        trigger = {
+			check_variable = {v = 1}
+        }
+        localization_key = "David Lloyd George"
+    }
+	text = {
+        trigger = {
+			check_variable = {v = 2}
+        }
+        localization_key = "William Beveridge"
+    }
+	text = {
+        trigger = {
+			check_variable = {v = 3}
+        }
+        localization_key = "Crewe Milnes"
+    }
+	text = {
+        trigger = {
+			check_variable = {v = 4}
+        }
+        localization_key = "Ernest Brown"
+    }
+	text = {
+        trigger = {
+			check_variable = {v = 5}
+        }
+        localization_key = "Hamar Greenwood"
+    }
+}
+
+
+
+
+defined_text = {
+	name = GetGovernmentParliament
+
+	text = {
+		trigger = {
+			check_variable = { government = 1 }
+		}
+		localization_key = "Conservative"
+	}
+	text = {
+		trigger = {
+			check_variable = { government = 2 }
+		}
+		localization_key = "Liberal"
+	}
+	text = {
+		trigger = {
+			check_variable = { government = 3 }
+		}
+		localization_key = "Labour"
+	}
+	text = {
+		trigger = {
+			check_variable = { government = 4 }
+		}
+		localization_key = national_government
+	}
+	text = {
+		trigger = {
+			check_variable = { government = 5 }
+		}
+		localization_key = national_unity_government
+	}
+	
+}
+
+

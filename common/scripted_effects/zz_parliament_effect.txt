@@ -1,0 +1,410 @@
+zz_end_coalition = { 
+	remove_ideas = { 
+		zz_communism_coalition
+		zz_authoritarian_socialism_coalition
+		zz_socialism_coalition
+		zz_social_democracy_coalition
+		zz_social_liberalism_coalition
+		zz_market_liberalism_coalition
+		zz_jacobin_coalition
+		zz_democratic_coalition
+		zz_monarchism_coalition
+		zz_neutrality_coalition
+		zz_nationalism_coalition
+		zz_fascism_coalition
+	}
+}
+zz_pop_hit_election = { 
+
+}
+
+zz_uk_election = {
+	zz_end_coalition = yes
+	set_variable = { total_seats = seats} 
+	set_variable = { party_seats_num^0 = 0 }
+	set_variable = { party_seats_num^1 = 0 }
+	set_variable = { party_seats_num^2 = 0 }
+	set_variable = { party_seats_num^3 = 0 }
+	set_variable = { party_seats_num^4 = 0 }	
+}
+	
+zz_uk_chance_seats = { 
+	set_variable = {party_pop_elec^0 = party_pop^0}
+	set_variable = {party_pop_elec^1 = party_pop^1}
+	set_variable = {party_pop_elec^2 = party_pop^2}
+	set_variable = {party_pop_elec^3 = party_pop^3}
+	set_variable = {party_pop_elec^4 = party_pop^4}
+	while_loop_effect = {
+		limit = {
+			check_variable = { total_seats > 0}
+		}
+   		
+		set_variable = { party_elec_random^0 = random }
+		divide_variable = {party_pop_elec^0 = 100}
+		add_to_variable = {party_elec_random^0 = party_pop_elec^0 }
+		if = { 
+			limit = { 
+				check_variable = { party_elec_random^0 > 0.5}
+			}
+			add_to_variable = { party_seats_num^0 = 1}
+			subtract_from_variable = { total_seats = 1}
+			if = { 
+				limit = {
+					check_variable = { total_seats < 1}
+				}
+				set_variable = { break = 1}
+			}
+		}
+		set_variable = { party_elec_random^1 = random }
+		divide_variable = {party_pop_elec^1 = 100}
+		add_to_variable = {party_elec_random^1 = party_pop_elec^1 }
+		if = { 
+			limit = { 
+				check_variable = { party_elec_random^1 > 0.5}
+			}
+			add_to_variable = { party_seats_num^1 = 1}
+			subtract_from_variable = { total_seats = 1}
+			if = { 
+				limit = {
+					check_variable = { total_seats < 1}
+				}
+				set_variable = { break = 1}
+			}
+		}
+		
+		set_variable = { party_elec_random^2 = random }
+		divide_variable = {party_pop_elec^2 = 100}
+		add_to_variable = {party_elec_random^2 = party_pop_elec^2 }
+		if = { 
+			limit = { 
+				check_variable = { party_elec_random^2 > 0.5}
+			}
+			add_to_variable = { party_seats_num^2 = 1}
+			subtract_from_variable = { total_seats = 1}
+			if = { 
+				limit = {
+					check_variable = { total_seats < 1}
+				}
+				set_variable = { break = 1}
+			}
+		}
+		set_variable = { party_elec_random^3 = random }
+		divide_variable = {party_pop_elec^3 = 100}
+		add_to_variable = {party_elec_random^3 = party_pop_elec^3 }
+		if = { 
+			limit = { 
+				check_variable = { party_elec_random^3 > 0.5}
+			}
+			add_to_variable = { party_seats_num^3 = 1}
+			subtract_from_variable = { total_seats = 1}
+			if = { 
+				limit = {
+					check_variable = { total_seats < 0}
+				}
+				set_variable = { break = 1}
+			}
+		}
+
+		set_variable = { party_elec_random^4 = random }
+		divide_variable = {party_pop_elec^4 = 100}
+		add_to_variable = {party_elec_random^4 = party_pop_elec^4 }
+		if = { 
+			limit = { 
+				check_variable = { party_elec_random^4 > 0.5}
+			}
+			add_to_variable = { party_seats_num^4 = 1}
+			subtract_from_variable = { total_seats = 1}
+			if = { 
+				limit = {
+					check_variable = { total_seats < 0}
+				}
+				set_variable = { break = 1}
+			}
+		}
+	}
+}
+
+
+zz_legislation_vote_setup = { 
+	set_variable = { supneeded = seats } 
+	divide_variable = { supneeded = 2 } 
+	round_variable = supneeded 
+	add_to_variable = {supneeded = 1} 
+	set_variable = { party_seats_num_sup^0 =  party_seats_num^0 }
+	set_variable = { party_seats_num_sup^1 =  party_seats_num^1 }
+	set_variable = { party_seats_num_sup^2 =  party_seats_num^2 }
+	set_variable = { party_seats_num_sup^3 =  party_seats_num^3 }
+	set_variable = { party_seats_num_sup^4 =  party_seats_num^4 }
+	if = { 
+		limit = { check_variable = { government = 1}}
+		set_variable = { supseat = party_seats_num_sup^0 }
+		set_variable = { party_seats_num_sup^0 = 0  }
+	}
+	else_if = { 
+		limit = { check_variable = { government = 2}}
+		set_variable = { supseat = party_seats_num_sup^1 }
+		set_variable = { party_seats_num_sup^1 = 0  }
+	}
+	else_if = { 
+		limit = { check_variable = { government = 3}}
+		set_variable = { supseat = party_seats_num_sup^2 }
+		set_variable = { party_seats_num_sup^2 = 0  }
+	}
+	else_if = { 
+		limit = { check_variable = { government = 4}}
+		set_variable = { supseat = party_seats_num_sup^3 }
+		set_variable = { party_seats_num_sup^3 = 0  }
+	}
+	else_if = { 
+		limit = { check_variable = { government = 5}}
+		set_variable = { supseat = party_seats_num_sup^4 }
+		set_variable = { party_seats_num_sup^4 = 0  }
+	}
+}
+
+
+zz_legislation_lords_vote_setup = { 
+	set_variable = { secondsupneeded = secondhouseseats }
+	set_variable = { secondhousetotal = secondhouseseats } 
+	divide_variable = { secondsupneeded = 2 } 
+	round_variable = secondsupneeded 
+	add_to_variable = {secondsupneeded = 1} 
+	set_variable = { secondsup = random }
+	multiply_variable = { secondsup = secondhouseseats } 
+	subtract_from_variable = { secondhousetotal = secondsup } 
+}
+
+zz_ask_support = { 
+	add_popularity = { ideology = democratic popularity = 0.001 }
+	if = { 
+		limit = { check_variable = { party_seats_num_sup^i > 5 }}
+		add_to_variable = { supseat = 5 } 
+		add_to_variable = { party_pop_elec^i = 0.5 }
+		subtract_from_variable = { party_seats_num_sup^i = 5 }
+	}
+}
+
+
+zz_minister_select = { 
+	if = {
+		limit = { 
+			check_variable = { minister_type = 1 }
+		}
+		set_variable = { ENG.prime_minister = v}
+		prime_minister_effect = yes
+	}
+	else_if = { 
+		limit = { 
+			check_variable = { minister_type = 2 }
+		}
+		set_variable = { ENG.home_secretary = v }
+		home_secretary_effect = yes
+	}
+	else_if = { 
+		limit = { 
+			check_variable = { minister_type = 3 }
+		}
+		set_variable = { ENG.foreign_secretary = v }
+		foreign_secretary_effect = yes
+	}
+	else_if = { 
+		limit = { 
+			check_variable = { minister_type = 4 }
+		}
+		set_variable = { ENG.economic_secretary = v }
+		economic_secretary_effect = yes
+	}
+	else_if = { 
+		limit = { 
+			check_variable = { minister_type = 5 }
+		}
+		set_variable = { ENG.navy_secretary = v }
+	}
+	else_if = { 
+		limit = { 
+			check_variable = { minister_type = 6 }
+		}
+		set_variable = { ENG.war_secretary = v }
+	}
+	else_if = { 
+		limit = { 
+			check_variable = { minister_type = 7 }
+		}
+		set_variable = { ENG.air_secretary = v }
+	}
+}
+
+
+
+remove_prime_minister_effect = { 
+	remove_ideas = { 
+		zz_prime_minister_01
+		zz_prime_minister_02
+		zz_prime_minister_03
+		zz_prime_minister_04
+		zz_prime_minister_05
+	}
+}
+prime_minister_effect = { 
+	remove_prime_minister_effect = yes
+	if = { 
+		limit = { 
+			check_variable = { ENG.prime_minister = 1}
+		}
+		add_ideas = zz_prime_minister_01
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.prime_minister = 2}
+		}
+		add_ideas = zz_prime_minister_02
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.prime_minister = 3}
+		}
+		add_ideas = zz_prime_minister_03
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.prime_minister = 4}
+		}
+		add_ideas = zz_prime_minister_04
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.prime_minister = 5}
+		}
+		add_ideas = zz_prime_minister_05
+	}
+}
+
+remove_home_secretary_effect = { 
+	remove_ideas = { 
+		zz_home_secretary_01
+		zz_home_secretary_02
+		zz_home_secretary_03
+		zz_home_secretary_04
+		zz_home_secretary_05
+	}
+}
+home_secretary_effect = { 
+	remove_home_secretary_effect = yes
+	if = { 
+		limit = { 
+			check_variable = { ENG.home_secretary = 1}
+		}
+		add_ideas = zz_home_secretary_01
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.home_secretary = 2}
+		}
+		add_ideas = zz_home_secretary_02
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.home_secretary = 3}
+		}
+		add_ideas = zz_home_secretary_03
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.home_secretary = 4}
+		}
+		add_ideas = zz_home_secretary_04
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.home_secretary = 5}
+		}
+		add_ideas = zz_home_secretary_05
+	}
+}
+
+remove_foreign_secretary_effect = { 
+	remove_ideas = { 
+		zz_foreign_secretary_01
+		zz_foreign_secretary_02
+		zz_foreign_secretary_03
+		zz_foreign_secretary_04
+		zz_foreign_secretary_05
+	}
+}
+foreign_secretary_effect = { 
+	remove_foreign_secretary_effect  = yes
+	if = { 
+		limit = { 
+			check_variable = { ENG.foreign_secretary = 1}
+		}
+		add_ideas = zz_foreign_secretary_01
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.foreign_secretary = 2}
+		}
+		add_ideas = zz_foreign_secretary_02
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.foreign_secretary = 3}
+		}
+		add_ideas = zz_foreign_secretary_03
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.foreign_secretary = 4}
+		}
+		add_ideas = zz_foreign_secretary_04
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.foreign_secretary = 5}
+		}
+		add_ideas = zz_foreign_secretary_05
+	}
+}
+remove_economic_secretary_effect = { 
+	remove_ideas = { 
+		zz_economic_secretary_01
+		zz_economic_secretary_02
+		zz_economic_secretary_03
+		zz_economic_secretary_04
+		zz_economic_secretary_05
+	}
+}
+economic_secretary_effect = { 
+	remove_economic_secretary_effect  = yes
+	if = { 
+		limit = { 
+			check_variable = { ENG.economic_secretary = 1}
+		}
+		add_ideas = zz_economic_secretary_01
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.economic_secretary = 2}
+		}
+		add_ideas = zz_economic_secretary_02
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.economic_secretary = 3}
+		}
+		add_ideas = zz_economic_secretary_03
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.economic_secretary = 4}
+		}
+		add_ideas = zz_economic_secretary_04
+	}
+	else_if = {
+		limit = { 
+			check_variable = { ENG.economic_secretary = 5}
+		}
+		add_ideas = zz_economic_secretary_05
+	}
+}
+
+

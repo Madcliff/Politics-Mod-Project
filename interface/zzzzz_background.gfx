@@ -1,0 +1,44 @@
+spriteTypes = {
+	spriteType = {
+		name = "zz_laws_submenu"
+		texturefile = "gfx//uk_parliament_empire//laws_submenu_bg.dds"
+	}
+	spriteType = {
+		name = "zz_new"
+		texturefile = "gfx//uk_parliament_empire//zz_country_powers.dds"
+	}
+	spriteType = {
+		name = "zz_tax_settings_bg"
+		texturefile = "gfx//uk_parliament_empire//zz_tax_settings_bg.dds"
+	}
+	spriteType = {
+		name = "zz_state_buttons"
+		texturefile = "gfx//uk_parliament_empire//zz_state_buttons.dds"
+	}	
+	spriteType = {
+		name = "zz_button_148x34"
+		texturefile = "gfx//uk_parliament_empire//zz_button_148x34.dds"
+	}
+	spriteType = {
+		name = "zz_button_80x34"
+		texturefile = "gfx//uk_parliament_empire//zz_button_80x34.dds"
+	}	
+	spriteType = {
+		name = "zz_button_211x20"
+		texturefile = "gfx//uk_parliament_empire//zz_button_211x20.dds"
+	}
+	spriteType = {
+		name = "zz_button_parliament"
+		texturefile = "gfx//uk_parliament_empire//zz_parliament_party.dds"
+	}
+	spriteType = {
+		name = "zz_button_parliament_short"
+		texturefile = "gfx//uk_parliament_empire//zz_short_parliament.dds"
+	}	
+	spriteType = {
+		name = "zz_button_parliament_medium"
+		texturefile = "gfx//uk_parliament_empire//zz_medium_parliament.dds"
+	}	
+}
+
+

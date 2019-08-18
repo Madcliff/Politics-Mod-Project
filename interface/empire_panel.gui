@@ -1,0 +1,701 @@
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "empire_button_container"
+		position = { x = 90 y = 375 }
+		
+		
+		buttonType ={
+			name ="empire_button"
+			quadTextureSprite ="GFX_empire_button"
+			frame = 1
+			position = { x=0 y=0 }
+			clicksound = click_close
+			oversound = ui_menu_over
+			scale = 0.45
+		}
+		
+	}
+	containerWindowType = {
+		name = "political_currency_empire"
+		position = { x = 10 y = 475 }
+
+		buttonType ={
+			name ="money_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=0 }
+			shortcut = "ctrl+k"
+		}
+		
+		iconType = {
+			name ="money_icon"
+			spriteType = "GFX_pol_power_icon"
+			position = { x= 2 y = 3 }
+			scale = 0.7
+		}
+		instantTextBoxType = {
+			name ="money_text"
+			position = { x= 15 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?imperialprestige]"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+			
+			#pd_tooltip = "money_counter_TOOLTIP"
+			#pd_tooltip_delayed = "money_counter_TOOLTIP_DELAYED"
+		}
+		
+	}
+	containerWindowType = {
+		name = "political_currency_espionage"
+		position = { x = 75 y = 475 }
+
+		buttonType ={
+			name ="money_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=0 }
+			shortcut = "ctrl+k"
+		}
+		
+		iconType = {
+			name ="money_icon"
+			spriteType = "GFX_pol_power_icon"
+			position = { x= 2 y = 3 }
+			scale = 0.7
+		}
+		instantTextBoxType = {
+			name ="money_text"
+			position = { x= 15 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?intellectualpower]"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+			
+			#pd_tooltip = "money_counter_TOOLTIP"
+			#pd_tooltip_delayed = "money_counter_TOOLTIP_DELAYED"
+		}
+		
+	}
+	containerWindowType = {
+		name = "empire_container"
+		position = {x=300 y=0}
+		size = { width=1100 height=700 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_empire_bg"
+		}
+		
+		instantTextBoxType = {
+			name = "empire_title"
+			position = { x=50 y = 20 }
+			font = "hoi_18mbs"
+			text = "British Empire"
+			format = center
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
+		}
+		buttonType = {
+			name = "empire_container_close_button"
+			position = {x=1074 y=7}
+			quadTextureSprite ="GFX_closebutton_small"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			#Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			#pd_tooltip = "CLOSE"
+		}
+		containerWindowType = {
+			name = "empire_country"
+			position = {x=350 y=121}
+			size = { width=100 height=100 }
+
+			fade_time = 300
+			fade_type = linear
+			moveable = no
+			
+			
+			buttonType = {
+				name = "empire_country_entry_flag"
+				quadTextureSprite = "GFX_shield_medium"
+				position = { x = 0 y = 5 }
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "empire_country_title"
+				position = { x= 0 y = 67 }
+				font = "hoi_18mbs"
+				text = "[?root.current_country.GetName]"
+				format = centre
+				maxWidth = 200
+				maxHeight = 50
+				fixedsize = yes
+			}	
+				
+		}
+		containerWindowType = {
+			name = "empire_info"
+			position = {x=365 y=250}
+			size = { width=300 height=300 }
+
+			fade_time = 300
+			fade_type = linear
+			moveable = no
+			
+			background = {
+				name = "empire_sub_info"
+				quadTextureSprite = "GFX_parch_bg"
+				position = { x=-20 y=5 }
+			}
+			
+			iconType = {
+				name ="stability_bg"
+				spriteType = "GFX_generic_box_smallest"
+				position = { x= 170 y = 65 }
+				#pd_tooltip = "empire_stability_tt"
+			}	
+			iconType = {
+				name ="stability_icon"
+				spriteType = "GFX_stability_icon"
+				position = { x= 175 y = 66 }
+				#pd_tooltip = "empire_stability_tt"
+			}
+			instantTextBoxType = {
+				name = "empire_stability"
+				position = { x = 185 y = 68 }
+				font = "hoi_18mbs"
+				text = "[?current_country.EmpireGetStab]"
+				format = right
+				maxWidth = 50
+				maxHeight = 24
+				#pd_tooltip = "empire_stability_desc"
+			}
+			iconType = {
+				name ="war_support_bg"
+				spriteType = "GFX_generic_box_smallest"
+				position = { x= 170 y = 91 }
+				#pd_tooltip = "empire_war_support_desc"
+			}	
+			iconType = {
+				name ="war_support_icon"
+				spriteType = "GFX_war_support_icon"
+				position = { x= 175 y = 92 }
+				#pd_tooltip = "empire_war_support_desc"
+			}
+			instantTextBoxType = {
+				name = "empire_war_support"
+				position = { x = 185 y = 94 }
+				font = "hoi_18mbs"
+				text = ""
+				format = right
+				maxWidth = 50
+				maxHeight = 24
+				#pd_tooltip = "empire_war_support_desc"
+			}
+			iconType = {
+				name ="ic_bg"
+				spriteType = "GFX_generic_box_smallest"
+				position = { x= 170 y = 117 }
+				#pd_tooltip = "empire_ic_desc"
+			}	
+			iconType = {
+				name ="ic_icon"
+				spriteType = "GFX_industrial_capacity_icon"
+				position = { x= 172 y = 118 }
+				#pd_tooltip = "empire_ic_desc"
+				scale = 0.89
+			}
+			 
+			instantTextBoxType = {
+				name = "empire_ic"
+				position = { x = 200 y = 120 }
+				font = "hoi_18mbs"
+				text = "[?current_country.EmpireGetfactnum]"
+				format = right
+				maxWidth = 30
+				maxHeight = 24
+				#pd_tooltip = "empire_ic_desc"
+			}
+
+			#UK
+			instantTextBoxType = {
+				name = "empire_uk_info"
+				position = { x = 0 y = 20 }
+				font = "hoi_18mbs"
+				text = "zz_empire_info"
+				format = left
+				maxWidth = 270
+				maxHeight = 50
+			}	
+		}
+		containerWindowType = {
+			name = "empire_selection"
+			position = {x=30 y=60}
+			size = { width=320 height=600 }
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+			verticalScrollbar = "right_vertical_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_1b_thin_border"
+			}        
+		
+			gridboxtype = {
+				name = "empire_selection_grid"
+				position = { x = 10 y = 0 }
+				size = { width = 300 height = 100%% }
+				slotsize = { width = 300 height = 1 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+		
+		containerWindowType = {
+			name = "empire_powers"
+			position = { x = 500 y = 121 }
+			size = { width = 300 height = 300 }
+			
+			fade_time = 300
+			fade_type = linear
+			moveable = no
+			
+			iconType = {
+				name ="political_power_bg"
+				spriteType = "GFX_generic_box"
+				position = { x= 60 y = -1 }
+				#pd_tooltip = "empire_political_power_desc"
+			}	
+			iconType = {
+				name ="political_power_icon"
+				spriteType = "GFX_pol_power_icon"
+				position = { x= 65 y = 0 }
+				scale = 0.9
+				#pd_tooltip = "empire_political_power_desc"
+			}
+			instantTextBoxType = {
+				name = "empire_political_power"
+				position = { x = 90 y = 2 }
+				font = "hoi_18mbs"
+				text = "[?current_country.EmpireGetPP]"
+				format = centre
+				maxWidth = 65
+				maxHeight = 24
+				#pd_tooltip = "empire_political_power_desc"
+			}
+			buttonType = {
+				name = "empire_political_power_gift_button"
+				position = { x = 60 y = 25 }
+				quadTextureSprite = "GFX_tiling_sort_button_2frames"
+			}
+			instantTextBoxType = {
+				name = "empire_political_power_gift"
+				position = { x = 75 y = 30 }
+				font = "hoi_16mbs"
+				text = "Gift"
+				format = left
+				maxWidth = 50
+				maxHeight = 50
+				#pd_tooltip = ""
+			}
+			buttonType = {
+				name = "empire_political_power_request_button"
+				position = { x = 116 y = 25 }
+				quadTextureSprite = "GFX_tiling_sort_button_2frames"
+			}
+			instantTextBoxType = {
+				name = "empire_political_power_request"
+				position = { x = 120 y = 30 }
+				font = "hoi_16mbs"
+				text = "Request"
+				format = left
+				maxWidth = 50
+				maxHeight = 50
+				#pd_tooltip = ""
+			}
+			iconType = {
+				name ="manpower_bg"
+				spriteType = "GFX_generic_box"
+				position = { x= 60 y = 52 }
+				#pd_tooltip = "empire_manpower_desc"
+			}	
+			iconType = {
+				name ="manpower_icon"
+				spriteType = "GFX_manpower_icon"
+				position = { x= 65 y = 53 }
+				scale = 0.9
+				#pd_tooltip = "empire_manpower_desc"
+			}
+		
+			instantTextBoxType = {
+				name = "empire_manpower"
+				position = { x = 75 y = 55 }
+				font = "hoi_18mbs"
+				text = "[?current_country.EmpireGetManp]"
+				format = right
+				maxWidth = 78
+				maxHeight = 50
+				#pd_tooltip = "empire_manpower_desc"
+			}
+			buttonType = {
+				name = "empire_manpower_gift_button"
+				position = { x = 60 y = 78 }
+				quadTextureSprite = "GFX_tiling_sort_button_2frames"
+			}
+			instantTextBoxType = {
+				name = "empire_manpower_gift"
+				position = { x = 75 y = 82 }
+				font = "hoi_16mbs"
+				text = "Gift"
+				format = left
+				maxWidth = 50
+				maxHeight = 50
+				#pd_tooltip = ""
+			}
+			buttonType = {
+				name = "empire_manpower_request_button"
+				position = { x = 116 y = 78 }
+				quadTextureSprite = "GFX_tiling_sort_button_2frames"
+			}
+			instantTextBoxType = {
+				name = "empire_manpower_request"
+				position = { x = 120 y = 82 }
+				font = "hoi_16mbs"
+				text = "Request"
+				format = left
+				maxWidth = 50
+				maxHeight = 50
+				#pd_tooltip = ""
+			}
+		}
+		containerWindowType = {
+			name = "empire_navy"
+			position = { x = 690 y = 111 }
+			size = { width=500 height=500 }
+			
+			fade_time = 300
+			fade_type = linear
+			moveable = no
+			
+			#background = {
+			#	name = "empire_navy_info"
+			#	quadTextureSprite = "GFX_diplo_action_license_production_bg"
+			#	position = { x=-20 y=-30 }
+			#}
+			
+			buttonType = {
+				name = "empire_navy_button"
+				quadTextureSprite = "GFX_diplomacy_wargoal_entry"
+				position = { x = 0 y = 10 }
+				scale = 0.9
+			}
+			instantTextBoxType = {
+				name = "empire_navy_header"
+				position = { x = 10 y = 14 }
+				font = "hoi_18mbs"
+				text = "Navy"
+				format = centre
+				maxWidth = 90
+				maxHeight = 50
+			}
+			iconType = {
+				name = "empire_navy_battleship_bg"
+				spriteType = "GFX_generic_box_125"
+				position = { x = 15 y = 50 }
+				scale = 1.5
+			}
+			buttonType = {
+				name = "empire_navy_battleship"
+				spriteType = "GFX_basic_battleship_medium"
+				position = { x = 25 y = 54 }
+				scale = 0.63
+			}
+			iconType = {
+				name = "empire_navy_battleship_counter_bg"
+				spriteType = "GFX_diplo_unity_bg"
+				position = { x = 205 y = 50 }
+				scale = 0.63
+			}
+			instantTextBoxType = {
+				name = "empire_navy_capital_counter"
+				position = { x = 205 y = 50 }
+				font = "hoi_18mbs"
+				text = "[?current_country.EmpireGetshipnumbattleship]"
+				format = right
+				maxWidth = 30
+				maxHeight = 24
+				#pd_tooltip = "empire_ic_desc"
+			}
+			#Battlcruiser
+
+			iconType = {
+				name = "empire_navy_battlecruiser_bg"
+				spriteType = "GFX_generic_box_125"
+				position = { x = 15 y = 100 }
+				scale = 1.5
+			}
+			buttonType = {
+				name = "empire_navy_battlecruiser"
+				spriteType = "GFX_basic_battlecruiser_medium"
+				position = { x = 25 y = 104 }
+				scale = 0.63
+			}
+			iconType = {
+				name = "empire_navy_battlecruiser_counter_bg"
+				spriteType = "GFX_diplo_unity_bg"
+				position = { x = 205 y = 100 }
+				scale = 0.63
+			}
+			instantTextBoxType = {
+				name = "empire_navy_battle_cruiser_counter"
+				position = { x = 205 y = 100 }
+				font = "hoi_18mbs"
+				text = "[?current_country.EmpireGetshipnumbattlecruiser]"
+				format = right
+				maxWidth = 30
+				maxHeight = 24
+				#pd_tooltip = "empire_ic_desc"
+			}
+			iconType = {
+				name = "empire_navy_carrier_bg"
+				spriteType = "GFX_generic_box_125"
+				position = { x = 15 y = 150 }
+				scale = 1.5
+			}
+			buttonType = {
+				name = "empire_navy_carrier"
+				spriteType = "GFX_basic_carrier_medium"
+				position = { x = 25 y = 154 }
+				scale = 0.63
+			}
+			iconType = {
+				name = "empire_navy_carrier_counter_bg"
+				spriteType = "GFX_diplo_unity_bg"
+				position = { x = 205 y = 150 }
+				scale = 0.63
+			}
+			instantTextBoxType = {
+				name = "empire_navy_carrier_counter"
+				position = { x = 205 y = 150 }
+				font = "hoi_18mbs"
+				text = "[?current_country.EmpireGetshipnumcarrier]"
+				format = right
+				maxWidth = 30
+				maxHeight = 24
+				#pd_tooltip = "empire_ic_desc"
+			}
+
+			iconType = {
+				name = "empire_navy_heavycruiser_bg"
+				spriteType = "GFX_generic_box_125"
+				position = { x = 15 y = 200 }
+				scale = 1.5
+			}
+			buttonType = {
+				name = "empire_navy_heavycruiser"
+				spriteType = "GFX_basic_heavy_cruiser_medium"
+				position = { x = 25 y = 215 }
+				scale = 0.63
+			}
+			iconType = {
+				name = "empire_navy_heavycruiser_counter_bg"
+				spriteType = "GFX_diplo_unity_bg"
+				position = { x = 205 y = 200 }
+				scale = 0.63
+			}
+			instantTextBoxType = {
+				name = "empire_navy_heavycruiser_counter"
+				position = { x = 205 y = 200 }
+				font = "hoi_18mbs"
+				text = "[?current_country.EmpireGetshipnumheavycruiser]"
+				format = right
+				maxWidth = 30
+				maxHeight = 24
+				#pd_tooltip = "empire_ic_desc"
+			}
+
+			iconType = {
+				name = "empire_navy_lightcruiser_bg"
+				spriteType = "GFX_generic_box_125"
+				position = { x = 15 y = 250 }
+				scale = 1.5
+			}
+			buttonType = {
+				name = "empire_navy_lightcruiser"
+				spriteType = "GFX_basic_light_cruiser_medium"
+				position = { x = 25 y = 265 }
+				scale = 0.63
+			}
+			iconType = {
+				name = "empire_navy_lightcruiser_counter_bg"
+				spriteType = "GFX_diplo_unity_bg"
+				position = { x = 205 y = 250 }
+				scale = 0.63
+			}
+			instantTextBoxType = {
+				name = "empire_navy_lightcruiser_counter"
+				position = { x = 205 y = 250 }
+				font = "hoi_18mbs"
+				text = "[?current_country.EmpireGetshipnumlightcruiser]"
+				format = right
+				maxWidth = 30
+				maxHeight = 24
+				#pd_tooltip = "empire_ic_desc"
+			}
+
+
+
+			iconType = {
+				name = "empire_navy_destroyer_bg"
+				spriteType = "GFX_generic_box_125"
+				position = { x = 15 y = 300 }
+				scale = 1.5
+			}
+			buttonType = {
+				name = "empire_navy_destroyer"
+				spriteType = "GFX_basic_destroyer_medium"
+				position = { x = 25 y = 305 }
+				scale = 0.63
+			}
+			iconType = {
+				name = "empire_navy_destroyer_counter_bg"
+				spriteType = "GFX_diplo_unity_bg"
+				position = { x = 205 y = 300 }
+				scale = 0.63
+			}
+			instantTextBoxType = {
+				name = "empire_navy_screen_counter"
+				position = { x = 205 y = 300 }
+				font = "hoi_18mbs"
+				text = "[?current_country.EmpireGetshipnumscreen]"
+				format = right
+				maxWidth = 30
+				maxHeight = 24
+				#pd_tooltip = "empire_ic_desc"
+			}
+			
+			
+			iconType = {
+				name = "empire_navy_submarine_bg"
+				spriteType = "GFX_generic_box_125"
+				position = { x = 15 y = 350 }
+				scale = 1.5
+			}
+			buttonType = {
+				name = "empire_navy_submarine"
+				spriteType = "GFX_basic_submarine_medium"
+				position = { x = 25 y = 354 }
+				scale = 0.63
+			}
+			iconType = {
+				name = "empire_navy_submarine_counter_bg"
+				spriteType = "GFX_diplo_unity_bg"
+				position = { x = 205 y = 350 }
+				scale = 0.63
+			}
+			instantTextBoxType = {
+				name = "empire_navy_sub_counter"
+				position = { x = 205 y = 350 }
+				font = "hoi_18mbs"
+				text = "[?current_country.EmpireGetshipnumsub]"
+				format = right
+				maxWidth = 30
+				maxHeight = 24
+				#pd_tooltip = "empire_ic_desc"
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "empire_monarch"
+		position = {x=365 y=120}
+		size = { width=100 height=50 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = no
+
+		
+		iconType = {
+			name = "empire_monarch"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_King_George_V"
+			scale = 0.5
+			#pd_tooltip = "EMPIRE_MONARCH_NAME"
+		}
+		instantTextBoxType = {
+			name = "empire_monarch_name"
+			position = { x= -5 y =105 }
+			font = "hoi_16mbs"
+			text = "EMPIRE_MONARCH_NAME"
+			format = center
+			maxWidth = 120
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		
+	}
+	
+	
+	containerWindowType = {
+			name = "empire_selection_entry"
+			position = { x = 0 y = 0}
+			size = { width = 300 height = 70 }
+		
+		
+			instantTextBoxType = {
+				name = "empire_selection_entry_name"
+				position = { x = 10 y = 15 }
+				font = "hoi_18mbs"
+				text = "[?THIS.GetName]"
+				format = left
+				maxWidth = 150
+				maxHeight = 48
+				fixedsize = yes
+			}
+		
+			buttonType = {
+				name = "empire_selection_entry_flag"
+				quadTextureSprite = "GFX_shield_medium"
+				position = { x = 150 y = 5 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		}
+	containerWindowType = {
+		name = "ship_selection"
+		position = {x=30 y=60}
+		size = { width=320 height=600 }
+		margin = { top = 10 bottom = 10 }
+		Orientation = upper_left
+
+		verticalScrollbar = "right_vertical_slider"
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_1b_thin_border"
+		}        
+		
+		gridboxtype = {
+			name = "empire_selection_grid"
+			position = { x = 10 y = 0 }
+			size = { width = 300 height = 100%% }
+			slotsize = { width = 300 height = 1 }
+			max_slots_horizontal = 1
+			add_horizontal = no
+		}
+	}
+
+}

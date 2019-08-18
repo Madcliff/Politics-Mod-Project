@@ -1,0 +1,111 @@
+#Kings
+spriteTypes = {
+    #George V
+    spriteType = { 
+		name = GFX_idea_King_George_V
+		texturefile = "gfx//leaders//ENG//kings//Portrait_United_Kingdom_George_V.tga"
+	}
+    #Edward VIII
+    spriteType = { 
+		name = GFX_idea_King_Edward_VIII
+		texturefile = "gfx//leaders//ENG//kings//Portrait_United_Kingdom_Edward_VIII.tga"
+	}
+    #George VI
+    spriteType = { 
+		name = GFX_idea_King_George_VI
+		texturefile = "gfx//leaders//ENG//kings//Portrait_United_Kingdom_George_VI.tga"
+	}
+}
+
+# Conservatives
+spriteTypes = {
+    #Winston Churchill
+	spriteType = { 
+		name = GFX_idea_Winston_Churchill
+		texturefile = "gfx//leaders//ENG//ministers//conservatives//Churchill.tga"
+	}
+	#Neville Chamberlain
+	spriteType = { 
+		name = GFX_idea_Neville_Chamberlain
+		texturefile = "gfx//leaders//ENG//ministers//conservatives//Charmberlain.tga"
+	}
+	#Stanley Baldwin
+	spriteType = { 
+		name = GFX_idea_Stanley_Baldwin
+		texturefile = "gfx//leaders//ENG//ministers//conservatives//Baldwin.tga"
+	}
+}
+
+#Liberals
+spriteTypes = {
+    #David LLoyd George
+	spriteType = { 
+		name = GFX_idea_David_Lloyd_George
+		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Lloyd_George.tga"
+	}
+    #Beveridge
+    spriteType = { 
+		name = GFX_idea_William_Beveridge
+		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_William_Beveridge.tga"
+	} 
+    #Milne
+    spriteType = { 
+		name = GFX_idea_Crewe_Milnes
+		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Crewe_Milnes.tga"
+	}
+    #Brown
+    spriteType = { 
+		name = GFX_idea_Ernest_Brown
+		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Ernest_Brown.tga"
+	}
+    #Greenwood
+    spriteType = { 
+		name = GFX_idea_Hamar_Greenwood
+		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Hamar_Greenwood.tga"
+	}
+    #fisher
+    spriteType = { 
+		name = GFX_idea_Herbert_Fisher
+		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Herbert_Fisher.tga"
+	}
+    #Samuel
+    spriteType = { 
+		name = GFX_idea_Herbert_Samuel
+		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Herbert_Samuel.tga"
+	}
+    #Seely
+    spriteType = { 
+		name = GFX_idea_Hugh_Seely
+		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Hugh_Seely.tga"
+	}
+    #Nacpherson
+    spriteType = { 
+		name = GFX_idea_Ian_Macpherson
+		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Ian_Macpherson.tga"
+	}
+    #Bernays
+    spriteType = { 
+		name = GFX_idea_Robert_Bernays
+		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Robert_Bernays.tga"
+	}
+    #Hutchinson
+    spriteType = { 
+		name = GFX_idea_Robert_Hutchinson
+		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Robert_Hutchinson.tga"
+	}
+    #Munro
+    spriteType = { 
+		name = GFX_idea_Robert_Munro
+		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Robert_Munro.tga"
+	}
+    #Isaacs
+    spriteType = { 
+		name = GFX_idea_Rufus_Isaacs
+		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Rufus_Isaacs.tga"
+	}
+    #Runicman
+    spriteType = { 
+		name = GFX_idea_Walter_Runciman
+		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Walter_Runciman.tga"
+	}
+} 

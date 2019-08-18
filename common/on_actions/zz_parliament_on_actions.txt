@@ -1,0 +1,225 @@
+on_actions = {
+    on_daily = { 
+        effect = { 
+            If = {
+                limit = { 
+                    TAG = ENG
+                }
+                ENG = { 
+                    if = { 
+                        limit = { 
+                            check_variable = { government = 1}
+                            has_stability > 0.75
+                            check_variable = { party_pop^0 < 100}
+                            check_variable = { party_pop^0 > -100}
+                        }
+                        add_to_variable = {party_pop^0 = 0.1}
+                    }
+                    else_if = { 
+                        limit = { 
+                            check_variable = { government = 1}
+                            has_stability < 0.5
+                            check_variable = { party_pop^0 < 100}
+                            check_variable = { party_pop^0 > -100}
+                        }
+                        add_to_variable = {party_pop^0 = -0.1}
+                    }
+                    else_if = { 
+                        limit = { 
+                            check_variable = { government = 2}
+                            has_stability > 0.75
+                            check_variable = { party_pop^1 < 100}
+                            check_variable = { party_pop^1 > -100}
+                        }
+                        add_to_variable = {party_pop^1 = 0.1}
+                    }
+                    else_if = { 
+                        limit = { 
+                            check_variable = { government = 2}
+                            has_stability < 0.5
+                            check_variable = { party_pop^1 < 100}
+                            check_variable = { party_pop^1 > -100}
+                        }
+                        add_to_variable = {party_pop^1 = -0.1}
+                    }
+                    else_if = { 
+                        limit = { 
+                            check_variable = { government = 3}
+                            has_stability > 0.75
+                            check_variable = { party_pop^2 < 100}
+                            check_variable = { party_pop^2 > -100}
+                        }
+                        add_to_variable = {party_pop^2 = 0.1}
+                    }
+                    else_if = { 
+                        limit = { 
+                            check_variable = { government = 3}
+                            has_stability < 0.5
+                            check_variable = { party_pop^2 < 100}
+                            check_variable = { party_pop^2 > -100}
+                        }
+                        add_to_variable = {party_pop^2 = -0.1}
+                    }
+                    else_if = { 
+                        limit = { 
+                            check_variable = { government = 4}
+                            has_stability > 0.75
+                            check_variable = { party_pop^3 < 100}
+                            check_variable = { party_pop^3 > -100}
+                        }
+                        add_to_variable = {party_pop^3 = 0.1}
+                    }
+                    else_if = { 
+                        limit = { 
+                            check_variable = { government = 4}
+                            has_stability < 0.5
+                            check_variable = { party_pop^3 < 100}
+                            check_variable = { party_pop^3 > -100}
+                        }
+                        add_to_variable = {party_pop^3 = -0.1}
+                    }
+                    else_if = { 
+                        limit = { 
+                            check_variable = { government = 5}
+                            has_stability > 0.75
+                            check_variable = { party_pop^4 < 100}
+                            check_variable = { party_pop^4 > -100}
+                        }
+                        add_to_variable = {party_pop^4 = 0.1}
+                    }
+                    else_if = { 
+                        limit = { 
+                            check_variable = { government = 5}
+                            has_stability < 0.5
+                            check_variable = { party_pop^4 < 100}
+                            check_variable = { party_pop^4 > -100}
+                        }
+                        add_to_variable = {party_pop^4 = -0.1}
+                    }
+                }
+            }
+            
+        }
+    }
+	on_startup = {
+		effect = {
+            ENG = { 
+                #add_ideas = zz_pacifism
+                set_variable = { government = 1}
+                set_variable = { seats = 615}
+                set_variable = { secondhouseseats = 400} 
+                add_to_array = {
+                    party_array = 1
+                }
+                add_to_array = {
+                    party_array = 2
+                }
+                add_to_array = {
+                    party_array = 3
+                }
+                add_to_array = {
+                    party_array = 4
+                }
+                add_to_array = {
+                    party_array = 5
+                }
+                add_to_array = {
+                    party_seats_num = 522
+                }
+                add_to_array = {
+                    party_seats_num = 76
+                }
+                add_to_array = {
+                    party_seats_num = 17
+                }
+                add_to_array = {
+                    party_seats_num = 0
+                }
+                add_to_array = {
+                    party_seats_num = 0
+                }
+                add_to_array = {
+                    party_seats_num_sup = 0
+                }
+                add_to_array = {
+                    party_seats_num_sup = 0
+                }
+                add_to_array = {
+                    party_seats_num_sup = 0
+                }
+                add_to_array = {
+                    party_seats_num_sup = 0
+                }
+                add_to_array = {
+                    party_seats_num_sup = 0
+                }
+                set_variable = { party_pop^0 = 20 }
+                set_variable = { party_pop^1 = 5 }
+                set_variable = { party_pop^2 = 10 }
+                set_variable = { party_pop^3 = -20 }
+                set_variable = { party_pop^4 = -20 }
+                
+                add_to_array = {
+                    prime_minister_array = 1
+                }
+                add_to_array = {
+                    prime_minister_array = 2
+                }
+                add_to_array = {
+                    prime_minister_array = 3
+                }
+                add_to_array = {
+                    prime_minister_array = 4
+                }
+                add_to_array = {
+                    prime_minister_array = 5
+                }
+                add_to_array = {
+                    prime_minister_array = 6
+                }
+                add_to_array = {
+                    prime_minister_array = 7
+                }
+                add_to_array = {
+                    prime_minister_array = 8
+                }
+                add_to_array = {
+                    prime_minister_array = 9
+                }
+                add_to_array = {
+                    prime_minister_array = 10
+                }
+                add_to_array = {
+                    party_pop_elec = 0
+                }
+                add_to_array = {
+                    party_pop_elec = 0
+                }
+                add_to_array = {
+                    party_pop_elec = 0
+                }
+                add_to_array = {
+                    party_pop_elec = 0
+                }
+                add_to_array = {
+                    party_pop_elec = 0
+                }
+                add_to_array = {
+                    party_elec_random = 0
+                }
+                add_to_array = {
+                    party_elec_random = 0
+                }
+                add_to_array = {
+                    party_elec_random = 0
+                }
+                add_to_array = {
+                    party_elec_random = 0
+                }
+                add_to_array = {
+                    party_elec_random = 0
+                }
+            }
+		}
+	}
+}

@@ -1,0 +1,269 @@
+scripted_gui = { 
+	cabinet_government_panel = { 
+		context_type = decision_category
+		window_name = "cabinet_government_window"
+		effects = {
+			appoint_prime_minister_click = { 
+				set_temp_variable = { minister_menu_show = 1 }
+				subtract_from_temp_variable = { minister_menu_show = show_minister_menu_show}
+				set_variable = { show_minister_menu_show = minister_menu_show }
+				set_variable = {minister_type = 1}
+			}
+			appoint_home_secretary_click = { 
+				set_temp_variable = { minister_menu_show = 1 }
+				subtract_from_temp_variable = { minister_menu_show = show_minister_menu_show}
+				set_variable = { show_minister_menu_show = minister_menu_show }
+				set_variable = {minister_type = 2}
+			}
+			appoint_foreign_secretary_click = { 
+				set_temp_variable = { minister_menu_show = 1 }
+				subtract_from_temp_variable = { minister_menu_show = show_minister_menu_show}
+				set_variable = { show_minister_menu_show = minister_menu_show }
+				set_variable = {minister_type = 3}
+			}
+			appoint_chancellor_of_exchequer_click = { 
+				set_temp_variable = { minister_menu_show = 1 }
+				subtract_from_temp_variable = { minister_menu_show = show_minister_menu_show}
+				set_variable = { show_minister_menu_show = minister_menu_show }
+				set_variable = {minister_type = 4}
+			}
+			appoint_first_lord_of_the_admiralty_click = {
+				set_temp_variable = { minister_menu_show = 1 }
+				subtract_from_temp_variable = { minister_menu_show = show_minister_menu_show}
+				set_variable = { show_minister_menu_show = minister_menu_show }
+				set_variable = {minister_type = 5}
+			}
+			appoint_secretary_of_state_for_war_click = {
+				set_temp_variable = { minister_menu_show = 1 }
+				subtract_from_temp_variable = { minister_menu_show = show_minister_menu_show}
+				set_variable = { show_minister_menu_show = minister_menu_show }
+				set_variable = {minister_type = 6}
+			} 
+			appoint_secretary_of_state_for_air_click = { 
+				set_temp_variable = { minister_menu_show = 1 }
+				subtract_from_temp_variable = { minister_menu_show = show_minister_menu_show}
+				set_variable = { show_minister_menu_show = minister_menu_show }
+				set_variable = {minister_type = 7}
+			}
+		}
+		properties = { 
+			appoint_prime_minister = { 
+				image = "[root.getpm]"
+			}
+			appoint_home_secretary = { 
+				image = "[root.gethomesec]"
+			}
+			appoint_foreign_secretary = { 
+				image = "[root.getforesec]"
+			}
+			appoint_chancellor_of_exchequer = { 
+				image = "[root.getecosec]"
+			}
+			appoint_first_lord_of_the_admiralty = { 
+				image = "[root.getnavsec]"
+			}
+			appoint_secretary_of_state_for_war = { 
+				image = "[root.getwarsec]"
+			}
+			appoint_secretary_of_state_for_air = { 
+				image = "[root.getairsec]"
+			}
+		}
+	}
+	prime_minister_selection_panel = { 
+		context_type = player_context
+		window_name = "prime_minister_menu"
+		visible = {
+            check_variable = { show_minister_menu_show > 0.0 }
+		}
+		dynamic_lists = {
+			prime_minister_selection_grid = {
+				array = ENG.prime_minister_array
+				entry_container = minister_select_entry
+			}
+		}
+		effects = {
+			prime_minister_menu_close_button_click = { 
+				set_temp_variable = { minister_menu_show = 1 }
+				subtract_from_temp_variable = { minister_menu_show = show_minister_menu_show}
+				set_variable = { show_minister_menu_show = minister_menu_show }
+			}
+			minister_select_entry_button_click = { 
+				zz_minister_select = yes
+				set_temp_variable = { minister_menu_show = 1 }
+				subtract_from_temp_variable = { minister_menu_show = show_minister_menu_show}
+				set_variable = { show_minister_menu_show = minister_menu_show }
+			}
+		}
+		properties = {
+			minister_select_entry_button = {
+				image = "[root.getpmarray]"
+			}
+		}
+	}
+	legislation_target_panel = { 
+		context_type = decision_category
+		window_name = "legislation_target_window"
+		effects = {
+			country_entry_flag_click = { 
+				set_temp_variable = { country_target_menu_show = 1 }
+				subtract_from_temp_variable = { country_target_menu_show = show_country_target_menu }
+				set_variable = { show_country_target_menu = country_target_menu_show }
+				clear_array = ENG.target_country_array
+				add_to_array = { ENG.target_country_array = ENG }
+				for_each_scope_loop = {
+					array = ENG.subjects 
+					add_to_array = { ENG.target_country_array = THIS }
+				}
+			}
+		}
+		properties = {
+			country_entry_flag = {
+				image = "[?root.current_country_decision.GetFlag]"
+			}
+		}
+	}
+
+	
+
+	country_target_menu_panel = { 
+		context_type = player_context
+		window_name = "country_target_menu"
+		visible = {
+            check_variable = { show_country_target_menu > 0.0 }
+		}
+		dynamic_lists = {
+			country_target_menu_selection_grid = {
+				array = ENG.target_country_array
+				change_scope = yes
+				entry_container = country_target_entry
+			}
+		}
+		effects = {
+			country_target_menu_close_button_click = { 
+				set_temp_variable = { country_target_menu_show = 1 }
+				subtract_from_temp_variable = { country_target_menu_show = show_country_target_menu }
+				set_variable = { show_country_target_menu = country_target_menu_show }
+			}
+			country_target_entry_flag_click = { 
+				set_variable = {root.current_country_decision = THIS.id}
+				clear_array = ROOT.target_state_array
+				for_each_scope_loop = {
+					array = PREV.owned_states 
+					add_to_array = { ROOT.target_state_array = THIS }
+				}
+				ROOT = {
+					set_temp_variable = { country_target_menu_show = 1 }
+					subtract_from_temp_variable = { country_target_menu_show = show_country_target_menu }
+					set_variable = { show_country_target_menu = country_target_menu_show }
+					set_temp_variable = { country_state_target_menu_show = 1 }
+					subtract_from_temp_variable = { country_state_target_menu_show = show_country_state_target_menu }
+					set_variable = { show_country_state_target_menu = country_state_target_menu_show }
+				}
+			}
+		}
+		properties = {
+			country_target_entry_flag = {
+				image = "[This.GetFlag]"
+			}
+		}
+	}
+	country_state_target_menu_panel = { 
+		context_type = player_context
+		window_name = "country_state_target_menu"
+		visible = {
+            check_variable = { show_country_state_target_menu > 0.0 }
+		}
+		dynamic_lists = {
+			country_state_target_menu_selection_grid = {
+				array = root.target_state_array
+				change_scope = yes
+				entry_container = country_state_target_entry
+			}
+		}
+		effects = {
+			country_state_target_menu_close_button_click = { 
+				set_temp_variable = { country_state_target_menu_show = 1 }
+				subtract_from_temp_variable = { country_state_target_menu_show = show_country_state_target_menu }
+				set_variable = { show_country_state_target_menu = country_state_target_menu_show }
+			}
+			country_state_target_entry_name_button_click = { 
+				set_variable = {root.current_country_state_decision = THIS.id}
+				ROOT = {
+					set_temp_variable = { country_state_target_menu_show = 1 }
+					subtract_from_temp_variable = { country_state_target_menu_show = show_country_state_target_menu }
+					set_variable = { show_country_state_target_menu = country_state_target_menu_show }
+				}
+			}
+		}
+	}
+
+
+
+
+	house_of_commons_voting_panel = { 
+		context_type = decision_category
+		window_name = "parliament_panel_house_of_commons_voting"
+		dynamic_lists = {
+			party_menu_selection_grid = {
+				array = ROOT.party_array
+				entry_container = party_array_entry
+			}
+		}
+		effects = {
+			parliament_button_click = {
+				set_temp_variable = { parliament_show = 1 }
+				subtract_from_temp_variable = { parliament_show = show_parliament }
+				set_variable = { show_parliament = parliament_show }
+			}
+			party_ask_aid_click = {
+				zz_ask_support = yes 
+
+			}
+		}
+	}
+	house_of_lords_voting_panel = { 
+		context_type = decision_category
+		
+		window_name = "parliament_panel_house_of_lords_voting"
+		effects = {
+			parliament_button_click = {
+				set_temp_variable = { lords_show = 1 }
+				subtract_from_temp_variable = { lords_show = show_lords }
+				set_variable = { show_lords = lords_show }
+			}
+			ask_for_aid_in_the_lords_click = { 
+				if = {
+					limit = { 
+						check_variable = { secondhousetotal > 5 }
+						
+					}
+					add_to_variable = { secondsup = 5 } 
+					subtract_from_variable = { secondhousetotal = 5}
+				}
+			}
+			ask_for_aid_in_the_lords_shift_click = { 
+				if = {
+					limit = { 
+						check_variable = { secondhousetotal > 50 }
+						
+					}
+					add_to_variable = { secondsup = 50 } 
+					subtract_from_variable = { secondhousetotal = 50}
+				}
+			}
+			expand_the_lords_click = { 
+				add_to_variable = { secondsup = 100 } 
+				add_to_variable = { secondhouseseats = 100 } 
+				set_variable = { secondsupneeded = secondhouseseats }
+			}		
+		}
+		triggers = {
+			ask_for_aid_in_the_lords_click_enabled = { 
+				check_variable = { secondhousetotal > 5 }
+			}
+		}
+	}
+}
+
+			
