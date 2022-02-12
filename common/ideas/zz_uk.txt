@@ -49,15 +49,16 @@ ideas = {
             removal_cost = -1
 
             modifier = {
-                navy_refit_ic_cost = -0.5
-                navy_refit_speed = 0.5
+                efit_ic_cost = -0.5
+				refit_speed = 0.5
+				repair_speed_factor = 0.5
                 naval_hit_chance = 0.1
                 naval_damage_factor = 0.4
                 naval_defense_factor = 0.4
             }
             equipment_bonus = {
                 carrier = {
-                    carrier_size = 0.2
+                    carrier_size = 0.3
                     sub_detection = 0.2
                     reliability = 1
                     naval_speed = 0.2
