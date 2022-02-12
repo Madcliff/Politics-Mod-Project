@@ -1,0 +1,122 @@
+# Churchill
+ideas = {
+    hidden_ideas = {
+        zz_prime_minister_1 = {
+            allowed = {
+                always = no
+            }
+            traits = { prime_minister }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            modifier = {
+                political_power_factor = 1
+                subjects_autonomy_gain = -0.5
+                mobilization_speed = 0.1
+                stability_weekly = 0.01
+                generate_wargoal_tension = -0.7
+            }
+        }
+        zz_home_secretary_1 = {
+            allowed = {
+                always = no
+            }
+            traits = { home_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                stability_weekly = 0.02
+            }
+        }
+        zz_foreign_secretary_1 = {
+            allowed = {
+                always = no
+            }
+            traits = { foreign_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                subjects_autonomy_gain = -1
+            }
+        }
+        zz_economic_secretary_1 = {
+            allowed = {
+                always = no
+            }
+            traits = { economic_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                industrial_capacity_factory = 0.15
+                political_power_gain = -0.1
+            }
+        }
+        zz_navy_secretary_1 = {
+            allowed = {
+                always = no
+            }
+            traits = { navy_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+              industrial_capacity_dockyard = 1.0
+            }
+        }
+        zz_war_secretary_1 = {
+            allowed = {
+                always = no
+            }
+            traits = { war_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                mobilization_speed = 0.1
+                war_support_weekly = 0.1
+            }
+        }
+        zz_air_secretary_1 = {
+            allowed = {
+                always = no
+            }
+            traits = { air_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            equipment_bonus = {
+                fighter = {
+                    instant = yes
+                    build_cost_ic = -0.30
+                }
+                interceptor = {
+                    instant = yes
+                    build_cost_ic = -0.30
+                }
+            }
+        }
+    }
+}

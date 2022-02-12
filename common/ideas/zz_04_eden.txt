@@ -1,0 +1,114 @@
+#Anothony Eden
+ideas = {
+    hidden_ideas = {
+		zz_prime_minister_4 = {
+            allowed = {
+                always = no
+            }
+            traits = { prime_minister }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+              industrial_capacity_factory = 0.05
+		          industrial_capacity_dockyard = 0.05
+            }
+        }
+        zz_home_secretary_4 = {
+            allowed = {
+                always = no
+            }
+            traits = { home_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                political_power_factor = 0.15
+            }
+        }
+        zz_foreign_secretary_4 = {
+            allowed = {
+                always = no
+            }
+            traits = { foreign_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                send_volunteer_factor = 2
+                air_volunteer_cap = 2
+                send_volunteers_tension = -0.5
+            }
+        }
+        zz_economic_secretary_4 = {
+            allowed = {
+                always = no
+            }
+            traits = { economic_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+				        production_speed_buildings_factor = 0.05
+            }
+        }
+        zz_navy_secretary_4 = {
+            allowed = {
+                always = no
+            }
+            traits = { navy_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                naval_morale_factor = 0.2
+            }
+        }
+        zz_war_secretary_4 = {
+            allowed = {
+                always = no
+            }
+            traits = { war_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                command_power_gain_mult = 2
+                max_command_power = 500
+            }
+        }
+        zz_air_secretary_4 = {
+            allowed = {
+                always = no
+            }
+            traits = { air_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                air_range_factor = 0.25
+            }
+        }
+    }
+}

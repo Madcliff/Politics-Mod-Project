@@ -1,0 +1,90 @@
+click_empire_nation_effect = {
+	
+	# set_variable = { empire_shown_country = CAN.id }
+	
+	set_variable = { empire_show_stability = stability }
+	multiply_variable = { empire_show_stability = 100 }
+	round_variable = empire_show_stability
+	
+	set_variable = { empire_show_war_support = has_war_support }
+	multiply_variable = { empire_show_war_support = 100 }
+	round_variable = empire_show_war_support
+	
+	set_variable = { empire_show_pp = political_power }
+	round_variable = empire_show_pp
+	
+	set_variable = { empire_show_manpower = manpower }
+	divide_variable = { empire_show_manpower = 100 }
+	round_variable = empire_show_manpower
+	divide_variable = { empire_show_manpower = 10 }
+	
+}
+
+zz_inland_construction = { 
+	meta_effect = { # The actual meta-effect. This can go anywhere you need it: in a decision, in a scripted effect, in a scripted GUI click effect, etc...
+		text = {	
+			while_loop_effect = { 
+				limit = { 
+					check_variable  = { state_amount > 0 }
+				}
+				add_to_variable = { state_amount = -1 }	
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+						free_building_slots = {
+							building = [BUILDING_TYPE]
+							size > [BUILDING_AMOUNT]
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = [BUILDING_AMOUNT]
+					add_building_construction = {
+						type = [BUILDING_TYPE]
+						level = [BUILDING_AMOUNT]
+						instant_build = yes
+					}
+				}
+			}
+		}
+		STATE_AMOUNT = "[?state_amount|.0]"
+		BUILDING_AMOUNT = "[?building_amount|.0]"
+		BUILDING_TYPE = "[This.GetBuildingName]" 
+	}
+}
+
+zz_coastal_construction = { 
+	meta_effect = { # The actual meta-effect. This can go anywhere you need it: in a decision, in a scripted effect, in a scripted GUI click effect, etc...
+		text = {	
+			while_loop_effect = { 
+				limit = { 
+					check_variable  = { state_amount > 0 }
+				}
+				add_to_variable = { state_amount = -1 }	
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						is_core_of = ROOT
+						free_building_slots = {
+							building = [BUILDING_TYPE]
+							size > [BUILDING_AMOUNT]
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = [BUILDING_AMOUNT]
+					add_building_construction = {
+						type = [BUILDING_TYPE]
+						level = [BUILDING_AMOUNT]
+						instant_build = yes
+					}
+				}
+			}
+		}
+		STATE_AMOUNT = "[?state_amount|.0]"
+		BUILDING_AMOUNT = "[?building_amount|.0]"
+		BUILDING_TYPE = "[This.GetBuildingName]" 
+	}
+}
+
+
+
+

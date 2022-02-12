@@ -1,0 +1,107 @@
+#Stanley Baldwin
+ideas = {
+    hidden_ideas = {
+		zz_prime_minister_3 = {
+            allowed = {
+                always = no
+            }
+            traits = { prime_minister }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = 0.25
+            }
+        }
+        zz_home_secretary_3 = {
+            allowed = {
+                always = no
+            }
+            traits = { home_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = -0.05
+            }
+        }
+        zz_foreign_secretary_3 = {
+            allowed = {
+                always = no
+            }
+            traits = { foreign_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                guarantee_tension = -1
+            }
+        }
+
+        zz_economic_secretary_3 = {
+            allowed = {
+                always = no
+            }
+            traits = { economic_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                min_export = -0.05
+            }
+        }
+        zz_navy_secretary_3 = {
+            allowed = {
+                always = no
+            }
+            traits = { navy_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                naval_invasion_capacity = 0.2
+            }
+        }
+        zz_war_secretary_3 = {
+          allowed = {
+            always = no
+          }
+          traits = { war_secretary }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+          modifier = {
+            supply_consumption_factor = -0.1
+          }
+        }
+        zz_air_secretary_3 = {
+          allowed = {
+            always = no
+          }
+          traits = { air_secretary }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+          modifier = {
+            air_cas_efficiency = 0.25
+          }
+        } 
+	}
+}

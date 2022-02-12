@@ -1,0 +1,291 @@
+scripted_gui = {
+	political_currency_empire = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "political_currency_empire"
+
+		visible = {
+            #has_fuhrer_mana = yes
+			always = no
+		}
+
+		effects = {
+		}
+	}
+	political_currency_espionage = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "political_currency_espionage"
+
+		visible = {
+            #has_fuhrer_mana = yes
+			always = no
+		}
+
+		effects = {
+		}
+	}
+
+
+}
+
+scripted_gui = {
+	empire_button_container = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "empire_button_container"
+
+		visible = {
+			always = no
+			OR = {
+				tag = ENG
+				is_subject_of = ENG
+			}
+		}
+
+		effects = {
+			empire_button_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = show_gbre }
+					}
+					set_country_flag = show_gbre
+				}
+				else = {
+					clr_country_flag = show_gbre
+				}
+				clear_array = ENG.empire_array
+				add_to_array = { ENG.empire_array = ENG }
+				for_each_scope_loop = {
+					array = ENG.subjects
+					add_to_array = { ENG.empire_array = THIS }
+				}
+			}
+		}
+	}
+
+	empire_container = {
+		context_type = player_context
+		#parent_window_token = politics_tab
+		window_name = "empire_container"
+
+		visible = {
+			has_country_flag = show_gbre
+		}
+		dynamic_lists = {
+			empire_selection_grid = {
+				array = ENG.empire_array
+				change_scope = yes
+				entry_container = empire_selection_entry
+			}
+		}
+
+		effects = {
+			empire_selection_entry_flag_click = {
+				set_variable = {root.current_country = THIS.id}
+				ROOT = {
+					clr_country_flag = show_gbre
+					set_country_flag = show_gbre
+				}
+			}
+			empire_container_close_button_click = {
+				clr_country_flag = show_gbre
+			}
+
+			empire_political_power_gift_button_click = {
+				root = {
+					add_political_power = -50
+					var:current_country ={
+						add_political_power = 50
+					}
+					clr_country_flag = show_gbre
+					set_country_flag = show_gbre
+				}
+			}
+			empire_political_power_request_button_click = {
+				root = {
+					add_political_power = 50
+
+					var:current_country ={
+						add_political_power = -50
+					}
+
+					clr_country_flag = show_gbre
+					set_country_flag = show_gbre
+				}
+			}
+			empire_manpower_gift_button_click = {
+				root = {
+					add_manpower = -5000
+
+					var:current_country ={
+						add_manpower = 5000
+					}
+					clr_country_flag = show_gbre
+					set_country_flag = show_gbre
+				}
+			}
+			empire_manpower_request_button_click = {
+				root = {
+					add_manpower = 5000
+				}
+				var:current_country ={
+					add_manpower = -5000
+				}
+				clr_country_flag = show_gbre
+				set_country_flag = show_gbre
+			}
+
+			empire_navy_battleship_click = {
+				var:current_country ={
+					transfer_ship = {
+						type = battleship
+						target = ROOT
+					}
+				}
+			}
+			empire_navy_battleship_shift_click = {
+				var:current_country = {
+					ROOT = {
+						transfer_ship = {
+							type = battleship
+							target = PREV
+						}
+					}
+				}
+			}
+			empire_navy_battlecruiser_click = {
+				var:current_country ={
+					transfer_ship = {
+						type = battle_cruiser
+						target = ROOT
+					}
+				}
+			}
+			empire_navy_battlecruiser_shift_click = {
+				var:current_country = {
+					ROOT = {
+						transfer_ship = {
+							type = battle_cruiser
+							target = PREV
+						}
+					}
+				}
+			}
+
+			empire_navy_carrier_click = {
+				var:current_country ={
+					transfer_ship = {
+						type = carrier
+						target = ROOT
+					}
+				}
+			}
+			empire_navy_carrier_shift_click = {
+				var:current_country = {
+					ROOT = {
+						transfer_ship = {
+							type = carrier
+							target = PREV
+						}
+					}
+				}
+			}
+			empire_navy_heavycruiser_click = {
+				var:current_country ={
+					transfer_ship = {
+						type = heavy_cruiser
+						target = ROOT
+					}
+				}
+			}
+			empire_navy_heavycruiser_shift_click = {
+				var:current_country = {
+					ROOT = {
+						transfer_ship = {
+							type = heavy_cruiser
+							target = PREV
+						}
+					}
+				}
+			}
+
+			empire_navy_lightcruiser_click = {
+				var:current_country ={
+					transfer_ship = {
+						type = light_cruiser
+						target = ROOT
+					}
+				}
+			}
+			empire_navy_lightcruiser_shift_click = {
+				var:current_country = {
+					ROOT = {
+						transfer_ship = {
+							type = light_cruiser
+							target = PREV
+						}
+					}
+				}
+			}
+			empire_navy_destroyer_click = {
+				var:current_country = {
+					transfer_ship = {
+						type = destroyer
+						target = ROOT
+					}
+				}
+			}
+			empire_navy_destroyer_shift_click = {
+				var:current_country = {
+					ROOT = {
+						transfer_ship = {
+							type = destroyer
+							target = PREV
+						}
+					}
+				}
+			}
+			empire_navy_submarine_click = {
+				var:current_country = {
+					transfer_ship = {
+						type = submarine
+						target = ROOT
+					}
+				}
+			}
+			empire_navy_submarine_shift_click = {
+				var:current_country = {
+					ROOT = {
+						transfer_ship = {
+							type = submarine
+							target = PREV
+						}
+					}
+				}
+			}
+		}
+		properties = {
+			empire_selection_entry_flag = {
+				image = "[This.GetFlag]"
+			}
+			empire_country_entry_flag = {
+				image = "[?root.current_country.GetFlag]"
+			}
+		}
+	}
+
+	empire_monarch = {
+		context_type = player_context
+
+		window_name = "empire_monarch"
+		parent_window_name  = "empire_container"
+
+		visible = {
+			has_country_flag = show_gbre
+		}
+
+		effects = {
+		}
+	}
+}

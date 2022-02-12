@@ -1,0 +1,68 @@
+
+# is_diplomatic_action_valid_TOKEN can be used for diplo action validity checks. if not valid it won't appear
+# scope is target country
+# from is action initatior country
+
+# in some cases this trigger is checked for only initatior country, in that case both from & this is same
+
+can_core = { 
+	FROM = { 
+		compliance > 99
+	}
+	OR = { 
+		AND = {
+			owns_state = FROM
+			controls_state = FROM
+			FROM = { 
+				NOT = { 
+					is_core_of = THIS
+				}
+			}
+		}
+		any_other_country = { 
+			is_subject_of = root 
+			owns_state = FROM
+			controls_state = FROM
+			FROM = { 
+				NOT = { 
+					is_core_of = THIS
+				}
+			}
+		}
+	}
+}
+
+can_increase_slot = { 
+	OR = { 
+		AND = {
+			owns_state = FROM
+			controls_state = FROM
+			FROM = { 
+				is_core_of = THIS
+			}
+		}
+		any_other_country = { 
+			is_subject_of = root 
+			owns_state = FROM
+			controls_state = FROM
+			FROM = { 
+				is_core_of = THIS
+			}
+		}
+	}
+}
+
+can_increase_resource = { 
+	OR = { 
+		AND = {
+			owns_state = FROM
+			controls_state = FROM
+		}
+		any_other_country = { 
+			is_subject_of = root 
+			owns_state = FROM
+			controls_state = FROM
+		}
+	}
+}
+

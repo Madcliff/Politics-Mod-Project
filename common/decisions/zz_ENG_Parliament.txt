@@ -1,39 +1,2790 @@
-ENG_cabinet_government = { 
 
-	hold_election = {
+ENG_focus_bypass = { 
+
+	ENG_franco_british_union_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+		}
+		available = {
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			country_event = zz_uk_franco_british_union.1
+			effect_tooltip = {
+				annex_country = { target = FRA transfer_troops = yes }
+			}
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	
+	ENG_crypto_bomb_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = crypto_bomb_focus
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = crypto_bomb_focus
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = crypto_bomb_focus
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_rearmament = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = limited_rearmament_focus
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = limited_rearmament_focus
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = limited_rearmament_focus
+			set_rule = {can_only_justify_war_on_threat_country = no}
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_motorized_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = ENG_motorized_focus
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = ENG_motorized_focus
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = ENG_motorized_focus
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_tank_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+			
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = ENG_tank_focus
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = ENG_tank_focus
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = ENG_tank_focus
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_air_defense_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = air_defense_focus
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = air_defense_focus
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = air_defense_focus
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_radar_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = radar_focus
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = radar_focus
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = radar_focus
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_enact_the_shadow_rearmament_scheme = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = shadow_scheme_focus
+			}	
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = shadow_scheme_focus
+			}	
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = shadow_scheme_focus
+		}
+		ai_will_do = {
+			factor = 100
+		}
+    }
+	ENG_enact_uk_industrial_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+	    allowed = {
+	    	tag = ENG
+	    }
+		visible = { 
+			NOT = { 
+				has_completed_focus = uk_industrial_focus
+			}	
+		}
+	    available = {
+			NOT = { 
+				has_completed_focus = uk_industrial_focus
+			}	
+	    }
+		cost = 200
+	    fire_only_once = no
+		fixed_random_seed = no
+	  	complete_effect = {
+			complete_national_focus = uk_industrial_focus
+
+	    }
+	    ai_will_do = {
+	  		factor = 100
+	   	}
+	}
+	ENG_enact_uk_extra_tech_slot= {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = uk_extra_tech_slot
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = uk_extra_tech_slot
+			}	
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = uk_extra_tech_slot
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_general_rearmament_focus= {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = general_rearmament_focus
+			}	
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = general_rearmament_focus
+			}	
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = general_rearmament_focus
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_special_air_service = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = ENG_special_air_service
+			}	
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = ENG_special_air_service
+			}	
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = ENG_special_air_service
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_royal_ordinance_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = royal_ordinance_focus
+			}	
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = royal_ordinance_focus
+			}	
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = royal_ordinance_focus
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_uk_small_arms_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = uk_small_arms_focus
+			}	
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = uk_small_arms_focus
+			}	
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = uk_small_arms_focus
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	ENG_air_rearmament_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = air_rearmament_focus
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = air_rearmament_focus
+			}	
+		}
+		
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = air_rearmament_focus
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	ENG_chiefs_of_staff_committee = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = ENG_chiefs_of_staff_committee
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = ENG_chiefs_of_staff_committee
+			}	
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = ENG_chiefs_of_staff_committee
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_fighter_command_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = fighter_command_focus
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = fighter_command_focus
+			}	
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = fighter_command_focus
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_bomber_command_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = bomber_command_focus
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = bomber_command_focus
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = bomber_command_focus
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_coastal_command_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = coastal_command_focus
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = coastal_command_focus
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = coastal_command_focus
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_aircraft_production_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = aircraft_production_focus
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = aircraft_production_focus
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = aircraft_production_focus
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+
+	ENG_naval_rearmament_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = naval_rearmament_focus
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = naval_rearmament_focus
+			}	
+		}
+		
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = naval_rearmament_focus
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	EMG_empire_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+
+		}
+		visible = {
+			NOT = { 
+				has_completed_focus = uk_empire_focus
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = uk_empire_focus
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = uk_empire_focus
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_uk_service_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = uk_service_focus
+			}	
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = uk_service_focus
+			}	
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = uk_service_focus
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_uk_colonial_focus = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = uk_colonial_focus
+			}	
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = uk_colonial_focus
+			}	
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = uk_colonial_focus
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+
+	ENG_steady_as_she_goes = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_completed_focus = ENG_steady_as_she_goes
+			}
+		}
+		available = {
+			NOT = { 
+				has_completed_focus = ENG_steady_as_she_goes
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			complete_national_focus = ENG_steady_as_she_goes
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_global_defense = {
         icon = GFX_decision_generic_prepare_civil_war
         allowed = {
             tag = ENG
         }
+		visible = { 
+			NOT = { 
+				has_completed_focus = ENG_global_defense
+			}
+		}
         available = {
 			NOT = { 
-				has_country_flag = ENG_election
+				has_completed_focus = ENG_global_defense
 			}
-        }
-        fire_only_once = NO
+		}
+		cost = 200
+        fire_only_once = no
+		fixed_random_seed = no
         complete_effect = {
-			zz_uk_election = yes
-			set_country_flag = ENG_election
-			activate_mission = ENG_election_mission
+			complete_national_focus = ENG_global_defense
+        }
+        ai_will_do = {
+            factor = 100
+        }
+    }
+	ENG_every_man_will_do_his_duty = {
+        icon = GFX_decision_generic_prepare_civil_war
+        allowed = {
+            tag = ENG	
+        }
+		visible = {
+			NOT = { 
+				has_completed_focus = ENG_every_man_will_do_his_duty
+			}		
+		}
+        available = {
+			NOT = { 
+				has_completed_focus = ENG_every_man_will_do_his_duty
+			}
+		}
+		cost = 200
+        fire_only_once = no
+		fixed_random_seed = no
+        complete_effect = {
+			complete_national_focus = ENG_every_man_will_do_his_duty
+			
+        }
+        ai_will_do = {
+            factor = 100
+        }
+    }
+	ENG_no_confidence = {
+        icon = GFX_decision_generic_prepare_civil_war
+        allowed = {
+            tag = ENG
+        }
+		visible = { 
+			NOT = { 
+				has_completed_focus = ENG_motion_of_no_confidence
+			}
+		}
+        available = {
+			NOT = { 
+				has_completed_focus = ENG_motion_of_no_confidence
+			}
+		}
+		cost = 200
+        fire_only_once = no
+		fixed_random_seed = no
+        complete_effect = {
+			set_country_flag = baldwin_resigned
+			complete_national_focus = ENG_motion_of_no_confidence
+        }
+        ai_will_do = {
+            factor = 100
+        }
+    }
+	ENG_repudiate_appeasement = {
+        icon = GFX_decision_generic_prepare_civil_war
+        allowed = {
+            tag = ENG			
+        }
+		visible = { 
+			NOT = { 
+				has_completed_focus = ENG_no_further_appeasement
+			}
+		}
+        available = {
+			NOT = { 
+				has_completed_focus = ENG_no_further_appeasement
+			}			
+		}
+		cost = 200
+        fire_only_once = no
+		fixed_random_seed = no
+        complete_effect = {
+			complete_national_focus = ENG_no_further_appeasement
+        }
+        ai_will_do = {
+            factor = 100
+        }
+	}	
+	ENG_kickstart_the_war_industry = {
+        icon = GFX_decision_generic_prepare_civil_war
+        allowed = {
+            tag = ENG
+        }
+		visible = { 
+			NOT = { 
+				has_completed_focus = ENG_kickstart_the_war_industry
+			}	
+		}
+        available = {
+			NOT = { 
+				has_completed_focus = ENG_kickstart_the_war_industry
+			}	
+		}
+		cost = 200
+        fire_only_once = no
+		fixed_random_seed = no
+        complete_effect = {
+			complete_national_focus = ENG_kickstart_the_war_industry
         }
         ai_will_do = {
             factor = 100
         }
 	}
+	ENG_secure_the_oil_imports = {
+        icon = GFX_decision_generic_prepare_civil_war
+        allowed = {
+            tag = ENG
+        }
+		visible = { 
+			NOT = { 
+				has_completed_focus = ENG_secure_the_oil_imports
+			}	
+		}
+        available = {
+			NOT = { 
+				has_completed_focus = ENG_secure_the_oil_imports
+			}	
+		}
+		cost = 200
+        fire_only_once = no
+		fixed_random_seed = no
+        complete_effect = {
+			complete_national_focus = ENG_secure_the_oil_imports
+        }
+        ai_will_do = {
+            factor = 100
+        }
+	}	
+}
+ENG_tech_upgrade = { 
+	ENG_uk_naval_modules = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_tech = uk_naval_modules
+			}
+		}
+		available = {
+			NOT = { 
+				has_tech = uk_naval_modules
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			#set_technology = { 
+			#	uk_naval_modules = 1
+			#}
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+
+	ENG_uk_cv_jet_fighter1 = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_tech = uk_cv_jet_fighter1
+			}
+		}
+		available = {
+			has_tech = jet_fighter1
+			NOT = { 
+				has_tech = uk_cv_jet_fighter1
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_technology = { 
+				uk_cv_jet_fighter1 = 1
+			}
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_uk_cv_jet_fighter2 = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_tech = uk_cv_jet_fighter2
+			}
+		}
+		available = {
+			has_tech = jet_fighter2
+			NOT = { 
+				has_tech = uk_cv_jet_fighter2
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_technology = { 
+				uk_cv_jet_fighter2 = 1
+			}
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_uk_cv_heavy_fighter1 = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_tech = uk_cv_heavy_fighter1
+			}
+		}
+		available = {
+			has_tech = heavy_fighter1
+			NOT = { 
+				has_tech = uk_cv_heavy_fighter1
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_technology = { 
+				uk_cv_heavy_fighter1 = 1
+			}
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_uk_cv_heavy_fighter2 = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_tech = uk_cv_heavy_fighter2
+			}
+		}
+		available = {
+			has_tech = heavy_fighter2
+			NOT = { 
+				has_tech = uk_cv_heavy_fighter2
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_technology = { 
+				uk_cv_heavy_fighter2 = 1
+			}
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_uk_cv_heavy_fighter3 = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_tech = uk_cv_heavy_fighter3
+			}
+		}
+		available = {
+			has_tech = heavy_fighter3
+			NOT = { 
+				has_tech = uk_cv_heavy_fighter3
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_technology = { 
+				uk_cv_heavy_fighter3 = 1
+			}
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_uk_cv_tactical_bomber1 = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_tech = uk_cv_tactical_bomber1
+			}
+		}
+		available = {
+			has_tech = tactical_bomber1
+			NOT = { 
+				has_tech = uk_cv_tactical_bomber1
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_technology = { 
+				uk_cv_tactical_bomber1 = 1
+			}
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_uk_cv_tactical_bomber2 = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_tech = uk_cv_tactical_bomber2
+			}
+		}
+		available = {
+			has_tech = tactical_bomber2
+			NOT = { 
+				has_tech = uk_cv_tactical_bomber2
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_technology = { 
+				uk_cv_tactical_bomber2 = 1
+			}
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_uk_cv_tactical_bomber3 = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_tech = uk_cv_tactical_bomber3
+			}
+		}
+		available = {
+			has_tech = tactical_bomber3
+			NOT = { 
+				has_tech = uk_cv_tactical_bomber3
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_technology = { 
+				uk_cv_tactical_bomber3 = 1
+			}
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_uk_cv_jet_tactical_bomber1 = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_tech = uk_cv_jet_tactical_bomber1
+			}
+		}
+		available = {
+			has_tech = jet_tactical_bomber1
+			NOT = { 
+				has_tech = uk_cv_jet_tactical_bomber1
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_technology = { 
+				uk_cv_jet_tactical_bomber1 = 1
+			}
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+	ENG_uk_cv_jet_tactical_bomber2 = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_tech = uk_cv_jet_tactical_bomber2
+			}
+		}
+		available = {
+			has_tech = jet_tactical_bomber2
+			NOT = { 
+				has_tech = uk_cv_jet_tactical_bomber2
+			}
+		}
+		cost = 200
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_technology = { 
+				uk_cv_jet_tactical_bomber2 = 1
+			}
+	 	}
+	  	ai_will_do = {
+			factor = 100
+	  	}
+	}
+
+}
+ENG_subject_management = { 
+	ENG_manpower = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 100
+		days_remove = 240
+		fire_only_once = no
+
+		visible = {
+		}
+
+		complete_effect = {
+			add_timed_idea = { idea = imperial_manpower days = 240 }
+		}
+
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_build_up_india = {
+
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			RAJ ={ add_to_variable = { var_zz_agrarian_society = 0.01 }}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	
+	eng_improve_opinion = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 120
+		
+		available = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+			OR = {
+				political_power_daily > 0.5
+				has_political_power > 60
+			}
+		}
+
+		visible = {
+		}
+
+		target_array = subjects
+
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+
+		complete_effect = {
+			add_opinion_modifier = { target = ROOT modifier = zz_improve_relation }
+		}
+
+		modifier = {
+			political_power_cost = 0.5
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	eng_imperial_manpower = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 120
+		
+		available = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+			OR = {
+				political_power_daily > 0.5
+				has_political_power > 60
+			}
+		}
+
+		visible = {
+		}
+
+		target_array = subjects
+
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+
+		complete_effect = {
+			FROM = { add_timed_idea = { idea = imperial_manpower days = 120  } }
+		}
+
+		modifier = {
+			political_power_cost = 0.5
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	eng_recruitment_drive = {
+
+		icon = eng_propaganda_campaigns
+
+		days_remove = 120
+		
+		available = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+			OR = {
+				political_power_daily > 0.5
+				has_political_power > 60
+			}
+		}
+
+		visible = {
+			has_government = democratic
+			FROM = {
+				is_puppet_of = ROOT
+				democratic < 0.99
+			}
+		}
+
+		target_array = subjects
+
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+
+		complete_effect = {
+			FROM = { add_to_variable = { var_zz_recruitment = 0.01 } }
+		}
+
+		modifier = {
+			political_power_cost = 0.5
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	prospect_for_steel = {
+		icon = steel
+		target_trigger = {
+			can_increase_resource = yes
+		}
+		visible = {
+			can_increase_resource = yes
+		}
+		state_target = yes
+		cost = 50
+		fire_only_once = no
+		on_map_mode = map_only
+		complete_effect = {
+			FROM = {
+				randomize_temp_variable = {
+					var = var_resources
+					distribution = uniform
+					min = 1
+					max = 30
+				}
+				add_resource = {
+					type = steel
+					amount = var_resources
+				}
+			}
+			add_manpower = -100
+		}	
+	}
+	prospect_for_aluminium = {
+		icon = aluminium
+		target_trigger = {
+			can_increase_resource = yes
+		}
+		visible = {
+			can_increase_resource = yes
+		}
+		state_target = yes
+		cost = 50
+		fire_only_once = no
+		on_map_mode = map_only
+		complete_effect = {
+			FROM = {
+				randomize_temp_variable = {
+					var = var_resources
+					distribution = uniform
+					min = 1
+					max = 30
+				}
+				add_resource = {
+					type = aluminium
+					amount = var_resources
+				}
+			}
+			add_manpower = -100
+		}	
+	}
+	prospect_for_chromium = {
+		icon = chromium
+		target_trigger = {
+			can_increase_resource = yes
+		}
+		visible = {
+			can_increase_resource = yes
+		}
+		state_target = yes
+		cost = 50
+		fire_only_once = no
+		on_map_mode = map_only
+		complete_effect = {
+			FROM = {
+				randomize_temp_variable = {
+					var = var_resources
+					distribution = uniform
+					min = 1
+					max = 30
+				}
+				add_resource = {
+					type = chromium
+					amount = var_resources
+				}
+			}
+			add_manpower = -100
+		}	
+	}
+	prospect_for_tungsten = {
+		icon = tungsten
+		target_trigger = {
+			can_increase_resource = yes
+		}
+		visible = {
+			can_increase_resource = yes
+		}
+		state_target = yes
+		cost = 50
+		fire_only_once = no
+		on_map_mode = map_only
+		complete_effect = {
+			FROM = {
+				randomize_temp_variable = {
+					var = var_resources
+					distribution = uniform
+					min = 1
+					max = 30
+				}
+				add_resource = {
+					type = tungsten
+					amount = var_resources
+				}
+			}
+			add_manpower = -100
+		}	
+	}
+	prospect_for_rubber = {
+		icon = rubber
+		target_trigger = {
+			can_increase_resource = yes
+		}
+		visible = {
+			can_increase_resource = yes
+		}
+		state_target = yes
+		cost = 50
+		fire_only_once = no
+		on_map_mode = map_only
+		complete_effect = {
+			FROM = {
+				randomize_temp_variable = {
+					var = var_resources
+					distribution = uniform
+					min = 1
+					max = 30
+				}
+				add_resource = {
+					type = rubber
+					amount = var_resources
+				}
+			}
+			add_manpower = -100
+		}	
+	}
+	prospect_for_oil = {
+		icon = oil
+		target_trigger = {
+			can_increase_resource = yes
+		}
+		visible = {
+			can_increase_resource = yes
+		}
+		state_target = yes
+		cost = 50
+		fire_only_once = no
+		on_map_mode = map_only
+		complete_effect = {
+			FROM = {
+				randomize_temp_variable = {
+					var = var_resources
+					distribution = uniform
+					min = 1
+					max = 30
+				}
+				add_resource = {
+					type = oil
+					amount = var_resources
+				}
+			}
+			add_manpower = -100
+		}	
+	}
+	construct_offmap_CIC = {
+		target_trigger = {
+			owns_state = FROM
+		}
+		visible = {
+			owns_state = FROM
+
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+		}
+		state_target = yes
+		cost = 50
+		days_remove = 60
+		fire_only_once = no
+		on_map_mode = map_only
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}	
+	}
+	construct_offmap_MIC = {
+		target_trigger = {
+			owns_state = FROM
+		}
+		visible = {
+			owns_state = FROM
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+		}
+		state_target = yes
+		cost = 50
+		days_remove = 60
+		fire_only_once = no
+		on_map_mode = map_only
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+			add_offsite_building = { type = arms_factory level = 1 }
+		}	
+	}
+	construct_offmap_NIC = {
+		target_trigger = {
+			owns_state = FROM
+		}
+		visible = {
+			owns_state = FROM
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+		}
+		state_target = yes
+		cost = 50
+		days_remove = 60
+		fire_only_once = no
+		on_map_mode = map_only
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+			add_offsite_building = { type = dockyard level = 1 }
+		}	
+	}
+	upgrade_state = {
+		target_trigger = {
+			can_increase_slot = yes
+		}
+		visible = {
+			can_increase_slot = yes
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+		}
+		state_target = yes
+		cost = 50
+		days_remove = 60
+		fire_only_once = no
+		on_map_mode = map_only
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+			FROM = {
+				state_upgrade = yes
+			}
+			add_manpower = -5000
+		}	
+	}
+	core_state = {
+		target_trigger = {
+			can_core = yes
+		}
+		visible = {
+			can_core = yes
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+		}
+		state_target = yes
+		cost = 50
+		days_remove = 60
+		fire_only_once = no
+		on_map_mode = map_only
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+			OWNER = {
+				add_state_core = FROM
+			}
+			add_manpower = -5000
+		}	
+	}
+}
+ENG_GENERAL_SELCTION = { 
+
+	ENG_staff_training = {
+
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			var:general_decision  = {
+				add_logistics = 1
+				add_planning = 1
+				add_defense = 1
+				add_attack = 1
+				
+			  }
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_general_apptitude_enhancement = {
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			var:general_decision = {
+				add_max_trait = 3
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+
+	 
+	ENG_general_brilliant_strategist = {
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			var:general_decision = {
+				NOT = { 
+					has_trait = brilliant_strategist
+				}
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			var:general_decision = {
+				NOT = { 
+					has_trait = brilliant_strategist
+				}
+			}
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			var:general_decision = {
+				add_unit_leader_trait = brilliant_strategist
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_general_inflexible_strategist = {
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			var:general_decision = {
+				NOT = { 
+					has_trait = inflexible_strategist 
+				}
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			var:general_decision = {
+				NOT = { 
+					has_trait = inflexible_strategist 
+				}
+			}
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			var:general_decision = {
+				add_unit_leader_trait = inflexible_strategist 
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	
+	ENG_general_organizer = {
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			var:general_decision = {
+				NOT = { 
+					has_trait = organizer 
+				}
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			var:general_decision = {
+				NOT = { 
+					has_trait = organizer 
+				}
+			}
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			var:general_decision = {
+				add_unit_leader_trait = organizer 
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_general_cavalry_leader = {
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			var:general_decision = {
+				NOT = { 
+					has_trait = cavalry_leader  
+				}
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			var:general_decision = {
+				NOT = { 
+					has_trait = cavalry_leader  
+				}
+			}
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			var:general_decision = {
+				add_unit_leader_trait = cavalry_leader  
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_general_infantry_leader = {
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			var:general_decision = {
+				NOT = { 
+					has_trait = infantry_leader 
+				}
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			var:general_decision = {
+				NOT = { 
+					has_trait = infantry_leader  
+				}
+			}
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			var:general_decision = {
+				add_unit_leader_trait = infantry_leader  
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_general_skilled_staffer = {
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			var:general_decision = {
+				NOT = { 
+					has_trait = skilled_staffer
+				}
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			var:general_decision = {
+				NOT = { 
+					has_trait = skilled_staffer
+				}
+			}
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			var:general_decision = {
+				add_unit_leader_trait = skilled_staffer
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_general_trickster = {
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			var:general_decision = {
+				NOT = { 
+					has_trait = trickster
+				}
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			var:general_decision = {
+				NOT = { 
+					has_trait = trickster
+				}
+			}
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			var:general_decision = {
+				add_unit_leader_trait = trickster
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	 
+	ENG_general_trait_engineer = {
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			var:general_decision = {
+				NOT = { 
+					has_trait = trait_engineer  
+				}
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			var:general_decision = {
+				NOT = { 
+					has_trait = trait_engineer   
+				}
+			}
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			var:general_decision = {
+				add_unit_leader_trait = trait_engineer   
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_general_trait_panzer_leader = {
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			var:general_decision = {
+				NOT = { 
+					has_trait = panzer_leader  
+				}
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			var:general_decision = {
+				NOT = { 
+					has_trait = panzer_leader   
+				}
+			}
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			var:general_decision = {
+				add_unit_leader_trait = panzer_leader   
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_general_commando = {
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			var:general_decision = {
+				NOT = { 
+					has_trait = commando   
+				}
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			var:general_decision = {
+				NOT = { 
+					has_trait = commando    
+				}
+			}
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			var:general_decision = {
+				add_unit_leader_trait = commando    
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+
+
+
+	
+	
+	ENG_general_skill_alchemist = {
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			var:general_decision = {
+				NOT = { 
+					has_trait = alchemist
+				}
+			}
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			var:general_decision = {
+				NOT = { 
+					has_trait = alchemist
+				}
+			}
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			var:general_decision = {
+				add_unit_leader_trait = alchemist
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_general_skill_state_alchemist = {
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			var:general_decision = {
+				has_trait = alchemist
+				is_advisor = no
+			}
+			
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			var:general_decision = {
+				has_trait = alchemist
+			}
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			var:general_decision = {
+				add_advisor_role = {
+					advisor = {
+						slot = special_advisor
+						cost = 0
+						idea_token = state_alchemist
+						traits = {
+							state_alchemist
+						}
+						allowed = {
+							always = yes
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+}
+ENG_enhancement = {
+	
+	ENG_emergency_artillery= {
+
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 500
+
+		fire_only_once = no
+
+		visible = {
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				producer = ENG
+				type = artillery_equipment
+				amount = 5000
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_emergency_guns= {
+
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 500
+
+		fire_only_once = no
+
+		visible = {
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				producer = ENG
+				type = infantry_equipment
+				amount = 5000
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_emergency_support_equipment= {
+
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 500
+
+		fire_only_once = no
+
+		visible = {
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				producer = ENG
+				type = support_equipment
+				amount = 5000
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_emergency_trucks= {
+
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 500
+
+		fire_only_once = no
+
+		visible = {
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				producer = ENG
+				type = motorized_equipment
+				amount = 5000
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_enhancement_recruitment = {
+
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_to_variable = {var_zz_recruitment = 0.01}
+			add_dynamic_modifier = {
+				modifier = zz_recruitment
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	# Province Building
+	ENG_enhancement_resources = {
+
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_dynamic_modifier = {
+				modifier = zz_resource_output
+			}
+			add_to_variable = {var_resources = 0.1}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_enhancement_efficiency_start = {
+
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_to_variable = {var_efficency_start = 0.01}
+			add_dynamic_modifier = {
+				modifier = zz_efficiency_start
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_enhancement_efficency_cap = {
+
+
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_to_variable = {var_efficency_cap = 0.01}
+			add_dynamic_modifier = {
+				modifier = zz_efficiency_cap
+			}
+
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_enhancement_resarch_rate = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_dynamic_modifier = {
+				modifier = zz_research_modifier
+			}
+			add_to_variable = {var_research_speed = 0.01}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_enhancement_military_IC = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_to_variable = {var_ic_factory = 0.1}
+			add_dynamic_modifier = {
+				modifier = zz_mil_output
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_enhancement_civilian_IC = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_to_variable = {var_production_speed_building = 0.1}
+			add_dynamic_modifier = {
+				modifier = zz_civ_output
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_enhancement_dockyard_IC = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_to_variable = {var_ic_dock = 0.1}
+			add_dynamic_modifier = {
+				modifier = zz_dock_output
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_special_forces_cap = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_dynamic_modifier = {
+				modifier = zz_spec_forces_cap
+			}
+			add_to_variable = {var_spec_forces_cap = 0.01}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_special_forces_min = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_dynamic_modifier = {
+				modifier = zz_spec_forces_min
+			}
+			add_to_variable = {var_spec_forces_min = 1}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_command_power_max = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_dynamic_modifier = {
+				modifier = zz_command_power_max
+			}
+			add_to_variable = {var_command_power_max = 100}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_command_power_gain = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_dynamic_modifier = {
+				modifier = zz_command_power_gain
+			}
+			add_to_variable = {var_command_power_gain = 1}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+}
+
+ENG_Parliament = {
+	hold_election = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+				NOT = {
+					has_country_flag = ENG_election
+				}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+				zz_uk_election = yes
+				set_country_flag = ENG_election
+				activate_mission = ENG_election_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
 	ENG_election_mission = {
 		allowed = { tag = ENG }
 		available = {
-			NOT = { 
+			NOT = {
 				has_country_flag = ENG_election
 			}
 		}
 		activation = {
 			always = no
 		}
+		fixed_random_seed = no
 		is_good = yes
 		days_mission_timeout = 50
 		timeout_effect = {
-            zz_uk_chance_seats = yes
+    	zz_uk_chance_seats = yes
 			clr_country_flag = ENG_election
 		}
 		complete_effect = {
@@ -47,37 +2798,37 @@ ENG_cabinet_government = {
             tag = ENG
 		}
 		cost = 100
-        available = {
+		available = {
 			has_country_flag = ENG_election
-			check_variable = {total_seats > 100} 
-        }
-        fire_only_once = NO
-        complete_effect = {
+			check_variable = {total_seats > 100}
+		}
+		fixed_random_seed = no
+      	complete_effect = {
 			add_to_variable = { party_seats_num^0 = 100}
 			subtract_from_variable = { total_seats = 100}
-        }
+      	}
         ai_will_do = {
             factor = 100
         }
 	}
 	intervene_liberal = {
-        icon = GFX_decision_generic_prepare_civil_war
-        allowed = {
-            tag = ENG
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
 		}
 		cost = 100
-        available = {
+    	available = {
 			has_country_flag = ENG_election
-			check_variable = {total_seats > 100} 
-        }
-        fire_only_once = NO
-        complete_effect = {
+			check_variable = {total_seats > 100}
+    	}
+		fixed_random_seed = no
+   	 	complete_effect = {
 			add_to_variable = { party_seats_num^1 = 100}
 			subtract_from_variable = { total_seats = 100}
-        }
-        ai_will_do = {
-            factor = 100
-        }
+    	}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	intervene_labour = {
         icon = GFX_decision_generic_prepare_civil_war
@@ -87,10 +2838,10 @@ ENG_cabinet_government = {
 		cost = 100
         available = {
 			has_country_flag = ENG_election
-			check_variable = {total_seats > 100} 
+			check_variable = {total_seats > 100}
         }
-        fire_only_once = NO
-        complete_effect = {
+		fixed_random_seed = no
+		complete_effect = {
 			add_to_variable = { party_seats_num^2 = 100}
 			subtract_from_variable = { total_seats = 100}
         }
@@ -105,7 +2856,7 @@ ENG_cabinet_government = {
         }
         available = {
         }
-        fire_only_once = NO
+		fixed_random_seed = no
         complete_effect = {
 			set_variable = { government = 1}
         }
@@ -120,7 +2871,7 @@ ENG_cabinet_government = {
         }
         available = {
         }
-        fire_only_once = NO
+		fixed_random_seed = no
         complete_effect = {
 			set_variable = { government = 2}
         }
@@ -135,7 +2886,7 @@ ENG_cabinet_government = {
         }
         available = {
         }
-        fire_only_once = NO
+		fixed_random_seed = no
         complete_effect = {
 			set_variable = { government = 3}
         }
@@ -143,828 +2894,848 @@ ENG_cabinet_government = {
             factor = 100
         }
 	}
-}
-
-ENG_legislation = {
-	dummy = {
-        icon = GFX_decision_generic_prepare_civil_war
-        allowed = {
-            tag = ENG
-        }
-        available = {
-        }
-        fire_only_once = NO
-        complete_effect = {
-        }
-        ai_will_do = {
-            factor = 100
-        }
+	ENG_rebuilding_britain = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_country_flag = ENG_rebuilding_britain_success
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = ENG_vote
+				OR = {
+					has_country_flag = ENG_rebuilding_britain
+					has_country_flag = ENG_rebuilding_britain_success
+				}
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_rebuilding_britain
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_rebuilding_britain_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_industrial_enhancement_project = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_country_flag = ENG_industrial_enhancement_success
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = ENG_vote
+				OR = {
+					has_country_flag = ENG_industrial_enhancement
+					has_country_flag = ENG_industrial_enhancement_success
+				}
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_country_flag = ENG_industrial_enhancement
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_industrial_enhancement_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	ENG_naval_modernization_program = {
         icon = GFX_decision_generic_prepare_civil_war
         allowed = {
             tag = ENG
         }
+		visible = { 
+			NOT = { 
+				has_country_flag = ENG_naval_modernization_program_success
+			}
+		}
         available = {
             NOT = {
-				has_country_flag = ENG_vote  
+				has_country_flag = ENG_vote
                 OR = {
-	
 					has_country_flag = ENG_naval_modernization_program
                     has_country_flag = ENG_naval_modernization_program_success
                 }
             }
         }
-        fire_only_once = NO
+        fire_only_once = no
+		fixed_random_seed = no
         complete_effect = {
 			set_country_flag = ENG_vote
             set_country_flag = ENG_naval_modernization_program
             zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
             activate_mission = ENG_naval_modernization_program_mission
         }
         ai_will_do = {
             factor = 100
         }
 	}
-	ENG_research_program = {
+	ENG_air_modernization_program = {
         icon = GFX_decision_generic_prepare_civil_war
         allowed = {
             tag = ENG
-        }
-        available = {
-            NOT = {
-				has_country_flag = ENG_vote  
-                OR = {
-	
-					has_country_flag = ENG_research_program
-                    has_country_flag = ENG_research_program_success
-                }
-            }
-        }
-        fire_only_once = NO
-        complete_effect = {
-			set_country_flag = ENG_vote
-            set_country_flag = ENG_research_program
-            zz_legislation_vote_setup = yes
-            activate_mission = ENG_research_program_mission
-        }
-        ai_will_do = {
-            factor = 100
-        }
-	}
-	ENG_research_program_second = {
-        icon = GFX_decision_generic_prepare_civil_war
-        allowed = {
-            tag = ENG
-        }
-        available = {
-            NOT = {
-				has_country_flag = ENG_vote  
-                OR = {
-	
-					has_country_flag = ENG_research_program_second
-                    has_country_flag = ENG_research_program_success_second
-                }
-            }
-        }
-        fire_only_once = NO
-        complete_effect = {
-			set_country_flag = ENG_vote
-            set_country_flag = ENG_research_program_second
-            zz_legislation_vote_setup = yes
-            activate_mission = ENG_research_program_mission_second
-        }
-        ai_will_do = {
-            factor = 100
-        }
-	}
-	
-    ENG_rearmament = {
-        icon = GFX_decision_generic_prepare_civil_war
-        allowed = {
-            tag = ENG
-        }
-        available = {
-            NOT = {
-				has_country_flag = ENG_vote  
-                OR = {
-                    has_country_flag = ENG_rearmament
-                    has_country_flag = ENG_rearmament_success
-                }
-            }
-        }
-        fire_only_once = NO
-        complete_effect = {
-			set_country_flag = ENG_vote
-            set_country_flag = ENG_rearmament
-            zz_legislation_vote_setup = yes
-            activate_mission = ENG_rearmament_mission
-        }
-        ai_will_do = {
-            factor = 100
-        }
-    }
-    ENG_rebuilding_britain = {
-        icon = GFX_decision_generic_prepare_civil_war
-        allowed = {
-            tag = ENG
-        }
-        available = {
-            NOT = {
-				has_country_flag = ENG_vote  
-				OR = {
-					
-                    has_country_flag = ENG_rebuilding_britain
-                    has_country_flag = ENG_rebuilding_britain_success
-                }
-            }
-        }
-        fire_only_once = NO
-        complete_effect = {
-            set_country_flag = ENG_rebuilding_britain
-            zz_legislation_vote_setup = yes
-            activate_mission = ENG_rebuilding_britain_mission
-        }
-        ai_will_do = {
-            factor = 100
-        }
-    }
-    ENG_industrial_enhancement_project = {
-        icon = GFX_decision_generic_prepare_civil_war
-        allowed = {
-            tag = ENG
-        }
-        available = {
-            NOT = {
-				has_country_flag = ENG_vote  
-                OR = {
-					
-                    has_country_flag = ENG_industrial_enhancement
-                    has_country_flag = ENG_industrial_enhancement_success
-                }
-            }
-        }
-        fire_only_once = NO
-        complete_effect = {
-            set_country_flag = ENG_industrial_enhancement
-            zz_legislation_vote_setup = yes
-            activate_mission = ENG_industrial_enhancement_mission
-        }
-        ai_will_do = {
-            factor = 100
-        }
-    }
-    
-    ENG_shadow_armaments_factory = {
-        icon = GFX_decision_generic_prepare_civil_war
-        allowed = {
-            tag = ENG
-        }
-        available = {
-            has_country_flag = ENG_rebuilding_britain_success
-            NOT = {
-				has_country_flag = ENG_vote
-				OR = {  
-					
-					has_country_flag = ENG_shadow_arm
-				}
-            }
-			arms_factory > 1
-        }
-        fire_only_once = NO
-        complete_effect = {
-			set_country_flag = ENG_vote
-            set_country_flag = ENG_shadow_arm
-            zz_legislation_vote_setup = yes
-            activate_mission = ENG_shadow_armaments_factory_mission
-        }
-        ai_will_do = {
-            factor = 100
-        }
-    }
-    ENG_shadow_civilian_factory = {
-        icon = GFX_decision_generic_prepare_civil_war
-        allowed = {
-            tag = ENG
-        }
-        available = {
-            has_country_flag = ENG_rebuilding_britain_success
-            NOT = { 
-				has_country_flag = ENG_vote 
-				OR = {
-					
-                	has_country_flag = ENG_shadow_civ
-				}
-			}
-			industrial_complex  > 1
 			
         }
-        fire_only_once = NO
-        complete_effect = {
-            set_country_flag = ENG_vote
-			set_country_flag = ENG_shadow_civ
-            zz_legislation_vote_setup = yes
-            activate_mission = ENG_shadow_civilian_factory_mission
-        }
-        ai_will_do = {
-            factor = 100
-        }
-    }
-    ENG_shadow_dockyard  = {
-        icon = GFX_decision_generic_prepare_civil_war
-        allowed = {
-            tag = ENG
-        }
-        available = {
-            has_country_flag = ENG_rebuilding_britain_success
-            NOT = {  
-				has_country_flag = ENG_vote
-				OR = {
-					has_country_flag = ENG_shadow_dock
-				}
+		visible = { 
+			NOT = { 
+				has_country_flag = ENG_air_modernization_program_success
 			}
-			dockyard  > 1
+		}
+        available = {
+            NOT = {
+				has_country_flag = ENG_vote
+              	OR = {
+					has_country_flag = ENG_air_modernization_program
+          			has_country_flag = ENG_air_modernization_program_success
+              	}
+            }
         }
-        fire_only_once = NO
+        fire_only_once = no
+		fixed_random_seed = no
         complete_effect = {
 			set_country_flag = ENG_vote
-            set_country_flag = ENG_shadow_dock
+            set_country_flag = ENG_air_modernization_program
             zz_legislation_vote_setup = yes
-            activate_mission = ENG_shadow_dockyard_mission
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+            activate_mission = ENG_air_modernization_program_mission
         }
         ai_will_do = {
             factor = 100
         }
+	}
+	ENG_armour_modernization_program = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		visible = { 
+			NOT = { 
+				has_country_flag = ENG_armour_modernization_program_success
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = ENG_vote
+				OR = {
+					has_country_flag = ENG_armour_modernization_program
+					has_country_flag = ENG_armour_modernization_program_success
+				}
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_country_flag = ENG_vote
+			set_country_flag = ENG_armour_modernization_program
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_armour_modernization_program_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_civ = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_civ_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_mil = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_mil_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_nav = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_nav_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_war_plans = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_war_plans_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_tech = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_tech_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_shadow = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+				has_country_flag = ENG_shadow_scheme
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_shadow_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_industry = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_industry_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	
-	ENG_civilian_factory = {
-
-
+	ENG_britain_radar = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
 		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:current_country_decision = {
-					
-				
-				has_full_control_of_state = var:current_country_state_decision
-				var:current_country_state_decision = { 
-					industrial_complex < 20
-				}
-			}
-		}
-
-		highlight_states = { state = var:current_country_state_decision }
-
-
-
-		cost = 100
-
-		fire_only_once = no
-
-		visible = {
 			has_country_flag = ENG_rebuilding_britain_success
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			var:current_country_state_decision = { 
-				add_building_construction = { type = industrial_complex  level = 1 instant_build = yes }
-				add_extra_state_shared_building_slots = 1
+			NOT = {
+				has_country_flag = ENG_vote
 			}
 		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.581
-			}
-			modifier = {
-				factor = 0
-				fascism > 0.5
-			}
-		}
-	}	
-	ENG_military_factory = {
-
-
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:current_country_decision = {
-				has_full_control_of_state = var:current_country_state_decision
-			}
-			var:current_country_state_decision = { 
-				arms_factory < 20
-			}
-		}
-
-		highlight_states = { state = var:current_country_state_decision }
-
-
-
-		cost = 100
-
 		fire_only_once = no
-
-		visible = {
-			has_country_flag = ENG_rebuilding_britain_success
-		}
-
-		cancel_if_not_visible = yes
-
+		fixed_random_seed = no
 		complete_effect = {
-			var:current_country_state_decision = { 
-				add_building_construction = { type = arms_factory  level = 1 instant_build = yes }
-				add_extra_state_shared_building_slots = 1
-			}
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_radar_mission
 		}
-
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.581
-			}
-			modifier = {
-				factor = 0
-				fascism > 0.5
-			}
+			factor = 100
 		}
 	}
-	ENG_dockyards = {
-
-
+	ENG_britain_electronics = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
 		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:current_country_decision = {
-				has_full_control_of_state = var:current_country_state_decision
-			}
-			var:current_country_state_decision = { 
-				dockyard < 20
-			}
-		}
-
-		highlight_states = { state = var:current_country_state_decision }
-
-
-
-		cost = 100
-
-		fire_only_once = no
-
-		visible = {
 			has_country_flag = ENG_rebuilding_britain_success
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			var:current_country_state_decision = { 
-				add_building_construction = { type = dockyard  level = 1 instant_build = yes }
-				add_extra_state_shared_building_slots = 1
+			NOT = {
+				has_country_flag = ENG_vote
 			}
 		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.581
-			}
-			modifier = {
-				factor = 0
-				fascism > 0.5
-			}
-		}
-	}	
-	ENG_synthetic_refinery  = {
-
-
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:current_country_decision = {
-				has_full_control_of_state = var:current_country_state_decision
-			}
-			var:current_country_state_decision = { 
-				synthetic_refinery < 20
-			}
-		}
-
-		highlight_states = { state = var:current_country_state_decision }
-
-
-
-		cost = 100
-
 		fire_only_once = no
-
-		visible = {
-			has_country_flag = ENG_rebuilding_britain_success
-		}
-
-		cancel_if_not_visible = yes
-
+		fixed_random_seed = no
 		complete_effect = {
-			var:current_country_state_decision = { 
-				add_building_construction = { type = synthetic_refinery  level = 1 instant_build = yes }
-				add_extra_state_shared_building_slots = 1
-			}
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_electronics_mission
 		}
-
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.581
-			}
-			modifier = {
-				factor = 0
-				fascism > 0.5
-			}
-		}
-	}	
-	ENG_fuel_silo  = {
-
-
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:current_country_decision = {
-				has_full_control_of_state = var:current_country_state_decision
-			}
-			var:current_country_state_decision = { 
-				fuel_silo < 20
-			}
-		}
-
-		highlight_states = { state = var:current_country_state_decision }
-
-
-
-		cost = 100
-
-		fire_only_once = no
-
-		visible = {
-			has_country_flag = ENG_rebuilding_britain_success
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			var:current_country_state_decision = { 
-				add_building_construction = { type = fuel_silo level = 1 instant_build = yes }
-				add_extra_state_shared_building_slots = 1
-			}
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.581
-			}
-			modifier = {
-				factor = 0
-				fascism > 0.5
-			}
-		}
-	}	
-	ENG_infrastructure  = {
-
-
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:current_country_decision = {
-				has_full_control_of_state = var:current_country_state_decision
-			}
-			var:current_country_state_decision = { 
-				infrastructure < 10
-			}
-		}
-
-		highlight_states = { state = var:current_country_state_decision }
-
-
-
-		cost = 100
-
-		fire_only_once = no
-
-		visible = {
-			has_country_flag = ENG_rebuilding_britain_success
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			var:current_country_state_decision = { 
-				add_building_construction = { type = infrastructure   level = 1 instant_build = yes }
-			}
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.581
-			}
-			modifier = {
-				factor = 0
-				fascism > 0.5
-			}
-		}
-	}	
-	ENG_add_oil = {
-
-
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:current_country_decision = {
-				has_full_control_of_state = var:current_country_state_decision
-			}
-		}
-
-		highlight_states = { state = var:current_country_state_decision }
-
-
-
-		cost = 100
-
-		fire_only_once = no
-
-		visible = {
-			has_country_flag = ENG_rebuilding_britain_success
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			var:current_country_state_decision = {
-				add_resource = {
-					type = oil
-					amount = 25
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.581
-			}
-			modifier = {
-				factor = 0
-				fascism > 0.5
-			}
+			factor = 100
 		}
 	}
-	ENG_add_aluminium = {
-
-
+	ENG_britain_rocket = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
 		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:current_country_decision = {
-				has_full_control_of_state = var:current_country_state_decision
-			}
-		}
-
-		highlight_states = { state = var:current_country_state_decision }
-
-
-
-		cost = 100
-
-		fire_only_once = no
-
-		visible = {
 			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
 		}
-
-		cancel_if_not_visible = yes
-
+		fire_only_once = no
+		fixed_random_seed = no
 		complete_effect = {
-			var:current_country_state_decision = {
-				add_resource = {
-					type = aluminium
-					amount = 25
-				}
-			}
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_rocket_mission
 		}
-
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.581
-			}
-			modifier = {
-				factor = 0
-				fascism > 0.5
-			}
+			factor = 100
 		}
 	}
-	ENG_add_rubber = {
-
-
+	ENG_britain_nuclear = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
 		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:current_country_decision = {
-				has_full_control_of_state = var:current_country_state_decision
-			}
-		}
-
-		highlight_states = { state = var:current_country_state_decision }
-
-
-
-		cost = 100
-
-		fire_only_once = no
-
-		visible = {
 			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
 		}
-
-		cancel_if_not_visible = yes
-
+		fire_only_once = no
+		fixed_random_seed = no
 		complete_effect = {
-			var:current_country_state_decision = {
-				add_resource = {
-					type = rubber
-					amount = 25
-				}
-			}
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_nuclear_mission
 		}
-
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.581
-			}
-			modifier = {
-				factor = 0
-				fascism > 0.5
-			}
+			factor = 100
 		}
 	}
-	ENG_add_tungsten = {
-
-
+	ENG_britain_jet = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
 		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:current_country_decision = {
-				has_full_control_of_state = var:current_country_state_decision
-			}
-		}
-
-		highlight_states = { state = var:current_country_state_decision }
-
-
-
-		cost = 100
-
-		fire_only_once = no
-
-		visible = {
 			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
 		}
-
-		cancel_if_not_visible = yes
-
+		fire_only_once = no
+		fixed_random_seed = no
 		complete_effect = {
-			var:current_country_state_decision = {
-				add_resource = {
-					type = tungsten
-					amount = 25
-				}
-			}
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_jet_mission
 		}
-
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.581
-			}
-			modifier = {
-				factor = 0
-				fascism > 0.5
-			}
+			factor = 100
 		}
 	}
-	ENG_add_steel = {
-
-
+	ENG_britain_fighter = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
 		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:current_country_decision = {
-				has_full_control_of_state = var:current_country_state_decision
-			}
-		}
-
-		highlight_states = { state = var:current_country_state_decision }
-
-
-
-		cost = 100
-
-		fire_only_once = no
-
-		visible = {
 			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
 		}
-
-		cancel_if_not_visible = yes
-
+		fire_only_once = no
+		fixed_random_seed = no
 		complete_effect = {
-			var:current_country_state_decision = {
-				add_resource = {
-					type = steel
-					amount = 25
-				}
-			}
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_fighter_mission
 		}
-
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.581
-			}
-			modifier = {
-				factor = 0
-				fascism > 0.5
-			}
+			factor = 100
 		}
 	}
-	ENG_add_chromium = {
-
-
+	ENG_britain_bomber = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
 		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:current_country_decision = {
-				has_full_control_of_state = var:current_country_state_decision
-			}
-		}
-
-		highlight_states = { state = var:current_country_state_decision }
-
-
-
-		cost = 100
-
-		fire_only_once = no
-
-		visible = {
 			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
 		}
-
-		cancel_if_not_visible = yes
-
+		fire_only_once = no
+		fixed_random_seed = no
 		complete_effect = {
-			var:current_country_state_decision = {
-				add_resource = {
-					type = chromium
-					amount = 25
-				}
-			}
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_bomber_mission
 		}
-
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_stability < 0.581
-			}
-			modifier = {
-				factor = 0
-				fascism > 0.5
+			factor = 100
+		}
+	}
+	ENG_britain_coastal = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
 			}
 		}
-	}	
-}
-
-ENG_legislation_completition = {
-	dummy_complete = {
-        icon = GFX_decision_generic_prepare_civil_war
-        allowed = {
-            tag = ENG
-        }
-        available = {
-        }
-        fire_only_once = NO
-        complete_effect = {
-        }
-        ai_will_do = {
-            factor = 100
-        }
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_coastal_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_destroyer = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_destroyer_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_cruiser = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_cruiser_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_battleship = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_battleship_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_carrier = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_carrier_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_submarine = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_submarine_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_motorized = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_motorized_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_armour = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_armour_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_artillery = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_artillery_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	ENG_britain_special_forces = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			has_country_flag = ENG_rebuilding_britain_success
+			NOT = {
+				has_country_flag = ENG_vote
+			}
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_country_flag = ENG_vote
+			zz_legislation_vote_setup = yes
+			zz_legislation_lords_vote_setup = yes
+			UK_recalc_parliament_icon_frames = yes
+			activate_mission = ENG_britain_special_forces_mission
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	#Missions
+	ENG_rebuilding_britain_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_rebuilding_britain
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			set_country_flag = ENG_rebuilding_britain_success
+			clr_country_flag = ENG_rebuilding_britain
+			clr_country_flag = ENG_vote
+			add_to_variable = {var_production_speed_building = 0.25}
+			add_dynamic_modifier = {
+				modifier = zz_civ_output
+			}
+			
+		}
+	}
+	ENG_industrial_enhancement_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+            set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+            clr_country_flag = ENG_industrial_enhancement
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+            set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			set_country_flag = ENG_industrial_enhancement_success
+			clr_country_flag = ENG_industrial_enhancement
+			clr_country_flag = ENG_vote
+			add_to_variable = {var_production_speed_building = 0.25}
+			add_dynamic_modifier = {
+				modifier = zz_civ_output
+			}
+			add_ideas = {
+				ENG_industrial_enhancement
+			}
+			
+			
+		}
 	}
 	ENG_naval_modernization_program_mission = {
 		allowed = { tag = ENG }
 		available = {
-			check_variable = { supseat > supneeded } 
+			check_variable = { supseat > supneeded }
 		}
 		activation = {
 			always = no
@@ -973,249 +3744,32 @@ ENG_legislation_completition = {
 		days_mission_timeout = 50
 		timeout_effect = {
             set_variable = { supseat = 0 }
-			add_political_power = -50
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
             clr_country_flag = ENG_naval_modernization_program
 			clr_country_flag = ENG_vote
 		}
-		complete_effect = {
-            set_variable = { supseat = 0 } 
-            zz_legislation_lords_vote_setup = yes
-            activate_mission = ENG_naval_modernization_program_mission_lords
-		}
-	}
-	ENG_research_program_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded } 
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-            set_variable = { supseat = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_research_program
-			clr_country_flag = ENG_vote
-		}
-		complete_effect = {
-            set_variable = { supseat = 0 } 
-            zz_legislation_lords_vote_setup = yes
-            activate_mission = ENG_research_program_mission_lords
-		}
-	}
-	ENG_research_program_mission_second = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded } 
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-            set_variable = { supseat = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_research_program_second
-			clr_country_flag = ENG_vote
-		}
-		complete_effect = {
-            set_variable = { supseat = 0 } 
-            zz_legislation_lords_vote_setup = yes
-            activate_mission = ENG_research_program_mission_lords_second
-		}
-	}
-	ENG_rearmament_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded } 
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-            set_variable = { supseat = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_rearmament
-			clr_country_flag = ENG_vote
-		}
-		complete_effect = {
-            set_variable = { supseat = 0 } 
-            zz_legislation_lords_vote_setup = yes
-            activate_mission = ENG_rearmament_mission_lords
-		}
-	}
-    
-    ENG_rebuilding_britain_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded } 
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-            set_variable = { supseat = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_rebuilding_britain
-			clr_country_flag = ENG_vote
-		}
-		complete_effect = {
-            set_variable = { supseat = 0 } 
-            zz_legislation_lords_vote_setup = yes
-            activate_mission = ENG_rebuilding_britain_mission_lords
-		}
-	}
-    
-    ENG_industrial_enhancement_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded } 
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-            set_variable = { supseat = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_industrial_enhancement
-			clr_country_flag = ENG_vote
-		}
-
-		complete_effect = {
-            set_variable = { supseat = 0 } 
-            zz_legislation_lords_vote_setup = yes
-            activate_mission = ENG_industrial_enhancement_mission_lords
-		}
-	}
-    
-    
-    ENG_shadow_armaments_factory_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded } 
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-            set_variable = { supseat = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_shadow_arm
-			clr_country_flag = ENG_vote
-		}
+		fixed_random_seed = no
 		complete_effect = {
             set_variable = { supseat = 0 }
-            zz_legislation_lords_vote_setup = yes
-            activate_mission = ENG_shadow_armaments_factory_mission_lords
-		}
-	}
-    
-    ENG_shadow_civilian_factory_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded } 
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-            set_variable = { supseat = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_shadow_civ
+      		set_variable = { secondsup = 0 }
+      		set_country_flag = ENG_naval_modernization_program_success
+      		clr_country_flag = ENG_naval_modernization_program
 			clr_country_flag = ENG_vote
-		}
-		complete_effect = {
-            set_variable = { supseat = 0 }
-            zz_legislation_lords_vote_setup = yes
-            activate_mission = ENG_shadow_civilian_factory_mission_lords
-		}
-	}
-    
-    ENG_shadow_dockyard_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded } 
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-            set_variable = { supseat = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_shadow_dock
-			clr_country_flag = ENG_vote
-		}
-		complete_effect = {
-            set_variable = { supseat = 0 }
-            zz_legislation_lords_vote_setup = yes
-            activate_mission = ENG_shadow_dockyard_mission_lords
-		}
-	}
-    
-
-}
-
-ENG_legislation_completition_lords = { 
-	dummy_lords = {
-        icon = GFX_decision_generic_prepare_civil_war
-        allowed = {
-            tag = ENG
-        }
-        available = {
-        }
-        fire_only_once = NO
-        complete_effect = {
-        }
-        ai_will_do = {
-            factor = 100
-        }
-	}
-	ENG_naval_modernization_program_mission_lords = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { secondsup > secondsupneeded } 
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-            set_variable = { secondsup = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_naval_modernization_program
-			clr_country_flag = ENG_vote
-		}
-		complete_effect = {
-            set_variable = { secondsup = 0 }
-            set_country_flag = ENG_naval_modernization_program_success
-            clr_country_flag = ENG_naval_modernization_program
-			clr_country_flag = ENG_vote
+			add_to_variable = {var_ic_dock = 0.5}
+			add_dynamic_modifier = {
+				modifier = zz_dock_output
+			}
+			
 			add_ideas = {
 				ENG_naval_modernization_program
 			}
-			add_offsite_building = { type = dockyard level = 100 }
 		}
 	}
-	ENG_research_program_mission_lords = {
+	ENG_air_modernization_program_mission = {
 		allowed = { tag = ENG }
 		available = {
-			check_variable = { secondsup > secondsupneeded } 
+			check_variable = { supseat > supneeded }
 		}
 		activation = {
 			always = no
@@ -1223,26 +3777,32 @@ ENG_legislation_completition_lords = {
 		is_good = no
 		days_mission_timeout = 50
 		timeout_effect = {
-            set_variable = { secondsup = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_research_program
+      		set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }  
+			add_political_power = -100
+      		clr_country_flag = ENG_air_modernization_program
 			clr_country_flag = ENG_vote
 		}
+		fixed_random_seed = no
 		complete_effect = {
-            set_variable = { secondsup = 0 }
-            set_country_flag = ENG_research_program_success
-            clr_country_flag = ENG_research_program
+      		set_variable = { supseat = 0 }
+      		set_variable = { secondsup = 0 }
+			set_country_flag = ENG_air_modernization_program_success
+			clr_country_flag = ENG_air_modernization_program
 			clr_country_flag = ENG_vote
-			add_research_slot = 1
+			add_to_variable = {var_ic_factory = 0.25}
+			add_dynamic_modifier = {
+				modifier = zz_mil_output
+			}
 			add_ideas = {
-				ENG_research_program
+				ENG_air_modernization_program
 			}
 		}
 	}
-	ENG_research_program_mission_lords_second = {
+	ENG_armour_modernization_program_mission = {
 		allowed = { tag = ENG }
 		available = {
-			check_variable = { secondsup > secondsupneeded } 
+			check_variable = { supseat > supneeded }
 		}
 		activation = {
 			always = no
@@ -1250,28 +3810,226 @@ ENG_legislation_completition_lords = {
 		is_good = no
 		days_mission_timeout = 50
 		timeout_effect = {
-            set_variable = { secondsup = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_research_program
+      		set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+      		clr_country_flag = ENG_armour_modernization_program
 			clr_country_flag = ENG_vote
 		}
+		fixed_random_seed = no
 		complete_effect = {
-            set_variable = { secondsup = 0 }
-            set_country_flag = ENG_research_program_success
-            clr_country_flag = ENG_research_program
+      		set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			set_country_flag = ENG_armour_modernization_program_success
+			clr_country_flag = ENG_armour_modernization_program
 			clr_country_flag = ENG_vote
-			add_research_slot = 1
-			add_ideas = {
-				ENG_research_program_second
+			add_to_variable = {var_ic_factory = 0.25}
+			add_dynamic_modifier = {
+				modifier = zz_mil_output
 			}
-		}
-	}
+			add_ideas = {
+				ENG_armour_modernization_program
+			}  
 
+		}
+	}
+	ENG_britain_civ_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			set_variable = { building_type = 0 } 
+			set_variable = { state_amount = 2 }
+			set_variable = { building_amount = 5 }
+			zz_inland_construction = yes 
+		}
+	}
+	ENG_britain_mil_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			set_variable = { building_type = 1 } 
+			set_variable = { state_amount = 3 }
+			set_variable = { building_amount = 3 }
+			zz_inland_construction = yes
+		}
+	}
+	ENG_britain_nav_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			set_variable = { building_type = 2 } 
+			set_variable = { state_amount = 3 }
+			set_variable = { building_amount = 3 }
+			zz_coastal_construction = yes
+		}
+	}
+	ENG_britain_war_plans_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			air_experience = 50
+			navy_experience = 50
+			army_experience = 50
+		}
+	}
+	ENG_britain_tech_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_research_slot = 1
+		}
+	}
+	ENG_britain_shadow_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			set_country_flag = ENG_shadow_scheme
+		}
+	}
+	ENG_britain_industry_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
 	
-	ENG_rearmament_mission_lords = {
+	ENG_britain_radar_mission = {
 		allowed = { tag = ENG }
 		available = {
-			check_variable = { secondsup > secondsupneeded } 
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
 		}
 		activation = {
 			always = no
@@ -1279,26 +4037,29 @@ ENG_legislation_completition_lords = {
 		is_good = no
 		days_mission_timeout = 50
 		timeout_effect = {
-            set_variable = { secondsup = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_rearmament
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
 			clr_country_flag = ENG_vote
 		}
+		fixed_random_seed = no
 		complete_effect = {
-            set_variable = { secondsup = 0 }
-            set_country_flag = ENG_rearmament_success
-            clr_country_flag = ENG_rearmament
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
 			clr_country_flag = ENG_vote
-			add_ideas = {
-				ENG_rearmament
+			add_tech_bonus = {
+				name = radar_focus
+				bonus = 1.0
+				uses = 1
+				category = radar_tech
 			}
-			add_offsite_building = { type = arms_factory level = 100 }
 		}
 	}
-	ENG_rebuilding_britain_mission_lords = {
+	ENG_britain_electronics_mission = {
 		allowed = { tag = ENG }
 		available = {
-			check_variable = { secondsup > secondsupneeded } 
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
 		}
 		activation = {
 			always = no
@@ -1306,23 +4067,29 @@ ENG_legislation_completition_lords = {
 		is_good = no
 		days_mission_timeout = 50
 		timeout_effect = {
-            set_variable = { secondsup = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_rebuilding_britain
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
 			clr_country_flag = ENG_vote
 		}
+		fixed_random_seed = no
 		complete_effect = {
-            set_variable = { secondsup = 0 }
-            set_country_flag = ENG_rebuilding_britain_success
-            clr_country_flag = ENG_rebuilding_britain
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
 			clr_country_flag = ENG_vote
-			add_offsite_building = { type = industrial_complex level = 100 }
+			add_tech_bonus = {
+				name = UK_secret_focus
+				bonus = 1.0
+				uses = 1
+				category = electronics
+			}
 		}
 	}
-	ENG_industrial_enhancement_mission_lords = {
+	ENG_britain_rocket_mission = {
 		allowed = { tag = ENG }
 		available = {
-			check_variable = { secondsup > secondsupneeded } 
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
 		}
 		activation = {
 			always = no
@@ -1330,25 +4097,29 @@ ENG_legislation_completition_lords = {
 		is_good = no
 		days_mission_timeout = 50
 		timeout_effect = {
-            set_variable = { secondsup = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_industrial_enhancement
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
 			clr_country_flag = ENG_vote
 		}
+		fixed_random_seed = no
 		complete_effect = {
-            set_variable = { secondsup = 0 }
-            set_country_flag = ENG_industrial_enhancement_success
-            clr_country_flag = ENG_industrial_enhancement
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
 			clr_country_flag = ENG_vote
-			add_ideas = {
-				ENG_industrial_enhancement
+			add_tech_bonus = {
+				name = UK_secret_focus
+				bonus = 1.0
+				uses = 1
+				category = rocketry
 			}
 		}
 	}
-	ENG_shadow_armaments_factory_mission_lords = {
+	ENG_britain_nuclear_mission = {
 		allowed = { tag = ENG }
 		available = {
-			check_variable = { secondsup > secondsupneeded } 
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
 		}
 		activation = {
 			always = no
@@ -1356,28 +4127,29 @@ ENG_legislation_completition_lords = {
 		is_good = no
 		days_mission_timeout = 50
 		timeout_effect = {
-            set_variable = { secondsup = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_shadow_arm
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
 			clr_country_flag = ENG_vote
 		}
+		fixed_random_seed = no
 		complete_effect = {
-            set_variable = { secondsup = 0 }
-            add_offsite_building = { type = arms_factory level = 1 }
-			random_owned_state = { 
-				remove_building = { 
-					type = arms_factory
-    				level = 1
-				}
-			}
-            clr_country_flag = ENG_shadow_arm
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
 			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = UK_secret_focus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
 		}
 	}
-	ENG_shadow_civilian_factory_mission_lords = {
+	ENG_britain_jet_mission = {
 		allowed = { tag = ENG }
 		available = {
-			check_variable = { secondsup > secondsupneeded } 
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
 		}
 		activation = {
 			always = no
@@ -1385,52 +4157,396 @@ ENG_legislation_completition_lords = {
 		is_good = no
 		days_mission_timeout = 50
 		timeout_effect = {
-            set_variable = { secondsup = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_shadow_civ
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
 			clr_country_flag = ENG_vote
 		}
+		fixed_random_seed = no
 		complete_effect = {
-            set_variable = { secondsup = 0 }
-            add_offsite_building = { type = industrial_complex level = 1 }
-			random_owned_state = { 
-				remove_building = { 
-					type = industrial_complex 
-    				level = 1
-				}
-			}
-            clr_country_flag = ENG_shadow_civ
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
 			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = uk_jet_focus
+				bonus = 1.0
+				uses = 1
+				category = jet_technology
+			}
 		}
-	}
-	ENG_shadow_dockyard_mission_lords = {
+	}	
+	ENG_britain_fighter_mission = {
 		allowed = { tag = ENG }
 		available = {
-			check_variable = { secondsup > secondsupneeded } 
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
 		}
 		activation = {
 			always = no
 		}
-		is_good = no 
+		is_good = no
 		days_mission_timeout = 50
 		timeout_effect = {
-            set_variable = { secondsup = 0 }
-			add_political_power = -50
-            clr_country_flag = ENG_shadow_dock
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
 			clr_country_flag = ENG_vote
 		}
+		fixed_random_seed = no
 		complete_effect = {
-            set_variable = { secondsup = 0 }
-            add_offsite_building = { type = dockyard level = 1 }
-			random_owned_state = { 
-				remove_building = { 
-					type = dockyard 
-    				level = 1
-				}
-			}
-            clr_country_flag = ENG_shadow_dock
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
 			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = fighter_command_focus
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
 		}
 	}
-	
+	ENG_britain_bomber_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = bomber_command_focus
+				bonus = 1.0
+				uses = 1
+				category = cat_strategic_bomber
+				category = tactical_bomber
+			}
+		}
+	}		
+	ENG_britain_coastal_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = coastal_command_focus
+				bonus = 1.0
+				uses = 1
+				category = naval_bomber
+				category = cas_bomber
+			}
+		}
+	}
+	ENG_britain_destroyer_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	ENG_britain_cruiser_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = ENG_secure_the_imperial_shipping_routes
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+			}
+		}
+	}
+	ENG_britain_battleship_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = uk_battleship_focus
+				bonus = 1.0
+				uses = 1
+				category = bb_tech
+			}
+		}
+	}
+	ENG_britain_carrier_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = uk_carrier_focus
+				bonus = 1.0
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+	ENG_britain_submarine_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = uk_submarine_focus
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+	ENG_britain_motorized_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	ENG_britain_armour_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	ENG_britain_artillery_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = artillery_bonus
+				uses = 1
+				bonus = 1.0
+				category = artillery
+				category = support_tech
+			}
+		}
+	}
+	ENG_britain_special_forces_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = special_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_engineers
+				technology = tech_engineers2
+				technology = tech_engineers3
+				technology = tech_recon
+				technology = tech_recon2
+				technology = tech_recon3
+			}
+		}
+	}
 }
+

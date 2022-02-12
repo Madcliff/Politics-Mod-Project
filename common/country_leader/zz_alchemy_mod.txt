@@ -1,0 +1,19 @@
+leader_traits = {
+	state_alchemist = {
+		local_resources_factor = 0.3
+		breakthrough_factor = 1
+		army_org_factor = 0.5
+	}
+	state_alchemist_colonel = {
+		local_resources_factor = 0.5
+		breakthrough_factor = 1.5
+		army_org_factor = 0.75
+	}
+	state_alchemist_general = {
+		local_resources_factor = 1
+		breakthrough_factor = 2
+		army_org_factor = 1
+	}
+}
+
+

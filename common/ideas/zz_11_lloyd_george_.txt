@@ -1,0 +1,134 @@
+ideas = {
+    hidden_ideas = {
+        # David Lloyd George
+        zz_prime_minister_11 = {
+            allowed = {
+                always = no
+            }
+            traits = { prime_minister }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                war_support_factor = 0.05
+            }
+        }
+
+        zz_home_secretary_11 = {
+            allowed = {
+                always = no
+            }
+            traits = { home_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = 0.1
+            }
+        }
+
+        zz_foreign_secretary_11 = {
+            allowed = {
+                always = no
+            }
+            traits = { foreign_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                send_volunteer_size = 1
+            }
+        }
+
+        zz_economic_secretary_11 = {
+            allowed = {
+                always = no
+            }
+            traits = { economic_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                production_factory_max_efficiency_factor = 0.2
+
+            }
+        }
+
+        zz_navy_secretary_11 = {
+            allowed = {
+                always = no
+            }
+            traits = { navy_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            equipment_bonus = {
+                carrier = {
+                    instant = yes
+                    build_cost_ic = -0.30
+                }
+                capital_ship = {
+                    instant = yes
+                    build_cost_ic = -0.30
+                }
+                screen_ship = {
+                    instant = yes
+                    build_cost_ic = -0.30
+                }
+                submarine = {
+                    instant  = yes
+                    build_cost_ic = -0.30
+                }
+            }
+        }
+        zz_war_secretary_11 = {
+            allowed = {
+                always = no
+            }
+            traits = { war_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            equipment_bonus = {
+                armor = {
+                    instant = yes
+                    build_cost_ic = -0.30
+                }
+            }
+        }
+        zz_air_secretary_11 = {
+            allowed = {
+                always = no
+            }
+            traits = { air_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                air_weather_penalty = -0.1
+                air_night_penalty = -0.1
+            }
+        }
+    }
+}

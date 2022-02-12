@@ -1,0 +1,19 @@
+add_namespace = zz_uk_shadow_scheme
+country_event = {
+    id = zz_uk_shadow_scheme.1
+    title = britain.24.t
+    desc = britain.24.d
+    picture = GFX_report_event_generic_factory
+ 
+    fire_only_once = no
+	is_triggered_only = yes 
+
+    option = {
+        name = britain.24.a
+		clr_country_flag = ENG_shadow_scheme
+        set_variable = { building_type = 1 } 
+		set_variable = { state_amount = 10 }
+		set_variable = { building_amount = 2 }
+		zz_inland_construction = yes
+    }
+}

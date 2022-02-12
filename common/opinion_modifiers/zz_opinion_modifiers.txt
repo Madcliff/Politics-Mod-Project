@@ -1,0 +1,8 @@
+opinion_modifiers = {
+	zz_improve_relation = {
+		value = 100
+		months = 0
+		decay = 0
+		max_trust = 200
+	}
+}    

@@ -1,0 +1,93 @@
+#	Example:
+#
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+
+zz_research_modifier = {
+  research_speed_factor = var_research_speed
+}
+
+zz_resource_output = {
+  local_resources_factor = var_resources
+}
+zz_civ_output = {
+  production_speed_buildings_factor = var_production_speed_building
+}
+zz_mil_output = {
+  industrial_capacity_factory = var_ic_factory
+}
+zz_dock_output = {
+  industrial_capacity_dockyard = var_ic_dock
+}
+zz_efficiency_start = {
+  production_factory_start_efficiency_factor = var_efficency_start
+}
+zz_efficiency_cap = {
+  production_factory_max_efficiency_factor = var_efficency_cap
+}
+
+
+zz_spec_forces_cap = {
+  special_forces_cap = var_spec_forces_cap
+}
+
+zz_spec_forces_min = {
+  special_forces_min = var_spec_forces_min
+}
+
+zz_command_power_max = {
+  max_command_power = var_command_power_max
+}
+
+zz_command_power_gain = {
+  command_power_gain = var_command_power_gain
+}
+
+zz_agrarian_society = { 
+  icon = generic_agrarian_society
+  conscription_factor = var_zz_agrarian_society
+}
+
+zz_imperial_recruitment = { 
+  icon = generic_agrarian_society
+  conscription_factor = var_zz_recruitment
+}
+zz_imperial_manpower = { 
+  icon = generic_agrarian_society
+  weekly_manpower = var_zz_manpower
+}
+
+zz_manpower = { 
+  icon = generic_agrarian_society
+  weekly_manpower = var_zz_manpower
+}
+zz_recruitment = { 
+  icon = generic_agrarian_society
+  conscription_factor = var_zz_recruitment
+  mobilization_speed = var_zz_recruitment
+}
+
+
+

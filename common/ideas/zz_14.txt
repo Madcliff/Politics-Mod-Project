@@ -1,0 +1,4 @@
+ideas = {
+    hidden_ideas = {
+    }
+}

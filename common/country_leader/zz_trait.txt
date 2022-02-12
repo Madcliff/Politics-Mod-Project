@@ -1,0 +1,768 @@
+leader_traits = {
+    prime_minister = {
+		random = no
+	}
+    home_secretary = {
+		random = no
+	}
+    foreign_secretary = {
+		random = no
+	}
+	economic_secretary = {
+		random = no
+    }
+    navy_secretary = {
+		random = no
+    }
+    war_secretary = {
+		random = no
+    }
+    air_secretary = {
+		random = no
+	}
+
+	churchill_pm = { 
+		random = no
+		political_power_factor = 1
+		subjects_autonomy_gain = -0.5
+		mobilization_speed = 1
+		stability_weekly = 0.01
+		generate_wargoal_tension = -0.7
+	}
+	churchill_fs = { 
+		random = no
+		subjects_autonomy_gain = -1
+	}
+	churchill_hs = { 
+		random = no
+		stability_weekly = 0.01
+	}
+	churchill_es = { 
+		random = no
+		production_speed_buildings_factor = 0.5
+		industrial_capacity_factory = 0.5
+		industrial_capacity_dockyard = 0.5
+        political_power_gain = -0.1
+	}
+	churchill_ds = { 
+		random = no
+		mobilization_speed = 0.3
+		training_time_army_factor = -0.50
+		weekly_manpower = 10000
+	}
+	churchill_ns = { 
+		random = no
+		industrial_capacity_dockyard = 1.0
+	}
+	churchill_ws = { 
+		random = no
+		mobilization_speed = 0.1
+		war_support_weekly = 0.01
+	}
+	churchill_as = { 
+		random = no
+		equipment_bonus = {
+			fighter = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			interceptor = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+		}
+	}
+	churchill_ps = { 
+		random = no
+		political_power_factor = 2
+		stability_weekly = 0.001
+	}
+	churchill_is = { 
+		random = no
+		production_speed_buildings_factor = 2
+	}
+	churchill_cs = { 
+		random = no
+		subjects_autonomy_gain = -0.5
+		non_core_manpower = 0.2
+	}
+	churchill_sa = { 
+		random = no
+		political_power_factor = 1
+		subjects_autonomy_gain = -1
+		mobilization_speed = 0.1
+	}
+
+	chamberlain_pm = {
+		random = no
+		justify_war_goal_time = -0.25
+	}
+	chamberlain_hs = {
+		random = no
+		war_support_factor = 0.1
+	}
+	chamberlain_fs = {
+		random = no
+		lend_lease_tension = -1
+	}
+	chamberlain_es = {
+		random = no
+		local_resources_factor = 0.2
+	}
+	chamberlain_ds = {
+		random = no
+		training_time_army_factor = -0.3
+	}
+	chamberlain_ns = {
+		random = no
+		naval_coordination = 0.2
+	}
+	chamberlain_ws = {
+		random = no
+		equipment_bonus = {
+			motorized = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			mechanized = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+		}
+	}
+	chamberlain_as = {
+		random = no
+		air_intercept_efficiency = 0.25
+	}
+	chamberlain_is = {
+		random = no
+		local_resources_factor = 0.5
+	}
+	chamberlain_sa = {
+		random = no
+		justify_war_goal_time = -0.25
+		local_resources_factor = 0.2
+	}
+	baldwin_pm = {
+		random = no
+		stability_factor = 0.25
+	}
+	baldwin_hs = {
+		random = no
+		consumer_goods_factor = -0.05
+	}
+	baldwin_fs = {
+		random = no
+		guarantee_tension = -1
+	}
+	baldwin_es = {
+		random = no
+		min_export = -0.05
+	}
+	baldwin_ns = {
+		random = no
+		naval_invasion_capacity = 20
+		naval_invasion_prep_speed = 0.25
+	}
+	baldwin_ws = {
+		random = no
+		supply_consumption_factor = -0.1
+	}
+	baldwin_as = {
+		random = no
+		air_cas_efficiency = 0.25
+	}
+	baldwin_sa = {
+		random = no
+		supply_consumption_factor = -0.1
+	}
+
+	eden_pm = { 
+		random = no
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+	}
+	eden_hs = { 
+		random = no
+		political_power_factor = 0.15
+	}
+	eden_fs = { 
+		random = no
+		send_volunteer_factor = 2
+        air_volunteer_cap = 2
+        send_volunteers_tension = -0.5
+	}
+	eden_es = { 
+		random = no
+		production_speed_buildings_factor = 0.05
+	}
+	eden_ns = { 
+		naval_morale_factor = 0.2
+		experience_gain_navy = 0.05
+	}
+	eden_ws = { 
+		random = no
+		command_power_gain_mult = 2
+		max_command_power = 1000
+		experience_gain_army = 0.05
+	}
+	eden_as = { 
+		random = no
+		air_range_factor = 0.25
+		experience_gain_air = 0.05
+	}
+	eden_sa = { 
+		random = no
+		production_speed_buildings_factor = 0.05
+	}
+	halifax_pm = { 
+		random = no
+		war_support_factor = 0.05
+	}
+	halifax_hs = { 
+		random = no
+		stability_factor = 0.1
+	}
+	halifax_fs = { 
+		random = no
+		send_volunteer_size = 1
+		opinion_gain_monthly_factor = 0.05
+	}
+	halifax_es = { 
+		random = no
+		production_factory_max_efficiency_factor = 0.2
+	}
+	halifax_ns = { 
+		random = no
+		equipment_bonus = {
+			carrier = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			capital_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			screen_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			submarine = {
+				instant  = yes
+				build_cost_ic = -0.30
+			}
+		}
+	}
+	halifax_ws = { 
+		random = no
+		special_forces_cap = 0.1
+        special_forces_min = 20
+	}
+	halifax_as = { 
+		random = no
+		air_weather_penalty = -0.1
+        air_night_penalty = -0.1
+	}
+	halifax_sa = { 
+		random = no
+		stability_factor = 0.1
+	}
+
+	wood_pm = { 
+		random = no
+		war_support_factor = 0.05
+	}
+	wood_hs = { 
+		random = no
+		weekly_manpower = 1000
+	}
+	wood_fs = { 
+		random = no
+		compliance_gain = 0.05
+	}
+	wood_es = { 
+		random = no
+		consumer_goods_factor = -0.10
+        production_factory_max_efficiency_factor = 0.2
+	}
+	wood_ns = { 
+		random = no
+		equipment_bonus = {
+			carrier = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			capital_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			screen_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			submarine = {
+				instant  = yes
+				build_cost_ic = -0.30
+			}
+		}
+	}
+	wood_ws = { 
+		random = no
+		mobilization_speed = 0.9
+	}
+	wood_as = { 
+		random = no
+		air_weather_penalty = -0.1
+        air_night_penalty = -0.1
+	}
+	wood_sa = { 
+		random = no
+		mobilization_speed = 0.9
+	}
+	anderson_pm = { 
+		random = no
+		war_support_factor = 0.05
+	}
+	anderson_hs = { 
+		random = no
+		stability_weekly = 0.01
+	}
+	anderson_fs = { 
+		random = no
+		civilian_intel_factor = 0.2
+		army_intel_factor = 0.2
+		navy_intel_factor = 0.2
+		airforce_intel_factor = 0.2
+	}
+	anderson_es = { 
+		random = no
+		production_factory_max_efficiency_factor = 0.2
+        industrial_capacity_factory = 0.2
+        industrial_capacity_dockyard = 0.2
+        political_power_gain = -0.1
+	}
+	anderson_ns = { 
+		random = no
+		equipment_bonus = {
+			carrier = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			capital_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			screen_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			submarine = {
+				instant  = yes
+				build_cost_ic = -0.30
+			}
+		}
+	}
+	anderson_ws = { 
+		random = no
+		equipment_bonus = {
+			armor = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+		}
+	}
+	anderson_as = { 
+		random = no
+		air_weather_penalty = -0.1
+        air_night_penalty = -0.1
+	}
+	anderson_sa = { 
+		random = no
+		production_factory_max_efficiency_factor = 0.2
+	}
+	beaverbrook_pm = { 
+		random = no
+		war_support_factor = 0.05
+	}
+	beaverbrook_hs = { 
+		random = no
+		stability_factor = 0.1
+	}
+	beaverbrook_fs = { 
+		random = no
+		send_volunteer_size = 1
+	}
+	beaverbrook_es = { 
+		random = no
+		production_factory_max_efficiency_factor = 0.2
+	}
+	beaverbrook_ns = { 
+		random = no
+		equipment_bonus = {
+			carrier = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			capital_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			screen_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			submarine = {
+				instant  = yes
+				build_cost_ic = -0.30
+			}
+		}
+	}
+	beaverbrook_ws = { 
+		random = no
+		equipment_bonus = {
+			armor = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+		}
+	}
+	beaverbrook_as = { 
+		random = no
+		air_equipment_upgrade_xp_cost = -0.5
+		equipment_bonus = {
+			fighter_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 0.5
+			}
+			cv_fighter_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 0.5
+			}
+			heavy_fighter_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 1
+			}
+			cv_heavy_fighter_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 1
+			}
+			tac_bomber_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 0.5
+			}
+			cv_tac_bomber_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 0.5
+			}
+			nav_bomber_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 1
+			}
+			cv_nav_bomber_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 1
+			}
+			CAS_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 0.5
+			}
+			cv_CAS_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 0.5
+			}
+			strat_bomber_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 1
+			}
+			jet_fighter_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 1
+			}
+			cv_jet_fighter_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 1
+			}
+			jet_tac_bomber_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 1
+			}
+			cv_jet_tac_bomber_equipment = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 1
+			}
+			jet_strat_bomber_equipment = {
+			  instant = yes
+			  build_cost_ic = -0.50
+			  reliability = 1
+			}
+		}
+	}
+	beaverbrook_sa = { 
+		random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			cv_fighter_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			heavy_fighter_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			cv_heavy_fighter_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			tac_bomber_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			cv_tac_bomber_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			nav_bomber_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			cv_nav_bomber_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			CAS_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			cv_CAS_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			strat_bomber_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			jet_fighter_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			cv_jet_fighter_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			jet_tac_bomber_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			cv_jet_tac_bomber_equipment = {
+				instant = yes
+				reliability = 1
+			}
+			jet_strat_bomber_equipment = {
+			  instant = yes
+			  reliability = 1
+			}
+		}
+	}
+	RAB_pm = { 
+		random = no
+		war_support_factor = 0.05
+	}
+	RAB_hs = { 
+		random = no
+		stability_factor = 0.1
+	}
+	RAB_fs = { 
+		random = no
+		send_volunteer_size = 1
+	}
+	RAB_es = { 
+		random = no
+		production_factory_max_efficiency_factor = 0.2
+	}
+	RAB_ns = { 
+		random = no
+		equipment_bonus = {
+			carrier = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			capital_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			screen_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			submarine = {
+				instant  = yes
+				build_cost_ic = -0.30
+			}
+		}
+	}
+	RAB_ws = { 
+		random = no
+		dig_in_speed_factor = 0.05
+		max_dig_in = 5
+	}
+	RAB_as = { 
+		random = no
+		air_weather_penalty = -0.1
+        air_night_penalty = -0.1
+	}
+	RAB_sa = { 
+		random = no
+		production_factory_max_efficiency_factor = 0.2
+	}
+	astor_pm = { 
+		random = no
+		war_support_factor = 0.05
+	}
+	astor_hs = { 
+		random = no
+		stability_factor = 0.1
+	}
+	astor_fs = { 
+		random = no
+		send_volunteer_size = 1
+	}
+	astor_es = { 
+		random = no
+		production_factory_max_efficiency_factor = 0.2
+	}
+	astor_ns = { 
+		random = no
+		equipment_bonus = {
+			carrier = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			capital_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			screen_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			submarine = {
+				instant  = yes
+				build_cost_ic = -0.30
+			}
+		}
+	}
+	astor_ws = { 
+		random = no
+		equipment_bonus = {
+			armor = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+		}
+	}
+	astor_as = { 
+		random = no
+		air_weather_penalty = -0.1
+		air_night_penalty = -0.1
+	}
+	astor_pa = { 
+		random = no
+		equipment_bonus = {
+			carrier = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			capital_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			screen_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			submarine = {
+				instant  = yes
+				build_cost_ic = -0.30
+			}
+		}
+	}
+	astor_sa = { 
+		random = no
+		air_weather_penalty = -0.1
+		air_night_penalty = -0.1
+	}
+	lloyd_george_pm = { 
+		random = no
+		war_support_factor = 0.05
+	}
+	lloyd_george_hs = { 
+		random = no
+		stability_factor = 0.1
+	}
+	lloyd_george_fs = { 
+		random = no
+		send_volunteer_size = 1
+	}
+	lloyd_george_es = { 
+		random = no
+		production_factory_max_efficiency_factor = 0.2
+	}
+	lloyd_george_ns = { 
+		random = no
+		equipment_bonus = {
+			carrier = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			capital_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			screen_ship = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+			submarine = {
+				instant  = yes
+				build_cost_ic = -0.30
+			}
+		}
+	}
+	lloyd_george_ws = { 
+		random = no
+		equipment_bonus = {
+			armor = {
+				instant = yes
+				build_cost_ic = -0.30
+			}
+		}
+	}
+	lloyd_george_as = { 
+		random = no
+		air_weather_penalty = -0.1
+		air_night_penalty = -0.1
+	}
+	lloyd_george_sa = { 
+		random = no
+		war_support_factor = 0.5
+	}
+}
+

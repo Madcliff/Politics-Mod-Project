@@ -1,17 +1,17 @@
 #Kings
 spriteTypes = {
     #George V
-    spriteType = { 
+    spriteType = {
 		name = GFX_idea_King_George_V
 		texturefile = "gfx//leaders//ENG//kings//Portrait_United_Kingdom_George_V.tga"
 	}
     #Edward VIII
-    spriteType = { 
+    spriteType = {
 		name = GFX_idea_King_Edward_VIII
 		texturefile = "gfx//leaders//ENG//kings//Portrait_United_Kingdom_Edward_VIII.tga"
 	}
     #George VI
-    spriteType = { 
+    spriteType = {
 		name = GFX_idea_King_George_VI
 		texturefile = "gfx//leaders//ENG//kings//Portrait_United_Kingdom_George_VI.tga"
 	}
@@ -20,92 +20,104 @@ spriteTypes = {
 # Conservatives
 spriteTypes = {
     #Winston Churchill
-	spriteType = { 
-		name = GFX_idea_Winston_Churchill
-		texturefile = "gfx//leaders//ENG//ministers//conservatives//Churchill.tga"
+	spriteType = {
+		name = GFX_idea_winston_churchill
+		texturefile = "gfx//leaders//ENG//ministers//cup//winston_churchill.tga"
 	}
 	#Neville Chamberlain
-	spriteType = { 
-		name = GFX_idea_Neville_Chamberlain
-		texturefile = "gfx//leaders//ENG//ministers//conservatives//Charmberlain.tga"
+	spriteType = {
+		name = GFX_idea_neville_chamberlain
+		texturefile = "gfx//leaders//ENG//ministers//cup//chamberlain.tga"
 	}
 	#Stanley Baldwin
-	spriteType = { 
-		name = GFX_idea_Stanley_Baldwin
-		texturefile = "gfx//leaders//ENG//ministers//conservatives//Baldwin.tga"
+	spriteType = {
+		name = GFX_idea_stanley_baldwin
+		texturefile = "gfx//leaders//ENG//ministers//cup//baldwin.tga"
 	}
+	spriteType = {
+		name = GFX_idea_anthony_eden
+		texturefile = "gfx//leaders//ENG//ministers//cup//anthony_eden.tga"
+	}
+	spriteType = {
+		name = GFX_idea_lord_halifax
+		texturefile = "gfx//leaders//ENG//ministers//cup//halifax.tga"
+	}
+	spriteType = {
+		name = GFX_idea_kingsley_wood
+		texturefile = "gfx//leaders//ENG//ministers//cup//kingsley_wood.tga"
+	}
+	spriteType = {
+		name = GFX_idea_john_anderson
+		texturefile = "gfx//leaders//ENG//ministers//cup//sir_john_anderson.tga"
+	}
+	spriteType = {
+		name = GFX_idea_lord_beaverbrook
+		texturefile = "gfx//leaders//ENG//ministers//cup//the_lord_beaverbrook.tga"
+	}
+	spriteType = {
+		name = GFX_idea_r_a_b_butler
+		texturefile = "gfx//leaders//ENG//ministers//cup//r_a_b_butler.tga"
+	}
+
+	spriteType = {
+		name = GFX_idea_nancy_astor
+		texturefile = "gfx//leaders//ENG//ministers//cup//astor.tga"
+	}
+
+
+
 }
 
 #Liberals
 spriteTypes = {
     #David LLoyd George
-	spriteType = { 
+	spriteType = {
 		name = GFX_idea_David_Lloyd_George
-		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Lloyd_George.tga"
+		texturefile = "gfx//leaders//ENG//ministers//lib//david_lloyd_george.tga"
 	}
     #Beveridge
-    spriteType = { 
+    spriteType = {
 		name = GFX_idea_William_Beveridge
-		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_William_Beveridge.tga"
-	} 
+		texturefile = "gfx//leaders//ENG//ministers//lib//william_beveridge.tga"
+	}
     #Milne
-    spriteType = { 
-		name = GFX_idea_Crewe_Milnes
-		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Crewe_Milnes.tga"
-	}
+    spriteType = {
+  		name = GFX_idea_Crewe_Milnes
+  		texturefile = "gfx//leaders//ENG//ministers//lib//cewne_milne.tga"
+  	}
     #Brown
-    spriteType = { 
+    spriteType = {
 		name = GFX_idea_Ernest_Brown
-		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Ernest_Brown.tga"
-	}
-    #Greenwood
-    spriteType = { 
-		name = GFX_idea_Hamar_Greenwood
-		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Hamar_Greenwood.tga"
-	}
-    #fisher
-    spriteType = { 
-		name = GFX_idea_Herbert_Fisher
-		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Herbert_Fisher.tga"
+		texturefile = "gfx//leaders//ENG//ministers//lib//ernest_brown.tga"
 	}
     #Samuel
-    spriteType = { 
+    spriteType = {
 		name = GFX_idea_Herbert_Samuel
-		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Herbert_Samuel.tga"
+		texturefile = "gfx//leaders//ENG//ministers//lib//herbert_samuel.tga"
 	}
-    #Seely
-    spriteType = { 
-		name = GFX_idea_Hugh_Seely
-		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Hugh_Seely.tga"
+    #Davies
+    spriteType = {
+		name = GFX_idea_Clement_Davies
+		texturefile = "gfx//leaders//ENG//ministers//lib//clement_davies.tga"
 	}
-    #Nacpherson
-    spriteType = { 
-		name = GFX_idea_Ian_Macpherson
-		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Ian_Macpherson.tga"
+    #Archibald Sinclair
+    spriteType = {
+		name = GFX_idea_archibald_sinclair
+		texturefile = "gfx//leaders//ENG//ministers//lib//archibald_sinclair.tga"
 	}
-    #Bernays
-    spriteType = { 
-		name = GFX_idea_Robert_Bernays
-		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Robert_Bernays.tga"
+    #Maynard Keynes
+    spriteType = {
+		name = GFX_idea_maynard_keynes
+		texturefile = "gfx//leaders//ENG//ministers//lib//maynard_keynes.tga"
 	}
-    #Hutchinson
-    spriteType = { 
-		name = GFX_idea_Robert_Hutchinson
-		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Robert_Hutchinson.tga"
+    #Reginald McKenna
+    spriteType = {
+		name = GFX_idea_Reginald_McKenna
+		texturefile = "gfx//leaders//ENG//ministers//lib//reginald_mckenna.tga"
 	}
-    #Munro
-    spriteType = { 
-		name = GFX_idea_Robert_Munro
-		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Robert_Munro.tga"
+	#John Simon
+	spriteType = {
+		name = GFX_idea_Sir_John_Simon
+		texturefile = "gfx//leaders//ENG//ministers//lib//sir_john_simon.tga"
 	}
-    #Isaacs
-    spriteType = { 
-		name = GFX_idea_Rufus_Isaacs
-		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Rufus_Isaacs.tga"
-	}
-    #Runicman
-    spriteType = { 
-		name = GFX_idea_Walter_Runciman
-		texturefile = "gfx//leaders//ENG//ministers//liberals//UK_Walter_Runciman.tga"
-	}
-} 
+}

@@ -1,0 +1,1870 @@
+characters={
+	zz_winston_churchill={
+		name="Winston Churchill"
+		portraits={
+			civilian={
+				large="gfx/leaders/ENG/Portrait_Britain_Winston_Churchill.dds"
+			}
+			army={
+				small="gfx//leaders//ENG//ministers//cup//winston_churchill.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			traits = {
+				churchill_pm 
+			}
+			id=-1
+		}
+		advisor={
+			slot = prime_minister
+			idea_token = winston_churchill_pm
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				#not_already_hired_except_as = prime_minister
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				churchill_pm 
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = home_secretary
+			idea_token = winston_churchill_hs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				#not_already_hired_except_as = home_secretary
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				churchill_hs 
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = chancellor_of_the_exchequer
+			idea_token = winston_churchill_es
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				churchill_es 
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = foreign_secretary
+			idea_token = winston_churchill_fs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				churchill_fs 
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_war
+			idea_token = winston_churchill_ws
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				#not_already_hired_except_as minister_of_war
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				churchill_ws
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_navy
+			idea_token = winston_churchill_ns
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				#not_already_hired_except_as = minister_of_navy
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				churchill_ns
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_air_production
+			idea_token = winston_churchill_as
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				churchill_as 
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = winston_churchill_pa
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				#not_already_hired_except_as = political_advisor
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				churchill_sa 
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = special_advisor
+			idea_token = winston_churchill_sa
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				#not_already_hired_except_as = special_advisor
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				churchill_sa 
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	zz_stanley_baldwin={
+		name="Stanley Baldwin"
+		portraits={
+			civilian={
+				large="gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
+			}
+			army={
+				small="gfx//leaders//ENG//ministers//cup//baldwin.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ conservative_grandee }
+			expire="1938.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = prime_minister
+			idea_token = stanley_baldwin_pm
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				baldwin_pm 
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = home_secretary
+			idea_token = stanley_baldwin_hs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				baldwin_hs 
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = foreign_secretary
+			idea_token = stanley_baldwin_fs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				baldwin_fs 
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		advisor={
+			slot = chancellor_of_the_exchequer
+			idea_token = stanley_baldwin_es
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				baldwin_es 
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_navy
+			idea_token = stanley_baldwin_ns
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				baldwin_ns 
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_war
+			idea_token = stanley_baldwin_ws
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				baldwin_ws
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_air_production
+			idea_token = stanley_baldwin_as
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				baldwin_as
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = special_advisor
+			idea_token = stanley_baldwin_sa
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				baldwin_sa 
+			}	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	zz_neville_chamberlain={
+		name="Neville Chamberlain"
+		portraits={
+			civilian={
+				large="gfx//leaders//ENG//Portrait_Britain_Neville_Chamberlain.dds"
+			}
+			army={
+				small="gfx//leaders//ENG//ministers//cup//chamberlain.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ conservative_grandee }
+			expire="1938.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = prime_minister
+			idea_token = neville_chamberlain_pm
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				chamberlain_pm 
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = home_secretary
+			idea_token = neville_chamberlain_hs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				chamberlain_hs
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = foreign_secretary
+			idea_token = neville_chamberlain_fs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				chamberlain_fs 
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = chancellor_of_the_exchequer
+			idea_token = chamberlain_hs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				chamberlain_es
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_navy
+			idea_token = neville_chamberlain_ns
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				chamberlain_ns
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_war
+			idea_token = neville_chamberlain_ws
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				chamberlain_ws 
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_air_production
+			idea_token = neville_chamberlain_as
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				chamberlain_as
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = special_advisor
+			idea_token = neville_chamberlain_sa
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				chamberlain_sa
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	zz_anthony_eden={
+		name="Anthoney Eden"
+		portraits={
+			army={
+				small="gfx//leaders//ENG//ministers//cup//anthony_eden.dds"
+			}
+		}
+		advisor={
+			slot = prime_minister
+			idea_token = anthoney_eden_pm
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				eden_pm
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = home_secretary
+			idea_token = anthoney_eden_hs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				eden_hs
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = foreign_secretary
+			idea_token = anthoney_eden_fs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				eden_fs
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = chancellor_of_the_exchequer
+			idea_token = anthoney_eden_es
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				eden_es
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_navy
+			idea_token = anthoney_eden_ns
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				eden_ns
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_war
+			idea_token = anthoney_eden_ws
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				eden_ws
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_air_production
+			idea_token = anthoney_eden_as
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				eden_as
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = special_advisor
+			idea_token = anthoney_eden_sa
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				eden_sa
+			}	
+
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	zz_halifax={
+		name="Lord Halifax"
+		portraits={
+			army={
+				small="gfx//leaders//ENG//ministers//cup//halifax.dds"
+			}
+		}
+		advisor={
+			slot = prime_minister
+			idea_token = halifax_pm
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				halifax_pm
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = home_secretary
+			idea_token = halifax_hs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				halifax_hs
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = foreign_secretary
+			idea_token = halifax_fs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				halifax_fs
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = chancellor_of_the_exchequer
+			idea_token = halifax_es
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				halifax_es
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_navy
+			idea_token = halifax_ns
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				halifax_ns
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_war
+			idea_token = halifax_ws
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				halifax_ws
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_air_production
+			idea_token = halifax_as
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				halifax_as
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = special_advisor
+			idea_token = halifax_sa
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				halifax_sa
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	zz_wood={
+		name="Kingsley Wood"
+		portraits={
+			army={
+				small="gfx//leaders//ENG//ministers//cup//kingsley_wood.dds"
+			}
+		}
+		advisor={
+			slot = prime_minister
+			idea_token = wood_pm
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				wood_pm
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = home_secretary
+			idea_token = wood_hs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				wood_hs
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = foreign_secretary
+			idea_token = wood_fs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				wood_fs
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = chancellor_of_the_exchequer
+			idea_token = wood_es
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				wood_es
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_navy
+			idea_token = wood_ns
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				wood_ns
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_war
+			idea_token = wood_ws
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				wood_ws
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_air_production
+			idea_token = wood_as
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				wood_as
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = special_advisor
+			idea_token = wood_sa
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				wood_sa
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	zz_anderson={
+		name="Sir John Anderson"
+		portraits={
+			army={
+				small="gfx//leaders//ENG//ministers//cup//sir_john_anderson.dds"
+			}
+		}
+		advisor={
+			slot = prime_minister
+			idea_token = anderson_pm
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				anderson_pm
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = home_secretary
+			idea_token = anderson_hs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				anderson_hs
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = foreign_secretary
+			idea_token = anderson_fs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				anderson_fs
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = chancellor_of_the_exchequer
+			idea_token = anderson_es
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				anderson_es
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_navy
+			idea_token = anderson_ns
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				anderson_ns
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_war
+			idea_token = anderson_ws
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				anderson_ws
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_air_production
+			idea_token = anderson_as
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				anderson_as
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = special_advisor
+			idea_token = anderson_sa
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				anderson_sa
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	zz_beaverbrook={
+		name="Lord Beaverbrook"
+		portraits={
+			army={
+				small="gfx//leaders//ENG//ministers//cup//the_lord_beaverbrook.dds"
+			}
+		}
+		advisor={
+			slot = prime_minister
+			idea_token = beaverbrook_pm
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				beaverbrook_pm
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = home_secretary
+			idea_token = beaverbrook_hs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				beaverbrook_hs
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = foreign_secretary
+			idea_token = beaverbrook_fs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				beaverbrook_fs
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = chancellor_of_the_exchequer
+			idea_token = beaverbrook_es
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				beaverbrook_es
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_navy
+			idea_token = beaverbrook_ns
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				beaverbrook_ns
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_war
+			idea_token = beaverbrook_ws
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				beaverbrook_ws
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_air_production
+			idea_token = beaverbrook_as
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				beaverbrook_as
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = beaverbrook_pa
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				beaverbrook_sa
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = special_advisor
+			idea_token = beaverbrook_sa
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				beaverbrook_sa
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	zz_RAB={
+		name="RAB Butler"
+		portraits={
+			army={
+				small="gfx//leaders//ENG//ministers//cup//r_a_b_butler.dds"
+			}
+		}
+		advisor={
+			slot = prime_minister
+			idea_token = RAB_pm
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				RAB_pm
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = home_secretary
+			idea_token = RAB_hs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				RAB_hs
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = foreign_secretary
+			idea_token = RAB_fs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				RAB_fs
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = chancellor_of_the_exchequer
+			idea_token = RAB_es
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				RAB_es
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_navy
+			idea_token = RAB_ns
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				RAB_ns
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_war
+			idea_token = RAB_ws
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				RAB_ws
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_air_production
+			idea_token = RAB_as
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				RAB_as
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = RAB_pa
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				RAB_sa
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = special_advisor
+			idea_token = RAB_sa
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				RAB_sa
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	zz_astor={
+		name="Nancy Astor"
+		portraits={
+			army={
+				small="gfx//leaders//ENG//ministers//cup//astor.dds"
+			}
+		}
+		advisor={
+			slot = prime_minister
+			idea_token = astor_pm
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				astor_pm
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = home_secretary
+			idea_token = astor_hs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				astor_hs
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = foreign_secretary
+			idea_token = astor_fs
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				astor_fs
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = chancellor_of_the_exchequer
+			idea_token = astor_es
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				astor_es
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_navy
+			idea_token = astor_ns
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				astor_ns
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_war
+			idea_token = astor_ws
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				astor_ws
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = minister_of_air_production
+			idea_token = astor_as
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				astor_as
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = astor_pa
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				astor_pa
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		advisor={
+			slot = special_advisor
+			idea_token = astor_sa
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				astor_sa
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	zz_lloyd_george={
+		name="David Lloyd George"
+		portraits={
+			army={
+				small="gfx//leaders//ENG//ministers//lib//david_lloyd_george.tga"
+			}
+		}
+		advisor={
+			slot = prime_minister
+			idea_token = lloyd_george_pm
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				RAB_pm
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	zz_maynard_keynes={
+		name="Maynard Keynes"
+		portraits={
+			army={
+				small="gfx//leaders//ENG//ministers//lib//maynard_keynes.tga"
+			}
+		}
+		advisor={
+			slot = prime_minister
+			idea_token = meynard_keynes_pm
+			allowed = {
+				original_tag = ENG
+			}
+			available = {
+				not = {
+					has_completed_focus = ENG_eliminate_the_upper_class
+				}
+			}
+			traits = {
+				RAB_pm
+			}	
+	
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+
+	zz_random_tory_minister_1={
+		advisor={
+			slot = political_advisor
+			idea_token = ENG_random_tory_minister_8
+			visible  = {
+				}
+				allowed  = {
+					original_tag  = ENG
+				}
+				traits  = {
+					fortification_armchair_general 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_democratic_reformer_commonwealth_2d"
+			}
+		}
+	}
+	zz_eng_alan_turing={
+		advisor={
+			slot = political_advisor
+			idea_token = eng_alan_turing
+			available  = {
+					has_intelligence_agency  = yes 
+					custom_trigger_tooltip  = {
+						tooltip  = cyptology_tooltip_tt
+						has_done_agency_upgrade  = upgrade_form_department 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+					modifier  = {
+						has_political_power < 200.000
+						factor  = 0.000
+					}
+				}
+				allowed  = {
+					original_tag  = ENG
+					has_dlc = "La Resistance"
+				}
+				traits  = {
+					zz_mastermind_code_cracker 
+				}
+		}
+		advisor={
+			slot = special_advisor
+			idea_token = eng_alan_turing_sa
+			available  = {
+					has_intelligence_agency  = yes 
+					custom_trigger_tooltip  = {
+						tooltip  = cyptology_tooltip_tt
+						has_done_agency_upgrade  = upgrade_form_department 
+					}
+				}
+				ai_will_do  = {
+					factor  = 1.000
+					modifier  = {
+						has_political_power < 200.000
+						factor  = 0.000
+					}
+				}
+				allowed  = {
+					original_tag  = ENG
+					has_dlc = "La Resistance"
+				}
+				traits  = {
+					zz_mastermind_code_cracker 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="Alan Turing"
+		portraits={
+			army={
+				small="GFX_idea_eng_alan_turing"
+			}
+		}
+	}
+	zz_eng_stewart_menzies={
+		advisor={
+			slot = political_advisor
+			idea_token = eng_stewart_menzies
+			available  = {
+					has_intelligence_agency  = yes 
+				}
+				allowed  = {
+					original_tag  = ENG
+					has_dlc = "La Resistance"
+				}
+				traits  = {
+					zz_head_of_intelligence 
+				}
+		}
+		advisor={
+			slot = special_advisor
+			idea_token = eng_stewart_menzies_sa
+			available  = {
+					has_intelligence_agency  = yes 
+				}
+				allowed  = {
+					original_tag  = ENG
+					has_dlc = "La Resistance"
+				}
+				traits  = {
+					zz_head_of_intelligence 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="Stewart Menzies"
+		portraits={
+			army={
+				small="GFX_idea_eng_stewart_menzies"
+			}
+		}
+	}
+}

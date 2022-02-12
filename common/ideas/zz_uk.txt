@@ -1,6 +1,7 @@
-ideas = { 
-    country = {
-        ENG_rearmament = { 
+ideas = {
+    hidden_ideas = {
+        #Country Boost
+        ENG_rearmament = {
             allowed = {
                 always = no
             }
@@ -8,17 +9,19 @@ ideas = {
             allowed_civil_war = {
                 always = yes
             }
-                
+
             removal_cost = -1
-                
+
             modifier = {
-                industrial_capacity_factory = 0.75
-                industrial_capacity_dockyard = 0.75
-                max_command_power = 500
-                subjects_autonomy_gain = -0.5
+                max_command_power = 1000
+                operative_slot = 5
+                intel_network_gain = 0.5
+                decryption_power_factor = 5
+                agency_upgrade_time = -0.5
+                global_building_slots_factor = 0.25
             }
         }
-        ENG_industrial_enhancement = { 
+        ENG_industrial_enhancement = {
             allowed = {
                 always = no
             }
@@ -26,237 +29,15 @@ ideas = {
             allowed_civil_war = {
                 always = yes
             }
-                
-            removal_cost = -1
-                
-            modifier = {
-                production_speed_buildings_factor  = 1
-                consumer_goods_factor = -0.1
-                fuel_gain_factor = 0.2
-                fuel_gain_factor_from_states = 0.2
-                max_fuel_factor = 1
-            }
-        }
-        ENG_naval_modernization_program = { 
-            allowed = {
-                always = no
-            }
 
-            allowed_civil_war = {
-                always = yes
-            }
-                
             removal_cost = -1
-                
-            modifier = {
-                navy_refit_ic_cost = -0.75
-                navy_refit_speed = 2.0
-                naval_hit_chance = 0.1
-                
-            }
-            research_bonus = { naval_equipment = 0.5 }
-            equipment_bonus = {
-                carrier = {
-					build_cost_ic = -0.30
-                    carrier_size = 0.5
-                    armor_value = 1 
-                    max_strength = 0.5
-                    naval_range = 0.5
-                    sub_visibility = -0.2 
-                    surface_visibility = -0.2 
-                    naval_speed = 0.2
-                    reliability = 0.2
-                }
-                capital_ship = {
-					build_cost_ic = -0.30
-                    armor_value = 1 
-                    hg_attack = 0.5
-                    naval_range = 0.5
-                    sub_visibility = -0.2
-                    surface_visibility = -0.2 
-                    naval_speed = 0.2
-                    reliability = 0.2
-                }
-                screen_ship = {
-					build_cost_ic = -0.30
-                    naval_range = 0.5
-                    torpedo_attack = 0.5
-                    sub_detection = 0.5
-                    sub_visibility = -0.2 
-                    surface_visibility = -0.2 
-                    naval_speed = 0.2
-                    reliability = 0.2
-                }
-                submarine = {
-					build_cost_ic = -0.30
-                    naval_range = 0.5
-                    torpedo_attack = 0.5
-                    sub_visibility = -0.2 
-                    surface_visibility = -0.2 
-                    naval_speed = 0.2
-                    reliability = 0.2
-                }
-            }
-        }
-        ENG_research_program = { 
-            allowed = {
-                always = no
-            }
 
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
             modifier = {
-                research_speed_factor = 0.2
-                
-            }
-            research_bonus = { air_equipment = 0.5 }
-        }
-        ENG_research_program_second = { 
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                research_speed_factor = 0.2
-                
-            }
-            research_bonus = { naval_equipment = 0.5 }
-        }
-
-    }
-    hidden_ideas = { 
-        zz_prime_minister_01 = { 
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                political_power_factor = 0.25
-            }
-        }
-        zz_prime_minister_02 = { 
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                justify_war_goal_time = -0.25
-            }
-        }
-        zz_prime_minister_03 = { 
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                stability_factor = 0.25
-            }
-        }
-        zz_prime_minister_04 = { 
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                industrial_capacity_factory = 0.05
-		        industrial_capacity_dockyard = 0.05
-            }
-        }
-        zz_prime_minister_05 = { 
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                war_support_factor = 0.05
-            }
-        }
-        zz_home_secretary_01 = { 
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                enemy_partisan_effect = -0.25
-            }
-        }
-        zz_home_secretary_02 = { 
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                war_support_factor = 0.1
-            }
-        }
-        zz_home_secretary_03 = { 
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
+                global_building_slots_factor = 3
                 consumer_goods_factor = -0.05
             }
         }
-        zz_home_secretary_04 = { 
+        ENG_naval_modernization_program = {
             allowed = {
                 always = no
             }
@@ -264,14 +45,47 @@ ideas = {
             allowed_civil_war = {
                 always = yes
             }
-                
+
             removal_cost = -1
-                
+
             modifier = {
-                political_power_factor = 0.15
+                navy_refit_ic_cost = -0.5
+                navy_refit_speed = 0.5
+                naval_hit_chance = 0.1
+                naval_damage_factor = 0.4
+                naval_defense_factor = 0.4
+            }
+            equipment_bonus = {
+                carrier = {
+                    carrier_size = 0.2
+                    sub_detection = 0.2
+                    reliability = 1
+                    naval_speed = 0.2
+                    naval_range = 0.5
+                }
+                capital_ship = {
+                    armor_value = 0.2 
+                    hg_attack = 0.2
+                    reliability = 1
+                    naval_speed = 0.2
+                    naval_range = 0.5
+                }
+                screen_ship = {
+                    armor_value = 0.2
+                    lg_attack = 0.2
+                    sub_detection = 0.2
+                    reliability = 1
+                    naval_speed = 0.2
+                    naval_range = 0.5
+                }
+                submarine = {
+                    reliability = 1
+                    naval_speed = 0.2
+                    naval_range = 0.5
+                }
             }
         }
-        zz_home_secretary_05 = { 
+        ENG_air_modernization_program = {
             allowed = {
                 always = no
             }
@@ -279,14 +93,78 @@ ideas = {
             allowed_civil_war = {
                 always = yes
             }
-                
+
             removal_cost = -1
-                
             modifier = {
-                stability_factor = 0.1
+            }
+            equipment_bonus = {
+              fighter_equipment = {
+                  instant = yes
+                  reliability = 0.5
+              }
+              cv_fighter_equipment = {
+                  instant = yes
+                  reliability = 0.5
+              }
+              heavy_fighter_equipment = {
+                  instant = yes
+                  reliability = 1
+              }
+              cv_heavy_fighter_equipment = {
+                  instant = yes
+                  reliability = 1
+              }
+              tac_bomber_equipment = {
+                  instant = yes
+                  reliability = 1
+              }
+              cv_tac_bomber_equipment = {
+                  instant = yes
+                  reliability = 1
+              }
+              nav_bomber_equipment = {
+                  instant = yes
+                  reliability = 1
+              }
+              cv_nav_bomber_equipment = {
+                  instant = yes
+                  reliability = 1
+              }
+              CAS_equipment = {
+                  instant = yes
+                  reliability = 1
+              }
+              cv_CAS_equipment = {
+                  instant = yes
+                  reliability = 1
+              }
+              strat_bomber_equipment = {
+                  instant = yes
+                  reliability = 1
+              }
+              jet_fighter_equipment = {
+                  instant = yes
+                  reliability = 1
+              }
+              cv_jet_fighter_equipment = {
+                  instant = yes
+                  reliability = 1
+              }
+              jet_tac_bomber_equipment = {
+                  instant = yes
+                  reliability = 1
+              }
+              cv_jet_tac_bomber_equipment = {
+                  instant = yes
+                  reliability = 1
+              }
+              jet_strat_bomber_equipment = {
+                instant = yes
+                reliability = 1
+              }
             }
         }
-        zz_foreign_secretary_01 = { 
+        ENG_armour_modernization_program = {
             allowed = {
                 always = no
             }
@@ -294,154 +172,204 @@ ideas = {
             allowed_civil_war = {
                 always = yes
             }
-                
+
             removal_cost = -1
-                
             modifier = {
-                send_volunteers_tension = -1
+            }
+            equipment_bonus = {
+                amphibious_mechanized_equipment = {
+                    instant = yes
+                    reliability = 0.5
+                }
+                mechanized_equipment = {
+                   instant = yes
+                   reliability = 0.5
+                }
+                motorized_equipment = {
+                    instant = yes
+                    reliability = 0.5
+                }
+                amphibious_tank_equipment = {
+                    instant = yes
+                    reliability = 0.5
+                }
+                light_tank_equipment = {
+                    instant = yes
+                    reliability = 0.5
+                }
+                medium_tank_equipment = {
+                    instant = yes
+                    reliability = 0.5
+                }
+                heavy_tank_equipment = {
+                    instant = yes
+                    reliability = 0.5
+                }
+                super_heavy_tank_equipment = {
+                    instant = yes
+                    reliability = 0.5
+                }
+                modern_tank_equipment = {
+                    instant = yes
+                    reliability = 0.5
+                }
+                light_tank_chassis = {
+                    instant = yes
+                    reliability = 1
+                }
+                medium_tank_chassis = {
+                    instant = yes
+                    reliability = 1
+                }
+                heavy_tank_chassis = {
+                    instant = yes
+                    reliability = 1
+                }
+                modern_tank_chassis = {
+                    instant = yes
+                    reliability = 1
+                }
+                super_heavy_tank_chassis = {
+                    instant = yes
+                    reliability = 1
+                }
+                amphibious_tank_chassis = {
+                    instant = yes
+                    reliability = 1
+                }
+            }
+        }   
+    }
+    country = { 
+        beaverbrook_discount = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+                fighter_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 0.5
+                }
+                cv_fighter_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 0.5
+                }
+                heavy_fighter_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                cv_heavy_fighter_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                tac_bomber_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 0.5
+                }
+                cv_tac_bomber_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 0.5
+                }
+                nav_bomber_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                cv_nav_bomber_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                CAS_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 0.5
+                }
+                cv_CAS_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 0.5
+                }
+                strat_bomber_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                jet_fighter_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                cv_jet_fighter_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                jet_tac_bomber_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                cv_jet_tac_bomber_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                jet_strat_bomber_equipment = {
+                instant = yes
+                build_cost_ic = -0.50
+                reliability = 1
+                }
+            }
+		}
+        imperial_army = { 
+            allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+            modifier = {
+                autonomy_manpower_share = 0.25
+                can_master_build_for_us = 1
             }
         }
-        zz_foreign_secretary_02 = { 
+        imperial_manpower = { 
             allowed = {
-                always = no
-            }
+				always = no
+			}
 
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                lend_lease_tension = -1
-            }
-        }
-        zz_foreign_secretary_03 = { 
-            allowed = {
-                always = no
-            }
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
 
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
+			removal_cost = -1
             modifier = {
-                guarantee_tension = -1
-            }
-        }
-        zz_foreign_secretary_04 = { 
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                subjects_autonomy_gain = -0.5
-            }
-        }
-        zz_foreign_secretary_05 = { 
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                send_volunteer_size = 1	
-            }
-        }
-        zz_economic_secretary_01 = {
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                production_speed_arms_factory_factor = 0.1
-				industrial_capacity_factory = 0.05
-            }
-        }
-        zz_economic_secretary_02 = {
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                local_resources_factor = 0.2
-            }
-        }
-        zz_economic_secretary_03 = {
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                min_export = -0.05
-            }
-        }
-        zz_economic_secretary_04 = {
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-				production_speed_buildings_factor = 0.05
-            }
-        }
-        zz_economic_secretary_05 = {
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-                
-            removal_cost = -1
-                
-            modifier = {
-                production_factory_max_efficiency_factor = 0.2
-				
+                weekly_manpower = 5000
             }
         }
     }
 }
-
-
-                
-				
-				

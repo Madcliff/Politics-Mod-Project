@@ -1,225 +1,230 @@
 on_actions = {
-    on_daily = { 
-        effect = { 
-            If = {
-                limit = { 
-                    TAG = ENG
-                }
-                ENG = { 
-                    if = { 
-                        limit = { 
-                            check_variable = { government = 1}
-                            has_stability > 0.75
-                            check_variable = { party_pop^0 < 100}
-                            check_variable = { party_pop^0 > -100}
-                        }
-                        add_to_variable = {party_pop^0 = 0.1}
-                    }
-                    else_if = { 
-                        limit = { 
-                            check_variable = { government = 1}
-                            has_stability < 0.5
-                            check_variable = { party_pop^0 < 100}
-                            check_variable = { party_pop^0 > -100}
-                        }
-                        add_to_variable = {party_pop^0 = -0.1}
-                    }
-                    else_if = { 
-                        limit = { 
-                            check_variable = { government = 2}
-                            has_stability > 0.75
-                            check_variable = { party_pop^1 < 100}
-                            check_variable = { party_pop^1 > -100}
-                        }
-                        add_to_variable = {party_pop^1 = 0.1}
-                    }
-                    else_if = { 
-                        limit = { 
-                            check_variable = { government = 2}
-                            has_stability < 0.5
-                            check_variable = { party_pop^1 < 100}
-                            check_variable = { party_pop^1 > -100}
-                        }
-                        add_to_variable = {party_pop^1 = -0.1}
-                    }
-                    else_if = { 
-                        limit = { 
-                            check_variable = { government = 3}
-                            has_stability > 0.75
-                            check_variable = { party_pop^2 < 100}
-                            check_variable = { party_pop^2 > -100}
-                        }
-                        add_to_variable = {party_pop^2 = 0.1}
-                    }
-                    else_if = { 
-                        limit = { 
-                            check_variable = { government = 3}
-                            has_stability < 0.5
-                            check_variable = { party_pop^2 < 100}
-                            check_variable = { party_pop^2 > -100}
-                        }
-                        add_to_variable = {party_pop^2 = -0.1}
-                    }
-                    else_if = { 
-                        limit = { 
-                            check_variable = { government = 4}
-                            has_stability > 0.75
-                            check_variable = { party_pop^3 < 100}
-                            check_variable = { party_pop^3 > -100}
-                        }
-                        add_to_variable = {party_pop^3 = 0.1}
-                    }
-                    else_if = { 
-                        limit = { 
-                            check_variable = { government = 4}
-                            has_stability < 0.5
-                            check_variable = { party_pop^3 < 100}
-                            check_variable = { party_pop^3 > -100}
-                        }
-                        add_to_variable = {party_pop^3 = -0.1}
-                    }
-                    else_if = { 
-                        limit = { 
-                            check_variable = { government = 5}
-                            has_stability > 0.75
-                            check_variable = { party_pop^4 < 100}
-                            check_variable = { party_pop^4 > -100}
-                        }
-                        add_to_variable = {party_pop^4 = 0.1}
-                    }
-                    else_if = { 
-                        limit = { 
-                            check_variable = { government = 5}
-                            has_stability < 0.5
-                            check_variable = { party_pop^4 < 100}
-                            check_variable = { party_pop^4 > -100}
-                        }
-                        add_to_variable = {party_pop^4 = -0.1}
-                    }
-                }
-            }
-            
-        }
-    }
 	on_startup = {
 		effect = {
-            ENG = { 
-                #add_ideas = zz_pacifism
-                set_variable = { government = 1}
-                set_variable = { seats = 615}
-                set_variable = { secondhouseseats = 400} 
-                add_to_array = {
-                    party_array = 1
-                }
-                add_to_array = {
-                    party_array = 2
-                }
-                add_to_array = {
-                    party_array = 3
-                }
-                add_to_array = {
-                    party_array = 4
-                }
-                add_to_array = {
-                    party_array = 5
-                }
-                add_to_array = {
-                    party_seats_num = 522
-                }
-                add_to_array = {
-                    party_seats_num = 76
-                }
-                add_to_array = {
-                    party_seats_num = 17
-                }
-                add_to_array = {
-                    party_seats_num = 0
-                }
-                add_to_array = {
-                    party_seats_num = 0
-                }
-                add_to_array = {
-                    party_seats_num_sup = 0
-                }
-                add_to_array = {
-                    party_seats_num_sup = 0
-                }
-                add_to_array = {
-                    party_seats_num_sup = 0
-                }
-                add_to_array = {
-                    party_seats_num_sup = 0
-                }
-                add_to_array = {
-                    party_seats_num_sup = 0
-                }
-                set_variable = { party_pop^0 = 20 }
-                set_variable = { party_pop^1 = 5 }
-                set_variable = { party_pop^2 = 10 }
-                set_variable = { party_pop^3 = -20 }
-                set_variable = { party_pop^4 = -20 }
-                
-                add_to_array = {
-                    prime_minister_array = 1
-                }
-                add_to_array = {
-                    prime_minister_array = 2
-                }
-                add_to_array = {
-                    prime_minister_array = 3
-                }
-                add_to_array = {
-                    prime_minister_array = 4
-                }
-                add_to_array = {
-                    prime_minister_array = 5
-                }
-                add_to_array = {
-                    prime_minister_array = 6
-                }
-                add_to_array = {
-                    prime_minister_array = 7
-                }
-                add_to_array = {
-                    prime_minister_array = 8
-                }
-                add_to_array = {
-                    prime_minister_array = 9
-                }
-                add_to_array = {
-                    prime_minister_array = 10
-                }
-                add_to_array = {
-                    party_pop_elec = 0
-                }
-                add_to_array = {
-                    party_pop_elec = 0
-                }
-                add_to_array = {
-                    party_pop_elec = 0
-                }
-                add_to_array = {
-                    party_pop_elec = 0
-                }
-                add_to_array = {
-                    party_pop_elec = 0
-                }
-                add_to_array = {
-                    party_elec_random = 0
-                }
-                add_to_array = {
-                    party_elec_random = 0
-                }
-                add_to_array = {
-                    party_elec_random = 0
-                }
-                add_to_array = {
-                    party_elec_random = 0
-                }
-                add_to_array = {
-                    party_elec_random = 0
-                }
-            }
+			#RAJ 
+			RAJ = { 
+				remove_ideas = { 
+					RAJ_agrarian_society
+				}
+
+        
+				set_variable = {var_zz_agrarian_society = -0.69}
+				add_dynamic_modifier = { 
+					modifier = zz_agrarian_society
+				}
+      		}
+			ENG = {
+				#parliament_gui_initial = yes
+				recruit_character = zz_stanley_baldwin
+				recruit_character = zz_winston_churchill
+				recruit_character = zz_neville_chamberlain
+				recruit_character =	zz_anthony_eden
+				recruit_character =	zz_halifax
+				recruit_character =	zz_wood
+				recruit_character =	zz_anderson
+				recruit_character =	zz_beaverbrook
+				recruit_character =	zz_RAB
+				recruit_character =	zz_astor
+				recruit_character = zz_eng_alan_turing
+				recruit_character = zz_eng_stewart_menzies
+				set_autonomy = {
+					target = IRE
+					autonomous_state = autonomy_dominion
+				}
+				#add_ideas = zz_pacifism
+				set_variable = { government = 1}
+				set_variable = { seats = 615}
+				set_variable = { secondhouseseats = 400}
+				clear_array = ENG.target_country_array
+				add_to_array = { ENG.target_country_array = ENG }
+				for_each_scope_loop = {
+					array = ENG.subjects
+					add_to_array = { ENG.target_country_array = THIS }
+				}
+				clear_array = ENG.empire_array
+				add_to_array = { ENG.empire_array = ENG }
+				for_each_scope_loop = {
+					array = ENG.subjects
+					add_to_array = { ENG.empire_array = THIS }
+				}
+				add_to_array = {
+					party_array = 1
+				}
+				add_to_array = {
+					party_array = 2
+				}
+				add_to_array = {
+					party_array = 3
+				}
+				add_to_array = {
+					party_array = 4
+				}
+				add_to_array = {
+					party_array = 5
+				}
+				add_to_array = {
+					party_seats_num = 522
+				}
+				add_to_array = {
+					party_seats_num = 76
+				}
+				add_to_array = {
+					party_seats_num = 17
+				}
+				add_to_array = {
+					party_seats_num = 0
+				}
+				add_to_array = {
+					party_seats_num = 0
+				}
+				add_to_array = {
+					party_seats_num_sup = 0
+				}
+				add_to_variable = {var_efficency_start = 0.01}
+				
+				set_variable = { party_seats_num^0 = 522 }
+				set_variable = { party_seats_num^1 = 76 }
+				set_variable = { party_seats_num^2 = 17 }
+				set_variable = { party_seats_num^3 = 0 }
+				set_variable = { party_seats_num^4 = 0 }
+
+				set_variable = { party_pop^0 = 20 }
+				set_variable = { party_pop^1 = 5 }
+				set_variable = { party_pop^2 = 10 }
+				set_variable = { party_pop^3 = -20 }
+				set_variable = { party_pop^4 = -20 }
+
+				add_to_array = {
+					prime_minister_array = 1 #Churchill
+				}
+				add_to_array = {
+					prime_minister_array = 2 #Chamberlain
+				}
+				add_to_array = {
+					prime_minister_array = 3 # Baldwin
+				}
+				add_to_array = {
+					prime_minister_array = 4 #Anthony Eden
+				}
+				add_to_array = {
+					prime_minister_array = 5 #Lord Halifax
+				}
+				add_to_array = {
+					prime_minister_array = 6 #Kingsley Wood
+				}
+				add_to_array = {
+					prime_minister_array = 7 #John Anderson
+				}
+				add_to_array = {
+					prime_minister_array = 8 #Lord Beaverbrook
+				}
+				add_to_array = {
+					prime_minister_array = 9 #RAB Butler
+				}
+				add_to_array = {
+					prime_minister_array = 10 #Nancy Astor
+				}
+				# Liberal Party
+				add_to_array = {
+					prime_minister_array = 11 #David Lloyd George
+				}
+				add_to_array = {
+					prime_minister_array = 12 #David Lloyd George
+				}
+				add_to_array = {
+					prime_minister_array = 13 #David Lloyd George
+				}
+				add_to_array = {
+					prime_minister_array = 14 #David Lloyd George
+				}
+				add_to_array = {
+					prime_minister_array = 15 #David Lloyd George
+				}
+				add_to_array = {
+					prime_minister_array = 16 #David Lloyd George
+				}
+				add_to_array = {
+					party_pop_elec = 0
+				}
+				add_to_array = {
+					party_pop_elec = 0
+				}
+				add_to_array = {
+					party_pop_elec = 0
+				}
+				add_to_array = {
+					party_pop_elec = 0
+				}
+				add_to_array = {
+					party_pop_elec = 0
+				}
+				add_to_array = {
+					party_elec_random = 0
+				}
+				add_to_array = {
+					party_elec_random = 0
+				}
+				add_to_array = {
+					party_elec_random = 0
+				}
+				add_to_array = {
+					party_elec_random = 0
+				}
+				add_to_array = {
+					party_elec_random = 0
+				}
+			}
+		}
+	}
+	on_declare_war = { 
+		effect = { 
+			if = { 
+				limit = { 
+					ROOT = { original_tag = ENG } 
+					has_country_flag = ENG_shadow_scheme
+				} 
+				country_event = {
+					id = zz_uk_shadow_scheme.1
+					days = 5
+					random = 5
+					random_days = 10
+				}
+			} 
+		} 
+	}
+	on_daily = { 
+		effect = { 
+			ENG = { 
+				every_other_country = { 
+					limit = { 
+						is_subject_of = ENG 
+					}
+					if = { 
+						limit = {
+							not = { 
+								has_dynamic_modifier = {
+									modifier = zz_imperial_recruitment
+									scope = ENG
+								}
+							}
+						}
+						add_dynamic_modifier = { 
+							modifier = zz_imperial_recruitment
+						}
+					}
+					
+					if = { 
+						limit = {
+							not = {
+								has_idea = imperial_army
+							}
+						}
+						add_ideas = { 
+							imperial_army
+						}
+					}
+				}
+			}
 		}
 	}
 }

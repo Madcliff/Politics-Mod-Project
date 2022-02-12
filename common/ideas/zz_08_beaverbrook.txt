@@ -1,0 +1,212 @@
+ideas = {
+    hidden_ideas = {
+        # Lord Beaverbrook
+        zz_prime_minister_8 = {
+            allowed = {
+                always = no
+            }
+            traits = { prime_minister }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                war_support_factor = 0.05
+            }
+        }
+
+        zz_home_secretary_8 = {
+            allowed = {
+                always = no
+            }
+            traits = { home_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = 0.1
+            }
+        }
+
+        zz_foreign_secretary_8 = {
+            allowed = {
+                always = no
+            }
+            traits = { foreign_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                send_volunteer_size = 1
+            }
+        }
+
+        zz_economic_secretary_8 = {
+            allowed = {
+                always = no
+            }
+            traits = { economic_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                production_factory_max_efficiency_factor = 0.2
+
+            }
+        }
+
+        zz_navy_secretary_8 = {
+            allowed = {
+                always = no
+            }
+            traits = { navy_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            equipment_bonus = {
+                carrier = {
+                    instant = yes
+                    build_cost_ic = -0.30
+                }
+                capital_ship = {
+                    instant = yes
+                    build_cost_ic = -0.30
+                }
+                screen_ship = {
+                    instant = yes
+                    build_cost_ic = -0.30
+                }
+                submarine = {
+                    instant  = yes
+                    build_cost_ic = -0.30
+                }
+            }
+        }
+        zz_war_secretary_8 = {
+            allowed = {
+                always = no
+            }
+            traits = { war_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            equipment_bonus = {
+                armor = {
+                    instant = yes
+                    build_cost_ic = -0.30
+                }
+            }
+        }
+        zz_air_secretary_8 = {
+            allowed = {
+                always = no
+            }
+            traits = { air_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            equipment_bonus = {
+                fighter_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 0.5
+                }
+                cv_fighter_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 0.5
+                }
+                heavy_fighter_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                cv_heavy_fighter_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                tac_bomber_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 0.5
+                }
+                cv_tac_bomber_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 0.5
+                }
+                nav_bomber_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                cv_nav_bomber_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                CAS_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 0.5
+                }
+                cv_CAS_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 0.5
+                }
+                strat_bomber_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                jet_fighter_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                cv_jet_fighter_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                jet_tac_bomber_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                cv_jet_tac_bomber_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.50
+                    reliability = 1
+                }
+                jet_strat_bomber_equipment = {
+                  instant = yes
+                  build_cost_ic = -0.50
+                  reliability = 1
+                }
+            }
+        }
+    }
+}

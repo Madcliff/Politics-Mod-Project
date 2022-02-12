@@ -1,0 +1,54 @@
+guiTypes = {
+	containerWindowType = {
+		name = "general_selection_panel_window"
+		position = {x=0 y=0}
+		size = { width=480 height=227 }
+		containerWindowType = {
+			name = "general_selection_menu_grid"
+			position = {x=20 y=0}
+			size = { width= 400 height=200 }
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+			verticalScrollbar = "right_vertical_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_1b_thin_border"
+			}
+
+			gridboxtype = {
+				name = "general_selectiont_menu_selection_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 300 height = 100% }
+				slotsize = { width = 300 height = 1 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+	}
+	containerWindowType = {
+		name = "general_selection_entry"
+		position = { x = 0 y = 0}
+		size = { width = 300 height = 150 }
+
+
+		instantTextBoxType = {
+			name = "general_selection_entry_name"
+			position = { x = 10 y = 15 }
+			font = "hoi_16mbs"
+			text = "[?THIS.GetName]"
+			format = left
+			maxWidth = 200
+			maxHeight = 50
+			fixedsize = yes
+		}
+		buttonType = {
+			name = "general_portrait"
+			quadTextureSprite = "GFX_shield_medium"
+			position = { x = 250 y = 5 }
+			Orientation = "UPPER_LEFT"
+			scale=0.65
+		}
+	}
+}

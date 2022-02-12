@@ -1,0 +1,181 @@
+guiTypes = {
+	containerWindowType = {
+		name = "parliament_panel"
+		position = {x=10 y=0}
+		size = { width=480 height=600 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = no
+		clipping = no
+        
+        iconType = {
+			name ="senate_icon"
+			spriteType = "GFX_decision_category_usa_congress_senate_ui"
+			position = { x= 70	 y = 5 }
+		}
+		instantTextboxType = {
+			name = "parliament_panel_house_of_lords_voting"
+			position = { x = 20 y = 50 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "UK_lords_desc"
+			maxWidth = 200
+			maxHeight = 150
+		}
+
+        iconType = {
+			name ="house_icon"
+			spriteType = "GFX_decision_category_usa_congress_house_ui"
+			position = { x= 280 y = -17 }
+		}
+		instantTextboxType = {
+			name = "parliament_panel_house_of_commons_voting"
+			position = { x = 280 y = 50 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "UK_commons_desc"
+			maxWidth = 200
+			maxHeight = 150
+		}
+		instantTextboxType = {
+			name = "parliament_panel_government"
+			position = { x = 175 y = 200 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "UK_government_desc"
+			maxWidth = 200
+			maxHeight = 150
+		}
+		containerWindowType = {
+			name = "party_menu_grid"
+			position = {x=0 y=250}
+			size = { width=480 height=300 }
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+			verticalScrollbar = "right_vertical_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_1b_thin_border"
+			}
+
+			gridboxtype = {
+				name = "party_menu_selection_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 400 height = 100% }
+				slotsize = { width = 400 height = 1 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+		
+
+		
+		buttonType = {
+			name = "ask_for_aid_in_the_lords"
+			position = {x=50 y=550}
+			spriteType = "zz_button_parliament_medium"
+			#frame = 1
+			pdx_tooltip = ""
+			scale = 0.65
+		}
+
+		instantTextboxType = {
+			name = "ask_for_aid_text"
+			position = { x = 70 y = 560 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "Ask for Support"
+			maxWidth = 220
+			maxHeight = 20
+			format = left
+		}
+
+		buttonType = {
+			name = "expand_the_lords"
+			position = {x=250 y=550}
+			spriteType = "zz_button_parliament_medium"
+			#frame = 1
+			pdx_tooltip = ""
+			scale = 0.65
+		}
+
+		instantTextboxType = {
+			name = "expand_the_lords_text"
+			position = { x = 270 y = 560 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "Expand the Lords"
+			maxWidth = 220
+			maxHeight = 20
+			format = left
+		}
+	}
+	containerWindowType = {
+		name = "party_array_entry"
+		position = { x = 0 y = 0}
+		size = { width = 300 height = 30 }
+
+		instantTextboxType = {
+			name = "democratic_party_text"
+			position = { x = 15 y = 35 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "zz_party_name"
+			maxWidth = 220
+			maxHeight = 20
+			format = left
+		}
+		instantTextboxType = {
+			name = "democratic_party_support"
+			position = { x = 210 y = 35 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "zz_party_support"
+			maxWidth = 220
+			maxHeight = 20
+			format = left
+		}
+		instantTextboxType = {
+			name = "democratic_party_pop"
+			position = { x = 300 y = 35 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "zz_party_popularity"
+			maxWidth = 220
+			maxHeight = 20
+			format = left
+		}
+		buttonType = {
+			name = "party_ask_aid"
+			position = {x= 365 y=30}
+			spriteType = "zz_button_parliament_short"
+			#frame = 2
+			text = "Pseudo Foci"
+			pdx_tooltip = ""
+			scale = 0.67
+		}
+		instantTextboxType = {
+			name = "party_ask_aid_text"
+			position = { x = 370 y = 35 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "Ask for Aid"
+			maxWidth = 220
+			maxHeight = 20
+			format = left
+		}
+	}
+
+}

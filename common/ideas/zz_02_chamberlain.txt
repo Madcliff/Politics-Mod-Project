@@ -1,0 +1,115 @@
+#Chamberlain
+ideas = {
+    hidden_ideas = {
+		zz_prime_minister_2 = {
+            allowed = {
+                always = no
+            }
+            traits = { prime_minister }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                justify_war_goal_time = -0.25
+            }
+        }
+        zz_home_secretary_2 = {
+            allowed = {
+                always = no
+            }
+            traits = { home_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                war_support_factor = 0.1
+            }
+        }
+        zz_foreign_secretary_2 = {
+            allowed = {
+                always = no
+            }
+            traits = { foreign_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                lend_lease_tension = -1
+            }
+        }
+        zz_economic_secretary_2 = {
+            allowed = {
+                always = no
+            }
+            traits = { economic_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                local_resources_factor = 0.2
+            }
+        }
+        zz_navy_secretary_2 = {
+            allowed = {
+                always = no
+            }
+            traits = { navy_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                naval_coordination = 0.2
+            }
+        }
+        zz_air_secretary_2 = {
+          allowed = {
+            always = no
+          }
+          traits = { air_secretary }
+          allowed_civil_war = {
+            always = yes
+          }
+          removal_cost = -1
+          modifier = {
+            air_intercept_efficiency = 0.25
+          }
+        }
+        zz_war_secretary_2 = {
+            allowed = {
+                always = no
+            }
+            traits = { war_secretary }
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            equipment_bonus = {
+                motorized = {
+                    instant = yes
+                    build_cost_ic = -0.30
+                }
+                mechanized = {
+                    instant = yes
+                    build_cost_ic = -0.30
+                }
+            }
+		} 
+	}
+}

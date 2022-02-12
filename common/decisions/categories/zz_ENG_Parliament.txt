@@ -1,29 +1,55 @@
-
-
-ENG_cabinet_government= {
+ENG_Parliament = {
     icon = generic_political_actions
-    scripted_gui = cabinet_government_panel
+    scripted_gui = parliament_panel
     allowed = { tag = ENG }
-    priority = 85
-}
-ENG_legislation= {
-    icon = generic_political_actions
-    scripted_gui = legislation_target_panel
-    allowed = { tag = ENG }
-    priority = 85
+    priority = 1000
 }
 
-ENG_legislation_completition = {
+ENG_ministerial_powers = {
     icon = generic_political_actions
-    scripted_gui = house_of_commons_voting_panel
     allowed = { tag = ENG }
-    priority = 80
+    priority = 100
+}
+ENG_focus_bypass = {
+    icon = generic_political_actions
+    allowed = { tag = ENG }
+    priority = 99
+}
+ENG_tech_upgrade = {
+    icon = generic_political_actions
+    allowed = { tag = ENG }
+    priority = 99
+}
+ENG_subject_management = {
+    icon = generic_political_actions
+    allowed = { tag = ENG }
+    priority = 98
+}
+ENG_enhancement = {
+    icon = generic_political_actions
+    allowed = { tag = ENG }
+    priority = 97
 }
 
-ENG_legislation_completition_lords = {
+#ENG_research_legislation = {
+#    icon = generic_political_actions
+#    allowed = { tag = ENG }
+#    priority = 96
+#}
+
+ENG_GENERAL_SELCTION = { 
     icon = generic_political_actions
-    scripted_gui = house_of_lords_voting_panel
+    scripted_gui = general_selection_panel
     allowed = { tag = ENG }
-    priority = 75
+    priority = 94
 }
 
+
+
+
+#ENG_legislation_empire = {
+#    icon = generic_political_actions
+#    scripted_gui = imperial_interactions
+#    allowed = { tag = ENG }
+#    priority = 70
+#}
