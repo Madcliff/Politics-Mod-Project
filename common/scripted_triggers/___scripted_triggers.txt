@@ -6,9 +6,6 @@
 # in some cases this trigger is checked for only initatior country, in that case both from & this is same
 
 can_core = { 
-	FROM = { 
-		compliance > 99
-	}
 	OR = { 
 		AND = {
 			owns_state = FROM

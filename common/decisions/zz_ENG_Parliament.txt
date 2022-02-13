@@ -1550,6 +1550,9 @@ ENG_subject_management = {
 	core_state = {
 		target_trigger = {
 			can_core = yes
+			FROM = { 
+				compliance > 85
+			}
 		}
 		visible = {
 			can_core = yes
@@ -2593,6 +2596,108 @@ ENG_enhancement = {
 
 		complete_effect = {
 			add_to_variable = {var_ic_dock = 0.1}
+			add_dynamic_modifier = {
+				modifier = zz_dock_output
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_enhancement_military_IC_25 = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_to_variable = {var_ic_factory = 0.25}
+			add_dynamic_modifier = {
+				modifier = zz_mil_output
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_enhancement_civilian_IC_25 = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_to_variable = {var_production_speed_building = 0.25}
+			add_dynamic_modifier = {
+				modifier = zz_civ_output
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_enhancement_dockyard_IC_25 = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+			has_country_flag = ENG_rebuilding_britain_success
+		}
+
+		cancel_if_NOT_visible = yes
+
+		complete_effect = {
+			add_to_variable = {var_ic_dock = 0.25}
 			add_dynamic_modifier = {
 				modifier = zz_dock_output
 			}
