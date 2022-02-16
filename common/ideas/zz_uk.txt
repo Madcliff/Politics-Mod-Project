@@ -55,6 +55,7 @@ ideas = {
                 naval_hit_chance = 0.1
                 naval_damage_factor = 0.4
                 naval_defense_factor = 0.4
+                carrier_sortie_hours_delay = -2
             }
             equipment_bonus = {
                 carrier = {
