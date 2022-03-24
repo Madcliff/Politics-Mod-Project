@@ -103,22 +103,22 @@ ideas = {
                 small_plane_airframe = {
                     instant = yes
                     reliability = 1
-                    thrust = 10
+                    thrust = 1
                 }
                 cv_small_plane_airframe = {
                     instant = yes
                     reliability = 1
-                    thrust = 10
+                    thrust = 1
                 }
                 medium_plane_airframe = {
                     instant = yes
                     reliability = 1
-                    thrust = 10
+                    thrust = 1
                 }
                 large_plane_airframe = {
                     instant = yes
                     reliability = 1
-                    thrust = 10
+                    thrust = 1
                 }
               fighter_equipment = {
                   instant = yes

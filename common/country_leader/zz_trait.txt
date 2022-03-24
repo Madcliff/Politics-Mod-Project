@@ -430,6 +430,30 @@ leader_traits = {
 		random = no
 		air_equipment_upgrade_xp_cost = -0.5
 		equipment_bonus = {
+			small_plane_airframe = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 1
+				thrust = 1
+			}
+			cv_small_plane_airframe = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 1
+				thrust = 1
+			}
+			medium_plane_airframe = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 1
+				thrust = 1
+			}
+			large_plane_airframe = {
+				instant = yes
+				build_cost_ic = -0.50
+				reliability = 1
+				thrust = 1
+			}
 			fighter_equipment = {
 				instant = yes
 				build_cost_ic = -0.50
