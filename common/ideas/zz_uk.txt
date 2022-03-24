@@ -100,6 +100,26 @@ ideas = {
             modifier = {
             }
             equipment_bonus = {
+                small_plane_airframe = {
+                    instant = yes
+                    reliability = 1
+                    thrust = 10
+                }
+                cv_small_plane_airframe = {
+                    instant = yes
+                    reliability = 1
+                    thrust = 10
+                }
+                medium_plane_airframe = {
+                    instant = yes
+                    reliability = 1
+                    thrust = 10
+                }
+                large_plane_airframe = {
+                    instant = yes
+                    reliability = 1
+                    thrust = 10
+                }
               fighter_equipment = {
                   instant = yes
                   reliability = 0.5
