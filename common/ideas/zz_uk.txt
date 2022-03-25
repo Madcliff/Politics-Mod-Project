@@ -59,7 +59,7 @@ ideas = {
             }
             equipment_bonus = {
                 carrier = {
-                    carrier_size = 20
+                    carrier_size = 3
                     sub_detection = 0.2
                     reliability = 1
                     naval_speed = 0.2
