@@ -821,6 +821,116 @@ ENG_tech_upgrade = {
 
 }
 ENG_subject_management = { 
+	ENG_show_prospecting = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			not = { 
+				has_country_flag = zz_prospecting
+			}
+		}
+		fire_only_once = no
+
+		visible = {
+		}
+
+		complete_effect = {
+			set_country_flag = zz_prospecting
+		}
+
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_hide_prospecting = {
+		available = {
+			has_country_flag = zz_prospecting
+		}
+		fire_only_once = no
+
+		visible = {
+		}
+
+		complete_effect = {
+			clr_country_flag = zz_prospecting
+		}
+
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_show_construction = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			not = { 
+				has_country_flag = zz_construction
+			}
+		}
+		fire_only_once = no
+
+		visible = {
+		}
+
+		complete_effect = {
+			set_country_flag = zz_construction
+		}
+
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_hide_construction = {
+		available = {
+			has_country_flag = zz_construction
+		}
+		fire_only_once = no
+
+		visible = {
+		}
+
+		complete_effect = {
+			clr_country_flag = zz_construction
+		}
+
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
 	ENG_manpower = {
 		available = {
 			#has_country_flag = ENG_rebuilding_britain_success
@@ -1013,6 +1123,7 @@ ENG_subject_management = {
 			can_increase_resource = yes
 		}
 		visible = {
+			has_country_flag = zz_prospecting
 			can_increase_resource = yes
 		}
 		state_target = yes
@@ -1041,6 +1152,7 @@ ENG_subject_management = {
 			can_increase_resource = yes
 		}
 		visible = {
+			has_country_flag = zz_prospecting
 			can_increase_resource = yes
 		}
 		state_target = yes
@@ -1069,6 +1181,7 @@ ENG_subject_management = {
 			can_increase_resource = yes
 		}
 		visible = {
+			has_country_flag = zz_prospecting
 			can_increase_resource = yes
 		}
 		state_target = yes
@@ -1097,6 +1210,7 @@ ENG_subject_management = {
 			can_increase_resource = yes
 		}
 		visible = {
+			has_country_flag = zz_prospecting
 			can_increase_resource = yes
 		}
 		state_target = yes
@@ -1125,6 +1239,7 @@ ENG_subject_management = {
 			can_increase_resource = yes
 		}
 		visible = {
+			has_country_flag = zz_prospecting
 			can_increase_resource = yes
 		}
 		state_target = yes
@@ -1153,6 +1268,7 @@ ENG_subject_management = {
 			can_increase_resource = yes
 		}
 		visible = {
+			has_country_flag = zz_prospecting
 			can_increase_resource = yes
 		}
 		state_target = yes
@@ -1175,20 +1291,21 @@ ENG_subject_management = {
 			add_manpower = -100
 		}	
 	}
+
 	construct_offmap_CIC = {
 		target_trigger = {
 			owns_state = FROM
 		}
 		visible = {
 			owns_state = FROM
-
+			has_country_flag = zz_construction
 		}
 		available = {
 			num_of_civilian_factories_available_for_projects > 4
 		}
 		state_target = yes
 		cost = 50
-		days_remove = 60
+		days_remove = 30
 		fire_only_once = no
 		on_map_mode = map_only
 		modifier = {
@@ -1204,13 +1321,14 @@ ENG_subject_management = {
 		}
 		visible = {
 			owns_state = FROM
+			has_country_flag = zz_construction
 		}
 		available = {
 			num_of_civilian_factories_available_for_projects > 4
 		}
 		state_target = yes
 		cost = 50
-		days_remove = 60
+		days_remove = 30
 		fire_only_once = no
 		on_map_mode = map_only
 		modifier = {
@@ -1226,13 +1344,14 @@ ENG_subject_management = {
 		}
 		visible = {
 			owns_state = FROM
+			has_country_flag = zz_construction
 		}
 		available = {
 			num_of_civilian_factories_available_for_projects > 4
 		}
 		state_target = yes
 		cost = 50
-		days_remove = 60
+		days_remove = 30
 		fire_only_once = no
 		on_map_mode = map_only
 		modifier = {
@@ -1248,9 +1367,10 @@ ENG_subject_management = {
 		}
 		visible = {
 			can_increase_slot = yes
+			has_country_flag = zz_construction
 		}
 		available = {
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 14
 		}
 		state_target = yes
 		cost = 50
@@ -1258,7 +1378,7 @@ ENG_subject_management = {
 		fire_only_once = no
 		on_map_mode = map_only
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 15
 		}
 		complete_effect = {
 			FROM = {
@@ -1276,9 +1396,10 @@ ENG_subject_management = {
 		}
 		visible = {
 			can_core = yes
+			has_country_flag = zz_construction
 		}
 		available = {
-			num_of_civilian_factories_available_for_projects > 4
+			num_of_civilian_factories_available_for_projects > 14
 		}
 		state_target = yes
 		cost = 50
@@ -1286,7 +1407,7 @@ ENG_subject_management = {
 		fire_only_once = no
 		on_map_mode = map_only
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 15
 		}
 		complete_effect = {
 			OWNER = {
