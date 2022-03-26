@@ -14,6 +14,7 @@ characters={
 			expire="1965.1.1.1"
 			traits = {
 				churchill_pm 
+				federation_architecht_uk
 			}
 			id=-1
 		}
