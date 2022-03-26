@@ -14,6 +14,7 @@ ENG_focus_bypass = {
 		fire_only_once = no
 		fixed_random_seed = no
 		complete_effect = {
+			add_country_leader_trait = federation_architecht_uk
 			country_event = zz_uk_franco_british_union.1
 			effect_tooltip = {
 				annex_country = { target = FRA transfer_troops = yes }
@@ -708,19 +709,6 @@ ENG_focus_bypass = {
         complete_effect = {
 			set_country_flag = baldwin_resigned
 			complete_national_focus = ENG_motion_of_no_confidence
-			retire_country_leader = yes
-			create_country_leader = {
-				name = "Winston Churchill"
-				desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-				picture = GFX_portrait_Winston_Churchill
-				expire = "1965.1.1"
-				ideology = conservatism
-				traits = {
-					british_bulldog
-					churchill_pm 
-					federation_architecht_uk
-				}
-			}
         }
         ai_will_do = {
             factor = 100
