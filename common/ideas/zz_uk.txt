@@ -103,53 +103,53 @@ ideas = {
                 small_plane_airframe = {
                     instant = yes
                     reliability = 1
-                    thrust = 1
+                    thrust = 2
                 }
                 small_plane_cas_airframe = {
                     instant = yes
                     reliability = 1
-                    thrust = 1
+                    thrust = 2
                 }
                 cv_small_plane_airframe = {
                     instant = yes
                     reliability = 1
-                    thrust = 1
+                    thrust = 2
                 }
                 small_plane_naval_bomber_airframe = {
                     instant = yes
                     reliability = 1
-                    thrust = 1
+                    thrust = 2
                 }
 
                 cv_small_plane_cas_airframe = {
                     instant = yes
                     reliability = 1
-                    thrust = 1
+                    thrust = 2
                 }
                 cv_small_plane_naval_bomber_airframe = {
                     instant = yes
                     reliability = 1
-                    thrust = 1
+                    thrust = 2
                 }
                 medium_plane_airframe = {
                     instant = yes
                     reliability = 1
-                    thrust = 1
+                    thrust = 2
                 }
                 medium_plane_fighter_airframe = {
                     instant = yes
                     reliability = 1
-                    thrust = 1
+                    thrust = 2
                 }
                 medium_plane_scout_plane_airframe = {
                     instant = yes
                     reliability = 1
-                    thrust = 1
+                    thrust = 2
                 }
                 large_plane_airframe = {
                     instant = yes
                     reliability = 1
-                    thrust = 1
+                    thrust = 2
                 }
             }
         }

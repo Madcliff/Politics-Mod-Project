@@ -63,7 +63,32 @@ country_event = {
 		}
 		custom_effect_tooltip = FRA_franco_british_cores
 		hidden_effect = {
-			ENG = { set_cosmetic_tag = FRA_UK }
+			if = {
+				limit = {
+					ENG = {
+						NOT = {
+							has_completed_focus = ENG_imperial_federation
+						}
+					}
+				}
+				ENG = { set_cosmetic_tag = FRA_UK }
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						has_cosmetic_tag = ENG_imperial_federation_unified
+					}
+				}
+				ENG = { set_cosmetic_tag = ENG_FRA_imperial_federation_unified }
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						has_cosmetic_tag = ENG_imperial_federation_india_unified
+					}
+				}
+				ENG = { set_cosmetic_tag = ENG_FRA_imperial_federation_india_unified }
+			}
 			GER = { 
 				country_event = { hours = 6 id = news.35 }
 			}
