@@ -129,107 +129,54 @@ ideas = {
 
                 small_plane_airframe = {
                     instant = yes
-                    build_cost_ic = -0.50
                     reliability = 1
-                    thrust = 2
+                    thrust = 0.1
+                }
+                small_plane_cas_airframe = {
+                    instant = yes
+                    reliability = 1
+                    thrust = 0.1
                 }
                 cv_small_plane_airframe = {
                     instant = yes
-                    build_cost_ic = -0.50
                     reliability = 1
-                    thrust = 2
+                    thrust = 0.1
+                }
+                small_plane_naval_bomber_airframe = {
+                    instant = yes
+                    reliability = 1
+                    thrust = 0.1
+                }
+
+                cv_small_plane_cas_airframe = {
+                    instant = yes
+                    reliability = 1
+                    thrust = 0.1
+                }
+                cv_small_plane_naval_bomber_airframe = {
+                    instant = yes
+                    reliability = 1
+                    thrust = 0.1
                 }
                 medium_plane_airframe = {
                     instant = yes
-                    build_cost_ic = -0.50
                     reliability = 1
-                    thrust = 2
+                    thrust = 0.1
+                }
+                medium_plane_fighter_airframe = {
+                    instant = yes
+                    reliability = 1
+                    thrust = 0.1
+                }
+                medium_plane_scout_plane_airframe = {
+                    instant = yes
+                    reliability = 1
+                    thrust = 0.1
                 }
                 large_plane_airframe = {
                     instant = yes
-                    build_cost_ic = -0.50
                     reliability = 1
-                    thrust = 2
-                }
-                fighter_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 0.5
-                }
-                cv_fighter_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 0.5
-                }
-                heavy_fighter_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 1
-                }
-                cv_heavy_fighter_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 1
-                }
-                tac_bomber_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 0.5
-                }
-                cv_tac_bomber_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 0.5
-                }
-                nav_bomber_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 1
-                }
-                cv_nav_bomber_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 1
-                }
-                CAS_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 0.5
-                }
-                cv_CAS_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 0.5
-                }
-                strat_bomber_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 1
-                }
-                jet_fighter_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 1
-                }
-                cv_jet_fighter_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 1
-                }
-                jet_tac_bomber_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 1
-                }
-                cv_jet_tac_bomber_equipment = {
-                    instant = yes
-                    build_cost_ic = -0.50
-                    reliability = 1
-                }
-                jet_strat_bomber_equipment = {
-                  instant = yes
-                  build_cost_ic = -0.50
-                  reliability = 1
+                    thrust = 0.1
                 }
             }
         }
