@@ -1,5 +1,5 @@
 leader_traits = {
-	state_alchemist = {
+	state_alchemist_civil = {
 		local_resources_factor = 0.3
 		breakthrough_factor = 1
 		army_org_factor = 0.5
@@ -9,7 +9,7 @@ leader_traits = {
 		breakthrough_factor = 1.5
 		army_org_factor = 0.75
 	}
-	state_alchemist_general = {
+	alchemist_supporter = {
 		local_resources_factor = 1
 		breakthrough_factor = 2
 		army_org_factor = 1

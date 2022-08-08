@@ -1,4 +1,23 @@
 ideas = {
+    academy_spirit = {
+        alchemy_scholarships_spirit = {
+            ledger = army
+            available = { has_military_academy = yes }
+            visible = { 
+                tag = ENG 
+            }
+            modifier = {
+                naval_invasion_capacity = 20
+                army_leader_start_level = 1
+                army_leader_cost_factor = -0.3 
+                unit_leader_as_advisor_cp_cost_factor = -0.75
+                custom_modifier_tooltip = academy_scholarships_spirit_tt
+            }
+            ai_will_do = {
+                factor = 1
+            }
+        }
+    }
     hidden_ideas = {
         #Country Boost
         ENG_rearmament = {

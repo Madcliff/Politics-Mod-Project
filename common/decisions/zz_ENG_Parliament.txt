@@ -1960,7 +1960,7 @@ ENG_GENERAL_SELCTION = {
 				add_unit_leader_trait = alchemist
 			}
 		}
-
+		alchemist
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -2002,7 +2002,7 @@ ENG_GENERAL_SELCTION = {
 					advisor = {
 						slot = special_advisor
 						cost = 0
-						idea_token = state_alchemist
+						idea_token = state_alchemist_civil
 						traits = {
 							state_alchemist
 						}

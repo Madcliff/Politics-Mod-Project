@@ -4,7 +4,26 @@ leader_traits = {
 ##################################
 # Common Traits
 ##################################
+alchemist = { 
+	type = land
+	trait_type = personality_trait
 	
+	attack_skill = 1
+	planning_skill = 1
+	
+	attack_skill_factor = 1
+	planning_skill_factor = 1
+
+	new_commander_weight = {
+		factor = 0
+
+		modifier = {
+			FROM = { has_idea = alchemy_scholarships_spirit }
+			factor = 5
+		}
+	}
+	
+}
 
 ##################################
 # Field Marshal traits.
@@ -27,23 +46,27 @@ leader_traits = {
 		}
 		gui_row = 16
 		trait_type = assignable_trait
-		parent = alchemist_general
+		parent = alchemist_supporter
 		parent = alchemic_attacker
 		parent = alchemic_defender
 	}
 ##################################
 # Corps Commander traits.
 ##################################
-	alchemist = { 
+	state_alchemist = { 
 		type = corps_commander
 		allowed = {
 			FROM = {
 				tag = ENG
 			}
 		}
-		gain_xp = {
-			always = no
+		prerequisites = {
+			has_trait = alchemist
 		}
+		gain_xp = {
+			always = yes
+		}
+		cost = 700
 		non_shared_modifier = {
 			experience_gain_factor = 5
 		}
@@ -72,14 +95,14 @@ leader_traits = {
 		slot = special_advisor
 		specialist_advisor_trait = state_alchemist
 		expert_advisor_trait = state_alchemist_colonel
-		genius_advisor_trait = state_alchemist_general
+		genius_advisor_trait = state_alchemist_supporter
 	}
 	
 
 ##################################
 # Corps Commander assignabme traits.
 ##################################
-	alchemist_general = { 
+	alchemist_supporter = { 
 		type = corps_commander
 		
 		cost = 200
@@ -95,7 +118,7 @@ leader_traits = {
 		}
 		gui_row = 16
 		trait_type = assignable_trait
-		parent = alchemist
+		parent = state_alchemist
 		
 	}
 
@@ -123,7 +146,7 @@ leader_traits = {
 		gui_row = 17
 		
 		trait_type = assignable_trait
-		parent = alchemist
+		parent = state_alchemist
 	}
 	
 	alchemic_defender = {
@@ -151,6 +174,6 @@ leader_traits = {
 		gui_row = 18
 		
 		trait_type = assignable_trait
-		parent = alchemist
+		parent = state_alchemist
 	}
 }
