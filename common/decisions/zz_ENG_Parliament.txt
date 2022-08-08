@@ -2004,7 +2004,7 @@ ENG_GENERAL_SELCTION = {
 						cost = 0
 						idea_token = state_alchemist_civil
 						traits = {
-							state_alchemist
+							state_alchemist_civil
 						}
 						allowed = {
 							always = yes

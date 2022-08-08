@@ -433,65 +433,54 @@ leader_traits = {
 		equipment_bonus = {
 			small_plane_airframe = {
 				instant = yes
-				build_cost_ic = -0.50
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			cv_small_plane_airframe = {
 				instant = yes
-				build_cost_ic = -0.50
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			small_plane_cas_airframe = {
 				instant = yes
-				build_cost_ic = -0.50
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			cv_small_plane_cas_airframe = {
 				instant = yes
-				build_cost_ic = -0.50
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			small_plane_naval_bomber_airframe = {
 				instant = yes
-				build_cost_ic = -0.50
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			cv_small_plane_naval_bomber_airframe = {
 				instant = yes
-				build_cost_ic = -0.50
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			medium_plane_airframe = {
 				instant = yes
-				build_cost_ic = -0.50
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			medium_plane_fighter_airframe = {
 				instant = yes
-				build_cost_ic = -0.50
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			medium_plane_scout_plane_airframe = {
 				instant = yes
-				build_cost_ic = -0.50
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			large_plane_airframe = {
 				instant = yes
-				build_cost_ic = -0.50
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
-			
 		}
 	}
 	beaverbrook_sa = { 
@@ -500,52 +489,52 @@ leader_traits = {
 			small_plane_airframe = {
 				instant = yes
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			cv_small_plane_airframe = {
 				instant = yes
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			small_plane_cas_airframe = {
 				instant = yes
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			cv_small_plane_cas_airframe = {
 				instant = yes
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			small_plane_naval_bomber_airframe = {
 				instant = yes
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			cv_small_plane_naval_bomber_airframe = {
 				instant = yes
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			medium_plane_airframe = {
 				instant = yes
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			medium_plane_fighter_airframe = {
 				instant = yes
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			medium_plane_scout_plane_airframe = {
 				instant = yes
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 			large_plane_airframe = {
 				instant = yes
 				reliability = 1
-				thrust = 1
+				thrust = 0.1
 			}
 		}
 	}
