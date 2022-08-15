@@ -481,6 +481,11 @@ leader_traits = {
 				reliability = 1
 				thrust = 0.1
 			}
+			large_plane_maritime_patrol_plane_airframe = {
+				instant = yes
+				reliability = 1
+				thrust = 0.1
+			}
 		}
 	}
 	beaverbrook_sa = { 
@@ -532,6 +537,11 @@ leader_traits = {
 				thrust = 0.1
 			}
 			large_plane_airframe = {
+				instant = yes
+				reliability = 1
+				thrust = 0.1
+			}
+			large_plane_maritime_patrol_plane_airframe = {
 				instant = yes
 				reliability = 1
 				thrust = 0.1
