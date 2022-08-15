@@ -3184,8 +3184,7 @@ ENG_Parliament = {
 			factor = 100
 		}
 	}
-	
-	ENG_britain_radar = {
+	ENG_britain_industry_ahead = {
 		icon = GFX_decision_generic_prepare_civil_war
 		allowed = {
 			tag = ENG
@@ -3204,13 +3203,13 @@ ENG_Parliament = {
 			zz_legislation_vote_setup = yes
 			zz_legislation_lords_vote_setup = yes
 			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_radar_mission
+			activate_mission = ENG_britain_industry_ahead_mission
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
-	ENG_britain_electronics = {
+	ENG_britain_air = {
 		icon = GFX_decision_generic_prepare_civil_war
 		allowed = {
 			tag = ENG
@@ -3229,13 +3228,13 @@ ENG_Parliament = {
 			zz_legislation_vote_setup = yes
 			zz_legislation_lords_vote_setup = yes
 			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_electronics_mission
+			activate_mission = ENG_britain_air_mission
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
-	ENG_britain_rocket = {
+	ENG_britain_air_ahead = {
 		icon = GFX_decision_generic_prepare_civil_war
 		allowed = {
 			tag = ENG
@@ -3254,13 +3253,13 @@ ENG_Parliament = {
 			zz_legislation_vote_setup = yes
 			zz_legislation_lords_vote_setup = yes
 			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_rocket_mission
+			activate_mission = ENG_britain_air_ahead_mission
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
-	ENG_britain_nuclear = {
+	ENG_britain_naval = {
 		icon = GFX_decision_generic_prepare_civil_war
 		allowed = {
 			tag = ENG
@@ -3279,13 +3278,13 @@ ENG_Parliament = {
 			zz_legislation_vote_setup = yes
 			zz_legislation_lords_vote_setup = yes
 			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_nuclear_mission
+			activate_mission = ENG_britain_nav_mission
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
-	ENG_britain_jet = {
+	ENG_britain_naval_ahead = {
 		icon = GFX_decision_generic_prepare_civil_war
 		allowed = {
 			tag = ENG
@@ -3304,13 +3303,13 @@ ENG_Parliament = {
 			zz_legislation_vote_setup = yes
 			zz_legislation_lords_vote_setup = yes
 			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_jet_mission
+			activate_mission = ENG_britain_naval_ahead_mission
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
-	ENG_britain_fighter = {
+	ENG_britain_infantry = {
 		icon = GFX_decision_generic_prepare_civil_war
 		allowed = {
 			tag = ENG
@@ -3329,13 +3328,13 @@ ENG_Parliament = {
 			zz_legislation_vote_setup = yes
 			zz_legislation_lords_vote_setup = yes
 			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_fighter_mission
+			activate_mission = ENG_britain_infantry_mission
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
-	ENG_britain_bomber = {
+	ENG_britain_infantry_ahead = {
 		icon = GFX_decision_generic_prepare_civil_war
 		allowed = {
 			tag = ENG
@@ -3354,257 +3353,7 @@ ENG_Parliament = {
 			zz_legislation_vote_setup = yes
 			zz_legislation_lords_vote_setup = yes
 			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_bomber_mission
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	ENG_britain_coastal = {
-		icon = GFX_decision_generic_prepare_civil_war
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			has_country_flag = ENG_rebuilding_britain_success
-			NOT = {
-				has_country_flag = ENG_vote
-			}
-		}
-		fire_only_once = no
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_country_flag = ENG_vote
-			zz_legislation_vote_setup = yes
-			zz_legislation_lords_vote_setup = yes
-			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_coastal_mission
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	ENG_britain_destroyer = {
-		icon = GFX_decision_generic_prepare_civil_war
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			has_country_flag = ENG_rebuilding_britain_success
-			NOT = {
-				has_country_flag = ENG_vote
-			}
-		}
-		fire_only_once = no
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_country_flag = ENG_vote
-			zz_legislation_vote_setup = yes
-			zz_legislation_lords_vote_setup = yes
-			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_destroyer_mission
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	ENG_britain_cruiser = {
-		icon = GFX_decision_generic_prepare_civil_war
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			has_country_flag = ENG_rebuilding_britain_success
-			NOT = {
-				has_country_flag = ENG_vote
-			}
-		}
-		fire_only_once = no
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_country_flag = ENG_vote
-			zz_legislation_vote_setup = yes
-			zz_legislation_lords_vote_setup = yes
-			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_cruiser_mission
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	ENG_britain_battleship = {
-		icon = GFX_decision_generic_prepare_civil_war
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			has_country_flag = ENG_rebuilding_britain_success
-			NOT = {
-				has_country_flag = ENG_vote
-			}
-		}
-		fire_only_once = no
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_country_flag = ENG_vote
-			zz_legislation_vote_setup = yes
-			zz_legislation_lords_vote_setup = yes
-			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_battleship_mission
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	ENG_britain_carrier = {
-		icon = GFX_decision_generic_prepare_civil_war
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			has_country_flag = ENG_rebuilding_britain_success
-			NOT = {
-				has_country_flag = ENG_vote
-			}
-		}
-		fire_only_once = no
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_country_flag = ENG_vote
-			zz_legislation_vote_setup = yes
-			zz_legislation_lords_vote_setup = yes
-			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_carrier_mission
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	ENG_britain_submarine = {
-		icon = GFX_decision_generic_prepare_civil_war
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			has_country_flag = ENG_rebuilding_britain_success
-			NOT = {
-				has_country_flag = ENG_vote
-			}
-		}
-		fire_only_once = no
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_country_flag = ENG_vote
-			zz_legislation_vote_setup = yes
-			zz_legislation_lords_vote_setup = yes
-			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_submarine_mission
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	ENG_britain_motorized = {
-		icon = GFX_decision_generic_prepare_civil_war
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			has_country_flag = ENG_rebuilding_britain_success
-			NOT = {
-				has_country_flag = ENG_vote
-			}
-		}
-		fire_only_once = no
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_country_flag = ENG_vote
-			zz_legislation_vote_setup = yes
-			zz_legislation_lords_vote_setup = yes
-			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_motorized_mission
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	ENG_britain_armour = {
-		icon = GFX_decision_generic_prepare_civil_war
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			has_country_flag = ENG_rebuilding_britain_success
-			NOT = {
-				has_country_flag = ENG_vote
-			}
-		}
-		fire_only_once = no
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_country_flag = ENG_vote
-			zz_legislation_vote_setup = yes
-			zz_legislation_lords_vote_setup = yes
-			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_armour_mission
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	ENG_britain_artillery = {
-		icon = GFX_decision_generic_prepare_civil_war
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			has_country_flag = ENG_rebuilding_britain_success
-			NOT = {
-				has_country_flag = ENG_vote
-			}
-		}
-		fire_only_once = no
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_country_flag = ENG_vote
-			zz_legislation_vote_setup = yes
-			zz_legislation_lords_vote_setup = yes
-			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_artillery_mission
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	ENG_britain_special_forces = {
-		icon = GFX_decision_generic_prepare_civil_war
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			has_country_flag = ENG_rebuilding_britain_success
-			NOT = {
-				has_country_flag = ENG_vote
-			}
-		}
-		fire_only_once = no
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_country_flag = ENG_vote
-			zz_legislation_vote_setup = yes
-			zz_legislation_lords_vote_setup = yes
-			UK_recalc_parliament_icon_frames = yes
-			activate_mission = ENG_britain_special_forces_mission
+			activate_mission = ENG_britain_infantry_ahead_mission
 		}
 		ai_will_do = {
 			factor = 100
@@ -3964,15 +3713,55 @@ ENG_Parliament = {
 			set_variable = { secondsup = 0 }
 			clr_country_flag = ENG_vote
 			add_tech_bonus = {
-				name = industrial_bonus
+				name = uk_industry_mission
 				bonus = 1.0
 				uses = 2
 				category = industry
+				category = radar_tech
+				category = electronics
+				category = rocketry
+				category = nuclear
+				category = jet_technology
+			}
+		}
+	}
+	ENG_britain_industry_ahead_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = uk_industry_ahead_mission
+				ahead_reduction = 1.0
+				uses = 2
+				category = industry
+				category = radar_tech
+				category = electronics
+				category = rocketry
+				category = nuclear
+				category = jet_technology
 			}
 		}
 	}
 	
-	ENG_britain_radar_mission = {
+	ENG_britain_air_mission = {
 		allowed = { tag = ENG }
 		available = {
 			check_variable = { supseat > supneeded }
@@ -3995,165 +3784,19 @@ ENG_Parliament = {
 			set_variable = { secondsup = 0 }
 			clr_country_flag = ENG_vote
 			add_tech_bonus = {
-				name = radar_focus
-				bonus = 1.0
-				uses = 1
-				category = radar_tech
-			}
-		}
-	}
-	ENG_britain_electronics_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded }
-			check_variable = { secondsup > secondsupneeded }
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			add_political_power = -100
-			clr_country_flag = ENG_vote
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			clr_country_flag = ENG_vote
-			add_tech_bonus = {
-				name = UK_secret_focus
-				bonus = 1.0
-				uses = 1
-				category = electronics
-			}
-		}
-	}
-	ENG_britain_rocket_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded }
-			check_variable = { secondsup > secondsupneeded }
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			add_political_power = -100
-			clr_country_flag = ENG_vote
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			clr_country_flag = ENG_vote
-			add_tech_bonus = {
-				name = UK_secret_focus
-				bonus = 1.0
-				uses = 1
-				category = rocketry
-			}
-		}
-	}
-	ENG_britain_nuclear_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded }
-			check_variable = { secondsup > secondsupneeded }
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			add_political_power = -100
-			clr_country_flag = ENG_vote
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			clr_country_flag = ENG_vote
-			add_tech_bonus = {
-				name = UK_secret_focus
-				bonus = 1.0
-				uses = 1
-				category = nuclear
-			}
-		}
-	}
-	ENG_britain_jet_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded }
-			check_variable = { secondsup > secondsupneeded }
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			add_political_power = -100
-			clr_country_flag = ENG_vote
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			clr_country_flag = ENG_vote
-			add_tech_bonus = {
-				name = uk_jet_focus
-				bonus = 1.0
-				uses = 1
-				category = jet_technology
-			}
-		}
-	}	
-	ENG_britain_fighter_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded }
-			check_variable = { secondsup > secondsupneeded }
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			add_political_power = -100
-			clr_country_flag = ENG_vote
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			clr_country_flag = ENG_vote
-			add_tech_bonus = {
-				name = fighter_command_focus
+				name = uk_air_mission
 				bonus = 1.0
 				uses = 1
 				category = light_fighter
 				category = cat_heavy_fighter
+				category = cat_strategic_bomber
+				category = tactical_bomber
+				category = naval_bomber
+				category = cas_bomber
 			}
 		}
 	}
-	ENG_britain_bomber_mission = {
+	ENG_britain_air_ahead_mission = {
 		allowed = { tag = ENG }
 		available = {
 			check_variable = { supseat > supneeded }
@@ -4176,47 +3819,21 @@ ENG_Parliament = {
 			set_variable = { secondsup = 0 }
 			clr_country_flag = ENG_vote
 			add_tech_bonus = {
-				name = bomber_command_focus
-				bonus = 1.0
+				name = uk_air_ahead_mission
+				ahead_reduction = 1.0
 				uses = 1
+				category = light_fighter
+				category = cat_heavy_fighter
 				category = cat_strategic_bomber
 				category = tactical_bomber
-			}
-		}
-	}		
-	ENG_britain_coastal_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded }
-			check_variable = { secondsup > secondsupneeded }
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			add_political_power = -100
-			clr_country_flag = ENG_vote
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			clr_country_flag = ENG_vote
-			add_tech_bonus = {
-				name = coastal_command_focus
-				bonus = 1.0
-				uses = 1
 				category = naval_bomber
 				category = cas_bomber
 			}
 		}
 	}
 	
-	ENG_britain_destroyer_mission = {
+	
+	ENG_britain_naval_mission = {
 		allowed = { tag = ENG }
 		available = {
 			check_variable = { supseat > supneeded }
@@ -4239,139 +3856,20 @@ ENG_Parliament = {
 			set_variable = { secondsup = 0 }
 			clr_country_flag = ENG_vote
 			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 1.0
-				uses = 1
-				category = dd_tech 
-				category = ship_modules_tech
-			}
-		}
-	}
-	ENG_britain_cruiser_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded }
-			check_variable = { secondsup > secondsupneeded }
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			add_political_power = -100
-			clr_country_flag = ENG_vote
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			clr_country_flag = ENG_vote
-			add_tech_bonus = {
-				name = ENG_secure_the_imperial_shipping_routes
-				bonus = 1.0
-				uses = 1
-				category = cl_tech 
-				category = ship_modules_tech
-			}
-		}
-	}
-	ENG_britain_battleship_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded }
-			check_variable = { secondsup > secondsupneeded }
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			add_political_power = -100
-			clr_country_flag = ENG_vote
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			clr_country_flag = ENG_vote
-			add_tech_bonus = {
-				name = uk_battleship_focus
-				bonus = 1.0
-				uses = 1
-				category = bb_tech 
-				category = ship_modules_tech
-			}
-		}
-	}
-	ENG_britain_carrier_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded }
-			check_variable = { secondsup > secondsupneeded }
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			add_political_power = -100
-			clr_country_flag = ENG_vote
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			clr_country_flag = ENG_vote
-			add_tech_bonus = {
-				name = uk_carrier_focus
-				bonus = 1.0
-				uses = 1
-				category = cv_tech 
-				category = ship_modules_tech
-			}
-		}
-	}
-	ENG_britain_submarine_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded }
-			check_variable = { secondsup > secondsupneeded }
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			add_political_power = -100
-			clr_country_flag = ENG_vote
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			clr_country_flag = ENG_vote
-			add_tech_bonus = {
-				name = uk_submarine_focus
+				name = uk_naval_mission
 				bonus = 1.0
 				uses = 1
 				category = ss_tech 
+				category = dd_tech 
+				category = cl_tech 
+				category = bb_tech 
+				category = cv_tech 
 				category = ship_modules_tech
+				
 			}
 		}
 	}
-	ENG_britain_motorized_mission = {
+	ENG_britain_naval_ahead_mission = {
 		allowed = { tag = ENG }
 		available = {
 			check_variable = { supseat > supneeded }
@@ -4394,14 +3892,21 @@ ENG_Parliament = {
 			set_variable = { secondsup = 0 }
 			clr_country_flag = ENG_vote
 			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
+				name = uk_naval_ahead_mission
+				ahead_reduction = 1.0
 				uses = 1
-				category = motorized_equipment
+				category = ss_tech 
+				category = dd_tech 
+				category = cl_tech 
+				category = bb_tech 
+				category = cv_tech 
+				category = ship_modules_tech
+				
 			}
 		}
 	}
-	ENG_britain_armour_mission = {
+	
+	ENG_britain_infantry_mission = {
 		allowed = { tag = ENG }
 		available = {
 			check_variable = { supseat > supneeded }
@@ -4424,68 +3929,7 @@ ENG_Parliament = {
 			set_variable = { secondsup = 0 }
 			clr_country_flag = ENG_vote
 			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 1
-				category = armor
-			}
-		}
-	}
-	ENG_britain_artillery_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded }
-			check_variable = { secondsup > secondsupneeded }
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			add_political_power = -100
-			clr_country_flag = ENG_vote
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			clr_country_flag = ENG_vote
-			add_tech_bonus = {
-				name = artillery_bonus
-				uses = 1
-				bonus = 1.0
-				category = artillery
-				category = support_tech
-			}
-		}
-	}
-	ENG_britain_special_forces_mission = {
-		allowed = { tag = ENG }
-		available = {
-			check_variable = { supseat > supneeded }
-			check_variable = { secondsup > secondsupneeded }
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		days_mission_timeout = 50
-		timeout_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			add_political_power = -100
-			clr_country_flag = ENG_vote
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			set_variable = { supseat = 0 }
-			set_variable = { secondsup = 0 }
-			clr_country_flag = ENG_vote
-			add_tech_bonus = {
-				name = special_bonus
+				name = uk_infantry_mission
 				bonus = 1.0
 				uses = 1
 				technology = paratroopers
@@ -4498,6 +3942,53 @@ ENG_Parliament = {
 				technology = tech_recon
 				technology = tech_recon2
 				technology = tech_recon3
+				category = artillery
+				category = support_tech
+				category = motorized_equipment
+				category = armor
+			}
+		}
+	}
+	ENG_britain_infantry_ahead_mission = {
+		allowed = { tag = ENG }
+		available = {
+			check_variable = { supseat > supneeded }
+			check_variable = { secondsup > secondsupneeded }
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			add_political_power = -100
+			clr_country_flag = ENG_vote
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_variable = { supseat = 0 }
+			set_variable = { secondsup = 0 }
+			clr_country_flag = ENG_vote
+			add_tech_bonus = {
+				name = uk_infantry_ahead_mission
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+				technology = tech_engineers
+				technology = tech_engineers2
+				technology = tech_engineers3
+				technology = tech_recon
+				technology = tech_recon2
+				technology = tech_recon3
+				category = artillery
+				category = support_tech
+				category = motorized_equipment
+				category = armor
 			}
 		}
 	}
