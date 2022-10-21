@@ -72,6 +72,10 @@ scripted_gui = {
 			}
 		}
 	}
+		#for_each_scope_loop = {
+		#	array = ENG.subjects
+		#	add_to_array = { ENG.generals_array = THIS }
+		#}
 
 	general_selection_panel = {
 		context_type = decision_category
@@ -86,10 +90,7 @@ scripted_gui = {
 		effects = {
 			general_portrait_click= {
 				set_variable = {root.general_decision = THIS.id}
-				#for_each_scope_loop = {
-				#	array = ENG.subjects
-				#	add_to_array = { ENG.generals_array = THIS }
-				#}
+
 			}
 		}
 		properties = {
