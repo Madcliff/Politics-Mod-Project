@@ -69,7 +69,7 @@ alchemist = {
 		gain_xp = {
 			has_trait = alchemist
 		}
-		cost = 25
+		cost = 10
 		non_shared_modifier = {
 			experience_gain_factor = 5
 		}
