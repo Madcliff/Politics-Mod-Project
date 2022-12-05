@@ -71,7 +71,7 @@ alchemist = {
 		}
 		cost = 10
 		non_shared_modifier = {
-			experience_gain_factor = 5
+			experience_gain_factor = 50
 		}
 		modifier = {
 			planning_speed = 0.50
