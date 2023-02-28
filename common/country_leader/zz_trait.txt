@@ -25,6 +25,7 @@ leader_traits = {
 		random = no
 		political_power_factor = 1
 		subjects_autonomy_gain = -0.5
+		compliance_gain = 0.1
 		mobilization_speed = 1
 		stability_weekly = 0.01
 		generate_wargoal_tension = -0.7
@@ -64,11 +65,11 @@ leader_traits = {
 		equipment_bonus = {
 			fighter = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			interceptor = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 		}
 	}
@@ -123,11 +124,11 @@ leader_traits = {
 		equipment_bonus = {
 			motorized = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			mechanized = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 		}
 	}
@@ -238,19 +239,19 @@ leader_traits = {
 		equipment_bonus = {
 			carrier = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			capital_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			screen_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			submarine = {
 				instant  = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 		}
 	}
@@ -291,19 +292,19 @@ leader_traits = {
 		equipment_bonus = {
 			carrier = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			capital_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			screen_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			submarine = {
 				instant  = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 		}
 	}
@@ -347,19 +348,19 @@ leader_traits = {
 		equipment_bonus = {
 			carrier = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			capital_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			screen_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			submarine = {
 				instant  = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 		}
 	}
@@ -368,7 +369,7 @@ leader_traits = {
 		equipment_bonus = {
 			armor = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 		}
 	}
@@ -402,19 +403,19 @@ leader_traits = {
 		equipment_bonus = {
 			carrier = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			capital_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			screen_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			submarine = {
 				instant  = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 		}
 	}
@@ -423,7 +424,7 @@ leader_traits = {
 		equipment_bonus = {
 			armor = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 		}
 	}
@@ -569,19 +570,19 @@ leader_traits = {
 		equipment_bonus = {
 			carrier = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			capital_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			screen_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			submarine = {
 				instant  = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 		}
 	}
@@ -620,19 +621,19 @@ leader_traits = {
 		equipment_bonus = {
 			carrier = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			capital_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			screen_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			submarine = {
 				instant  = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 		}
 	}
@@ -641,7 +642,7 @@ leader_traits = {
 		equipment_bonus = {
 			armor = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 		}
 	}
@@ -655,19 +656,19 @@ leader_traits = {
 		equipment_bonus = {
 			carrier = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			capital_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			screen_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			submarine = {
 				instant  = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 		}
 	}
@@ -697,19 +698,19 @@ leader_traits = {
 		equipment_bonus = {
 			carrier = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			capital_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			screen_ship = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 			submarine = {
 				instant  = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 		}
 	}
@@ -718,7 +719,7 @@ leader_traits = {
 		equipment_bonus = {
 			armor = {
 				instant = yes
-				build_cost_ic = -0.30
+				build_cost_ic = -0.15
 			}
 		}
 	}

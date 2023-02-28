@@ -3865,7 +3865,7 @@ ENG_Parliament = {
 				category = bb_tech 
 				category = cv_tech 
 				category = ship_modules_tech
-				
+				category = naval_equipment 
 			}
 		}
 	}
@@ -3901,6 +3901,8 @@ ENG_Parliament = {
 				category = bb_tech 
 				category = cv_tech 
 				category = ship_modules_tech
+				category = ship_modules_tech
+				category = naval_equipment 
 				
 			}
 		}
