@@ -734,6 +734,18 @@ ENG_focus_bypass = {
 		fixed_random_seed = no
         complete_effect = {
 			complete_national_focus = ENG_no_further_appeasement
+			country_event = { id = zz_uk_shadow_scheme.22 days = 1 }
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Winston Churchill"
+				desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+				picture = GFX_portrait_Winston_Churchill
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					churchill_pm
+				}
+			}
         }
         ai_will_do = {
             factor = 100
@@ -818,8 +830,6 @@ ENG_tech_upgrade = {
 			factor = 100
 	  	}
 	}
-
-
 }
 ENG_subject_management = { 
 	ENG_show_prospecting = {
@@ -1498,6 +1508,7 @@ ENG_GENERAL_SELCTION = {
 		available = {
 			#has_country_flag = ENG_rebuilding_britain_success
 			var:general_decision = {
+				exists = yes
 				NOT = { 
 					has_trait = brilliant_strategist
 				}
@@ -1510,6 +1521,7 @@ ENG_GENERAL_SELCTION = {
 
 		visible = {
 			var:general_decision = {
+				exists = yes
 				NOT = { 
 					has_trait = brilliant_strategist
 				}
@@ -1960,7 +1972,6 @@ ENG_GENERAL_SELCTION = {
 				add_unit_leader_trait = alchemist
 			}
 		}
-		alchemist
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1998,19 +2009,7 @@ ENG_GENERAL_SELCTION = {
 
 		complete_effect = {
 			var:general_decision = {
-				add_advisor_role = {
-					advisor = {
-						slot = special_advisor
-						cost = 0
-						idea_token = state_alchemist_civil
-						traits = {
-							state_alchemist_civil
-						}
-						allowed = {
-							always = yes
-						}
-					}
-				}
+
 			}
 		}
 
@@ -3961,3 +3960,87 @@ ENG_Parliament = {
 	}
 }
 
+ENG_spell_casting = { 
+	ENG_show_spell_casting = {
+		available = {
+			#has_country_flag = ENG_rebuilding_britain_success
+			not = { 
+				has_country_flag = zz_spell_casting
+			}
+		}
+		fire_only_once = no
+
+		visible = {
+		}
+
+		complete_effect = {
+			set_country_flag = zz_spell_casting
+		}
+
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	ENG_hide_spell_casting = {
+		available = {
+			has_country_flag = zz_spell_casting
+		}
+		fire_only_once = no
+
+		visible = {
+		}
+
+		complete_effect = {
+			clr_country_flag = zz_spell_casting
+		}
+
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+	zz_attack_spell = {
+		icon = steel
+		target_trigger = {
+			ROOT = { divisions_in_state = { state = PREV size > 0 } }
+			any_enemy_country = { divisions_in_state = { state = PREV size > 0 } }
+		}
+		visible = {
+			has_country_flag = zz_spell_casting
+		}
+		state_target = yes
+		cost = 50
+		fire_only_once = no
+		on_map_mode = map_only
+		complete_effect = {
+			damage_units = {
+				state = THIS # optional
+				limit = {
+					has_war_with = FROM 
+				}
+				damage = 0.5
+				str_damage = 0.65
+				ratio = yes
+				army = yes
+				navy = yes
+			}
+		}	
+	}
+}

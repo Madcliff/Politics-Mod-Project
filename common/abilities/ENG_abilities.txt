@@ -98,6 +98,9 @@ ability = {
 				days = 14
 				tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
 			}
+			FROM = {
+				country_event = zz_alchemy_event.1
+			}
 		}
 	}
 	eng_alchemical_siege = {

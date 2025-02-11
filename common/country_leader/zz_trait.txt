@@ -28,7 +28,8 @@ leader_traits = {
 		compliance_gain = 0.1
 		mobilization_speed = 1
 		stability_weekly = 0.01
-		generate_wargoal_tension = -0.7
+		generate_wargoal_tension = -0.7			
+		military_industrial_organization_funds_gain = 1
 	}
 	churchill_fs = { 
 		random = no

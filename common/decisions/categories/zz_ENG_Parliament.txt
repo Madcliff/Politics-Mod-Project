@@ -45,6 +45,13 @@ ENG_GENERAL_SELCTION = {
 }
 
 
+ENG_spell_casting = {
+    icon = generic_political_actions
+    scripted_gui = state_selection_panel
+    allowed = { tag = ENG }
+    priority = 101
+}
+
 
 
 #ENG_legislation_empire = {
