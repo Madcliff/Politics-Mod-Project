@@ -60,6 +60,16 @@ country_event = {
 		}
 		ENG = {
 			annex_country = { target = FRA transfer_troops = yes }
+			set_autonomy = {
+				target = SYR
+				autonomous_state = autonomy_colony
+				freedom_level = 0.5
+			}
+			set_autonomy = {
+				target = LEB
+				autonomous_state = autonomy_colony
+				freedom_level = 0.5
+			}
 		}
 		custom_effect_tooltip = FRA_franco_british_cores
 		hidden_effect = {

@@ -73,3 +73,28 @@ state_upgrade = {
 		set_state_category = town 
 	}
 }
+
+zz_script_array_fill = {
+	hidden_effect = {
+		for_each_scope_loop = {
+			array = global.states
+			IF = {
+				limit = {
+					root = { 
+						any_enemy_country = {
+							divisions_in_state = { state = PREV.PREV size > 0 }
+						}
+					}
+					any_neighbor_state = {
+						ROOT  = {
+							divisions_in_state = { state = PREV.PREV size > 0 }
+						}
+					}
+				}
+				THIS = {
+					add_to_array = { root.target_states = THIS }
+				}
+			}
+		}
+	}
+}

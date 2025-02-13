@@ -1,7 +1,7 @@
 ability = {
 	eng_alchemical_fortifications = {
-		name = ABILITY_LAST_STAND
-		desc = ABILITY_LAST_STAND_DESC
+		name = ABILITY_ALCHEMICAL_FORTIFICATION
+		desc = ABILITY_ALCHEMICAL_FORTIFICATION_DESC
 		
 		sound_effect = command_power_ability_offensive
 		
@@ -28,7 +28,7 @@ ability = {
 				cannot_retreat_while_defending = 1.0
 				
 				days = 35
-				tooltip = ABILITY_LAST_STAND_TOOLTIP
+				tooltip = ABILITY_ALCHEMICAL_FORTIFICATION_TOOLTIP
 			}
 		}
 		
@@ -50,8 +50,8 @@ ability = {
 		}
 	}
 	eng_alchemical_assault = {
-		name = ABILITY_FORCE_ATTACK
-		desc = ABILITY_FORCE_ATTACK_DESC
+		name = ABILITY_ALCHEMICAL_ASSAULT
+		desc = ABILITY_ALCHEMICAL_ASSAULT_DESC
 		
 		sound_effect = command_power_ability_offensive
 		
@@ -96,7 +96,7 @@ ability = {
 				str_damage_multiplier = -0.5
 				war_support_reduction_on_damage = 0.01
 				days = 14
-				tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
+				tooltip = ABILITY_ALCHEMICAL_ASSAULT_TOOLTIP
 			}
 			FROM = {
 				country_event = zz_alchemy_event.1
@@ -104,8 +104,8 @@ ability = {
 		}
 	}
 	eng_alchemical_siege = {
-		name = ABILITY_SIEGE_ARTILLERY
-		desc = ABILITY_SIEGE_ARTILLERY_DESC
+		name = ABILITY_ALCHEMICAL_SIEGE
+		desc = ABILITY_ALCHEMICAL_SIEGE_DESC
 		
 		type = army_leader
 		

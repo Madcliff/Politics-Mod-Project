@@ -104,7 +104,7 @@ scripted_gui = {
 		window_name = "state_selection_panel_window"
 		dynamic_lists = {
 			state_selection_menu_selection_grid = {
-				array = root.controlled_states
+				array = root.target_states
 				change_scope = yes
 				entry_container = state_selection_entry
 			}
@@ -112,20 +112,20 @@ scripted_gui = {
 		effects = {
 			state_click_portrait_click= {
 				set_variable = {root.state_target = THIS.id}
-
-				damage_units = {
-					state = THIS # optional
-					limit = {
-						has_war_with = root 
+				THIS = {
+					damage_units = {
+						state = THIS # optional
+						limit = {
+							has_war_with = root 
+						}
+						damage = 0.5
+						str_damage = 0.65
+						ratio = yes
+						army = yes
+						navy = yes
 					}
-					damage = 0.5
-					str_damage = 0.65
-					ratio = yes
-					army = yes
-					navy = yes
-				}
-	
-			}
+				}		
+			}	
 		}
 		properties = {
 			state_portrait = {
@@ -133,6 +133,8 @@ scripted_gui = {
 			}
 		}
 	}
+
+
 }
 
 

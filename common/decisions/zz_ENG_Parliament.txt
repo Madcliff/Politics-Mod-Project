@@ -1126,7 +1126,44 @@ ENG_subject_management = {
 			factor = 0
 		}
 	}
-	
+	eng_support_empire = {
+
+		icon = eng_propaganda_campaigns
+
+		cost = 50
+		available = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+			OR = {
+				political_power_daily > 0.5
+				has_political_power > 60
+			}
+		}
+
+		visible = {
+		}
+
+		target_array = subjects
+
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+
+		complete_effect = {
+			add_autonomy_score = {
+				value = -50
+				localization = "Support Empire"
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	
 	prospect_for_steel = {
 		icon = steel
@@ -1433,10 +1470,6 @@ ENG_GENERAL_SELCTION = {
 	ENG_staff_training = {
 
 
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-		}
-
 		cost = 25
 
 		fire_only_once = no
@@ -1470,9 +1503,7 @@ ENG_GENERAL_SELCTION = {
 	}
 	ENG_general_apptitude_enhancement = {
 
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-		}
+
 
 		cost = 25
 
@@ -1505,15 +1536,6 @@ ENG_GENERAL_SELCTION = {
 	 
 	ENG_general_brilliant_strategist = {
 
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:general_decision = {
-				exists = yes
-				NOT = { 
-					has_trait = brilliant_strategist
-				}
-			}
-		}
 
 		cost = 25
 
@@ -1521,7 +1543,6 @@ ENG_GENERAL_SELCTION = {
 
 		visible = {
 			var:general_decision = {
-				exists = yes
 				NOT = { 
 					has_trait = brilliant_strategist
 				}
@@ -1550,14 +1571,6 @@ ENG_GENERAL_SELCTION = {
 	}
 	ENG_general_inflexible_strategist = {
 
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:general_decision = {
-				NOT = { 
-					has_trait = inflexible_strategist 
-				}
-			}
-		}
 
 		cost = 25
 
@@ -1594,15 +1607,6 @@ ENG_GENERAL_SELCTION = {
 	
 	ENG_general_organizer = {
 
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:general_decision = {
-				NOT = { 
-					has_trait = organizer 
-				}
-			}
-		}
-
 		cost = 25
 
 		fire_only_once = no
@@ -1637,14 +1641,6 @@ ENG_GENERAL_SELCTION = {
 	}
 	ENG_general_cavalry_leader = {
 
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:general_decision = {
-				NOT = { 
-					has_trait = cavalry_leader  
-				}
-			}
-		}
 
 		cost = 25
 
@@ -1680,14 +1676,6 @@ ENG_GENERAL_SELCTION = {
 	}
 	ENG_general_infantry_leader = {
 
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:general_decision = {
-				NOT = { 
-					has_trait = infantry_leader 
-				}
-			}
-		}
 
 		cost = 25
 
@@ -1723,14 +1711,7 @@ ENG_GENERAL_SELCTION = {
 	}
 	ENG_general_skilled_staffer = {
 
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:general_decision = {
-				NOT = { 
-					has_trait = skilled_staffer
-				}
-			}
-		}
+
 
 		cost = 25
 
@@ -1765,15 +1746,6 @@ ENG_GENERAL_SELCTION = {
 		}
 	}
 	ENG_general_trickster = {
-
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:general_decision = {
-				NOT = { 
-					has_trait = trickster
-				}
-			}
-		}
 
 		cost = 25
 
@@ -1810,14 +1782,6 @@ ENG_GENERAL_SELCTION = {
 	 
 	ENG_general_trait_engineer = {
 
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:general_decision = {
-				NOT = { 
-					has_trait = trait_engineer  
-				}
-			}
-		}
 
 		cost = 25
 
@@ -1853,15 +1817,6 @@ ENG_GENERAL_SELCTION = {
 	}
 	ENG_general_trait_panzer_leader = {
 
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:general_decision = {
-				NOT = { 
-					has_trait = panzer_leader  
-				}
-			}
-		}
-
 		cost = 25
 
 		fire_only_once = no
@@ -1896,14 +1851,6 @@ ENG_GENERAL_SELCTION = {
 	}
 	ENG_general_commando = {
 
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:general_decision = {
-				NOT = { 
-					has_trait = commando   
-				}
-			}
-		}
 
 		cost = 25
 
@@ -1944,14 +1891,7 @@ ENG_GENERAL_SELCTION = {
 	
 	ENG_general_skill_alchemist = {
 
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:general_decision = {
-				NOT = { 
-					has_trait = alchemist
-				}
-			}
-		}
+
 
 		cost = 25
 
@@ -1986,14 +1926,6 @@ ENG_GENERAL_SELCTION = {
 	}
 	ENG_general_skill_state_alchemist = {
 
-		available = {
-			#has_country_flag = ENG_rebuilding_britain_success
-			var:general_decision = {
-				has_trait = alchemist
-				is_advisor = no
-			}
-			
-		}
 
 		cost = 25
 
@@ -2001,15 +1933,17 @@ ENG_GENERAL_SELCTION = {
 
 		visible = {
 			var:general_decision = {
-				has_trait = alchemist
+				has_trait = state_alchemist
+				#is_advisor = no
+
 			}
 		}
 
 		cancel_if_NOT_visible = yes
-
+0
 		complete_effect = {
 			var:general_decision = {
-
+				add_unit_leader_trait = state_alchemist   
 			}
 		}
 
@@ -3553,7 +3487,8 @@ ENG_Parliament = {
 			set_variable = { building_type = 0 } 
 			set_variable = { state_amount = 2 }
 			set_variable = { building_amount = 5 }
-			zz_inland_construction = yes 
+			add_offsite_building = { type = industrial_complex level = 10 }
+			#zz_inland_construction = yes 
 		}
 	}
 	ENG_britain_mil_mission = {
@@ -3581,7 +3516,8 @@ ENG_Parliament = {
 			set_variable = { building_type = 1 } 
 			set_variable = { state_amount = 3 }
 			set_variable = { building_amount = 3 }
-			zz_inland_construction = yes
+			add_offsite_building = { type = arms_factory level = 10 }
+			#zz_inland_construction = yes
 		}
 	}
 	ENG_britain_nav_mission = {
@@ -3609,7 +3545,8 @@ ENG_Parliament = {
 			set_variable = { building_type = 2 } 
 			set_variable = { state_amount = 3 }
 			set_variable = { building_amount = 3 }
-			zz_coastal_construction = yes
+			add_offsite_building = { type = dockyard level = 10 }
+			#zz_coastal_construction = yes
 		}
 	}
 	ENG_britain_war_plans_mission = {
@@ -3917,8 +3854,8 @@ ENG_Parliament = {
 				category = cat_special_forces_generic
 				category = support_tech
 				category = artillery
-				category = support_tech
-				category = motorized_equipment
+				category = motorized
+				category = mechanized
 				category = armor
 			}
 		}
@@ -3952,8 +3889,8 @@ ENG_Parliament = {
 				category = cat_special_forces_generic
 				category = support_tech
 				category = artillery
-				category = support_tech
-				category = motorized_equipment
+				category = motorized
+				category = mechanized
 				category = armor
 			}
 		}
@@ -4017,29 +3954,50 @@ ENG_spell_casting = {
 		}
 	}
 	zz_attack_spell = {
-		icon = steel
-		target_trigger = {
-			ROOT = { divisions_in_state = { state = PREV size > 0 } }
-			any_enemy_country = { divisions_in_state = { state = PREV size > 0 } }
-		}
-		visible = {
+		icon = GFX_other_target_icon
+		target_root_trigger = {
 			has_country_flag = zz_spell_casting
 		}
+		target_trigger = {
+			FROM = {
+				root = { 
+					any_enemy_country = {
+						divisions_in_state = { state = PREV.PREV size > 0 }
+					}
+				}
+				any_neighbor_state = {
+					root = {
+						divisions_in_state = { state = PREV size > 0 }
+					}
+				}
+			}
+		}
 		state_target = yes
-		cost = 50
+		#cost = 50
 		fire_only_once = no
 		on_map_mode = map_only
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25
 		complete_effect = {
-			damage_units = {
-				state = THIS # optional
-				limit = {
-					has_war_with = FROM 
+			root = {
+				add_command_power = -25
+			}
+			
+			FROM = {
+				damage_units = {
+					state = THIS
+					limit = {
+						has_war_with = ROOT
+					}
+					damage = 0.7
+					str_damage = 0.65
+					org_damage = 0.5
+					ratio = yes
+					army = yes
+					navy = yes
 				}
-				damage = 0.5
-				str_damage = 0.65
-				ratio = yes
-				army = yes
-				navy = yes
 			}
 		}	
 	}

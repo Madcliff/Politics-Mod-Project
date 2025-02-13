@@ -16,85 +16,50 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				fighter_equipment = {
+				fighter = {
 					instant = yes
 					build_cost_ic = -0.60
 					reliability = 0.5
 				}
-				cv_fighter_equipment = {
+				heavy_fighter = {
 					instant = yes
 					build_cost_ic = -0.60
 					reliability = 0.5
 				}
-				heavy_fighter_equipment = {
+				interceptor = {
 					instant = yes
 					build_cost_ic = -0.60
 					reliability = 1
 				}
-				cv_heavy_fighter_equipment = {
+				tactical_bomber = {
 					instant = yes
 					build_cost_ic = -0.60
 					reliability = 1
 				}
-				tac_bomber_equipment = {
+				strategic_bomber = {
 					instant = yes
 					build_cost_ic = -0.60
 					reliability = 0.5
 				}
-				cv_tac_bomber_equipment = {
+				cas = {
 					instant = yes
 					build_cost_ic = -0.60
 					reliability = 0.5
 				}
-				nav_bomber_equipment = {
+				naval_bomber = {
 					instant = yes
 					build_cost_ic = -0.60
 					reliability = 1
 				}
-				cv_nav_bomber_equipment = {
+				helicopter_equipment = {
 					instant = yes
 					build_cost_ic = -0.60
 					reliability = 1
 				}
-				CAS_equipment = {
+				helicopter_equipment_1 = {
 					instant = yes
 					build_cost_ic = -0.60
 					reliability = 0.5
-				}
-				cv_CAS_equipment = {
-					instant = yes
-					build_cost_ic = -0.60
-					reliability = 0.5
-				}
-				strat_bomber_equipment = {
-					instant = yes
-					build_cost_ic = -0.60
-					reliability = 1
-				}
-				jet_fighter_equipment = {
-					instant = yes
-					build_cost_ic = -0.60
-					reliability = 1
-				}
-				cv_jet_fighter_equipment = {
-					instant = yes
-					build_cost_ic = -0.60
-					reliability = 1
-				}
-				jet_tac_bomber_equipment = {
-					instant = yes
-					build_cost_ic = -0.60
-					reliability = 1
-				}
-				cv_jet_tac_bomber_equipment = {
-					instant = yes
-					build_cost_ic = -0.60
-					reliability = 1
-				}
-				jet_strat_bomber_equipment = {
-				  instant = yes
-				  build_cost_ic = -0.60
-				  reliability = 1
 				}
 			}
 		}
@@ -146,32 +111,32 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-                light_tank_chassis_arch = {
+                land_cruiser = {
                     instant = yes
 					reliability = 1
 					build_cost_ic = -0.60
                 }
-                medium_tank_chassis_arch = {
+                super_heavy_artillery_equipment = {
                     instant = yes
 					reliability = 1
 					build_cost_ic = -0.60
                 }
-                heavy_tank_chassis_arch = {
+                super_heavy_artillery_equipment_1 = {
                     instant = yes
 					reliability = 1
 					build_cost_ic = -0.60
                 }
-                modern_tank_chassis_arch = {
+                armored_support_vehicle = {
                     instant = yes
 					reliability = 1
 					build_cost_ic = -0.60
                 }
-                super_heavy_tank_chassis_arch = {
+                armored_support_vehicle_1 = {
                     instant = yes
 					reliability = 1
 					build_cost_ic = -0.60
                 }
-                amphibious_tank_chassis_arch = {
+                armor = {
                     instant = yes
 					reliability = 1
 					build_cost_ic = -0.60
@@ -193,17 +158,17 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-                train_equipment = {
+                train = {
 					instant = yes
 					build_cost_ic = -0.6
 					reliability = 1
 				}
-				motorized_equipment = {
+				motorized = {
 					instant = yes
 					build_cost_ic = -0.6
 					reliability = 1
 				}
-				mechanized_equipment = {
+				mechanized = {
 					instant = yes
 					build_cost_ic = -0.6
 					reliability = 1
@@ -225,27 +190,27 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				infantry_equipment = {
+				infantry = {
 					instant = yes
 					build_cost_ic = -0.6
 					reliability = 1
 				}
-				support_equipment = {
+				support = {
 					instant = yes
 					build_cost_ic = -0.6
 					reliability = 1
 				}
-				artillery_equipment = {
+				artillery = {
 					instant = yes
 					build_cost_ic = -0.6
 					reliability = 1
 				}
-				anti_air_equipment = {
+				anti_air = {
 					instant = yes
 					build_cost_ic = -0.6
 					reliability = 1
 				}
-            	anti_tank_equipment = {
+            	anti_tank = {
 					instant = yes
 					build_cost_ic = -0.60
 					reliability = 1
