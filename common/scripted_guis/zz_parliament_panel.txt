@@ -134,6 +134,43 @@ scripted_gui = {
 		}
 	}
 
+	imperial_subject_interactions_panel = {
+		context_type = diplomatic_action
+		window_name = "imperial_interactions_window"
+		triggers = {
+			manpower_interaction_entry_select_enabled = {
+				FROM = {
+					not = {
+						has_idea = imperial_manpower
+					}
+				}
+			}
+			opinion_interaction_entry_select = {
+
+			}
+			imperial_recruitment_interaction_entry_select = {
+
+			}
+			imperial_support_interaction_entry_select = {
+
+			}
+
+		}	
+		effect = {
+			manpower_interaction_entry_select_click = {
+				set_variable = {root.interaction = 1 }
+			}
+			opinion_interaction_entry_select_click = {
+				set_variable = {root.interaction = 2 }
+			}
+			imperial_recruitment_interaction_entry_select  = {
+				set_variable = {root.interaction = 3 }
+			}
+			imperial_support_interaction_entry_select= {
+				set_variable = {root.interaction = 4 }
+			}
+		}
+	}
 
 }
 

@@ -114,3 +114,121 @@ guiTypes = {
 		
 	}
 }
+
+guiTypes = {
+	containerWindowType = {
+		name = "imperial_interactions_window"
+		position = {x=0 y=0}
+		size = { width=550 height=227 }
+		containerWindowType = {
+			name = "manpower_interaction_entry"
+			position = { x = 10 y = 30}
+			size = { width=100% height=41 }
+			
+			iconType = {
+				name = "btn_bg"
+				position = {x=0 y=0}
+				spriteType = "GFX_decision_item_bg"
+			}	
+			instantTextBoxType = {
+				name = "manpower_interaction_entry_name"
+				position = { x = 62 y = 2 }
+				font = "hoi_16mbs"
+				text = "Manpower"
+				format = left
+				maxWidth = 280
+				maxHeight = 32
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "manpower_interaction_entry_select"
+				position = {x=365 y=6}
+				spriteType = "GFX_decision_select_icon_strip"
+				clicksound = decisions_ui_checkbox
+				frame = 2
+			}
+			
+		}
+		containerWindowType = {
+			name = "opinion_interaction_entry"
+			position = { x = 10 y = 80}
+			size = { width = 200 height = 50 }
+			iconType = {
+				name = "btn_bg"
+				position = {x=0 y=0}
+				spriteType = "GFX_decision_item_bg"
+			}	
+			instantTextBoxType = {
+				name = "opinion_interaction_entry_name"
+				position = { x = 62 y = 2 }
+				font = "hoi_16mbs"
+				text = "Boost Opinion of Empire"
+				format = left
+				maxWidth = 280
+				maxHeight = 32
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "opinion_interaction_entry_select"
+				position = {x=365 y=6}
+				spriteType = "GFX_decision_select_icon_strip"
+				clicksound = decisions_ui_checkbox
+				frame = 2
+			}
+		}
+		containerWindowType = {
+			name = "imperial_recruitment_interaction_entry"
+			position = { x = 10 y = 130}
+			size = { width = 200 height = 50 }
+			iconType = {
+				name = "btn_bg"
+				position = {x=0 y=0}
+				spriteType = "GFX_decision_item_bg"
+			}	
+			instantTextBoxType = {
+				name = "imperial_recruitment_interaction_entry_name"
+				position = { x = 62 y = 2 }
+				font = "hoi_16mbs"
+				text = "Imperial Army"
+				format = left
+				maxWidth = 280
+				maxHeight = 32
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "imperial_recruitment_interaction_entry_select"
+				position = {x=365 y=6}
+				spriteType = "GFX_decision_select_icon_strip"
+				clicksound = decisions_ui_checkbox
+				frame = 2
+			}
+		}
+		containerWindowType = {
+			name = "imperial_support_interaction_entry"
+			position = { x = 10 y = 180}
+			size = { width = 200 height = 50 }
+			iconType = {
+				name = "btn_bg"
+				position = {x=0 y=0}
+				spriteType = "GFX_decision_item_bg"
+			}	
+			instantTextBoxType = {
+				name = "imperial_support_interaction_entry_name"
+				position = { x = 62 y = 2 }
+				font = "hoi_16mbs"
+				text = "Support Empire"
+				format = left
+				maxWidth = 280
+				maxHeight = 32
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "imperial_support_interaction_entry_select"
+				position = {x=365 y=6}
+				spriteType = "GFX_decision_select_icon_strip"
+				clicksound = decisions_ui_checkbox
+				frame = 2
+			}
+		}
+	}
+}

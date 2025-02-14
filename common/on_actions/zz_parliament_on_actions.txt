@@ -1,18 +1,7 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			#RAJ 
-			RAJ = { 
-				remove_ideas = { 
-					RAJ_agrarian_society
-				}
 
-        
-				set_variable = {var_zz_agrarian_society = -0.69}
-				add_dynamic_modifier = { 
-					modifier = zz_agrarian_society
-				}
-      		}
 			ENG = {
 				random_unit_leader = {
 					set_variable = {root.general_decision = THIS.id}
